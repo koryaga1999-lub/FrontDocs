@@ -1,0 +1,157 @@
+/* ХЕДЕР СЕКЦИЯ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  height: 100px;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+
+.header-inner {
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--spacing-2xl);
+  padding-top: 0;
+  padding-bottom: 270px;
+}
+
+.logo {
+  font-size: 50px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+.border {
+  width: 2px;
+  height: 70px;
+  background-color: #000;
+  margin: 0 30px;
+  flex: 0 0 auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: sans-serif;
+  gap: 50px;
+}
+
+.nav-list a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+
+/* ИНФОРМАЦИЯ СЕКЦИЯ */
+
+.information_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;            /* картинка по центру относительно текста */
+  padding: 0 40px;
+  gap: 40px;
+  top: 70px;
+}
+
+.hero_left{
+  flex: 1;                        /* левый блок занимает всё доступное */
+  display: flex;
+  flex-direction: column;
+}
+
+.hero_img{
+  width: 351px;
+  height: 351px;
+  object-fit: contain;            /* не растягиваем, сохраняем пропорции */
+  flex: 0 0 351px;                /* фикс ширина, не сжимать */
+}
+
+/* твои стили можно оставить, но лучше без margin-left у info_text */
+.info_text{
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+
+.h1_head{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hcj{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 2px;
+  color: #1919B7;
+}
+
+.discription{
+  font-size: 25px;
+  margin-top: 30px;
+  max-width: 800px;               /* вместо width: 800px */
+}
+
+.static_text{
+  display: flex;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  gap: 55px;
+}
+
+/* ПРЕИМУЩЕСТВА СЕКЦИЯ */
+
+.advantages_section {
+    padding: 0 40px;
+    margin-top: 54px;
+}
+
+.advantages_section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 88px;
+}

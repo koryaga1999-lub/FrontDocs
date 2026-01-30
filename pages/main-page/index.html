@@ -4,39 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <nav class="navigation_menu">
-            <h1 class="logo">FrontDocs.</h1>
-            <ul>
-                <li><a href="/FrontDocs/pages/main-page/">Главная</a></li>
-                <li><a href="/FrontDocs/pages/frontend-page/">Фронтенд</a></li>
-                <li><a href="/FrontDocs/pages/html-page/">HTML5</a></li>
-                <li><a href="/FrontDocs/pages/css-page/">CSS3</a></li>
-                <li><a href="/FrontDocs/pages/JavaScript-page/">JavaScript</a></li>
-                <li><a href="/FrontDocs/pages/git-page/">Git</a></li>
-                <li><a href="/FrontDocs/pages/">Задания</a></li>
-            </ul>
-            <img src="/FrontDocs/images/Icon (14).png" alt="">
-        </nav>
-    </header>
+  <div class="header-inner">
+    <h1 class="logo">FrontDocs.</h1>
+    <div class="border"></div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="/FrontDocs/pages/main-page/">Главная</a></li>
+        <li><a href="/FrontDocs/pages/frontend-page/">Фронтенд</a></li>
+        <li><a href="/FrontDocs/pages/html-page/">HTML5</a></li>
+        <li><a href="/FrontDocs/pages/css-page/">CSS3</a></li>
+        <li><a href="/FrontDocs/pages/JavaScript-page/">JavaScript</a></li>
+        <li><a href="/FrontDocs/pages/git-page/">Git</a></li>
+        <li><a href="/FrontDocs/pages/">Задания</a></li>
+      </ul>
+
+      <img class="nav-icon" src="/FrontDocs/images/icon.png" alt="">
+    </nav>
+  </div>
+</header>
     <main>
         <section class="information_section">
-            <div class="info_text">
+            <div class="hero_left">
+                <div class="info_text">
                 <h1 class="h1_head">Базовое руководство по Фронтенду</h1>
+
                 <p class="hcj">HTML CSS JavaScript</p>
-                <p class="discription"><strong>FrontDocs</strong> - проект, который собрал в себя <strong>только всё самое важное и лучшее</strong>, чтобы сделать ваше обучение <strong>легче!</strong></p>
+
+                <p class="discription">
+                    <strong>FrontDocs</strong> - проект, который собрал в себя
+                    <strong>только всё самое важное и лучшее</strong>, чтобы сделать ваше обучение
+                    <strong>легче!</strong>
+                </p>
+                </div>
+
+                <div class="static_text">
+                    <p class="static">Лекций на сайте: 51</p>
+                    <p class="static">Заданий на сайте:</p>
+                    <p class="static">Тестов:</p>
+                </div>
             </div>
-            <div class="info_text">
-                <p class="static">Лекций на сайте: </p>
-                <p class="static">Заданий на сайте: </p>
-                <p class="static">Тестов: </p>
-            </div>
-            <img src="/FrontDocs/images/line.png" alt="">
+
+            <img class="hero_img" src="./line.png" alt="линия">
         </section>
+        <hr>
         <section class="advantages_section">
-            <h2>Преимущества FrontDocs:</h2>
+            <div>
+                <h2>Преимущества FrontDocs:</h2>
+                <img src="" alt="">
+            </div>
+            
 
             <div class="">
                 <img src="/FrontDocs/images/icon.png" alt="">

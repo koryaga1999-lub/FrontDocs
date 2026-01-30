@@ -5,14 +5,19 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     max-width: var(--container-width);
     margin: 0 auto;
     padding: var(--spacing-2xl);
-    position: relative; /* ДОБАВИТЬ */
-    min-height: 100vh; /* ДОБАВИТЬ */
-    padding-bottom: 270px; /* Примерная высота футера */
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 270px;
+    padding-top: 0; 
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
