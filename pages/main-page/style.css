@@ -19,7 +19,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-
   height: 100px;
   width: 100%;
   background-color: #D9D9D9;
@@ -29,7 +28,6 @@ body {
   margin: 0 auto;
   height: 100%;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,14 +90,14 @@ body {
 .information_section{
   display: flex;
   justify-content: space-between;
-  align-items: center;            /* картинка по центру относительно текста */
+  align-items: center;            
   padding: 0 40px;
   gap: 40px;
   top: 70px;
 }
 
 .hero_left{
-  flex: 1;                        /* левый блок занимает всё доступное */
+  flex: 1;                        
   display: flex;
   flex-direction: column;
 }
@@ -107,11 +105,10 @@ body {
 .hero_img{
   width: 351px;
   height: 351px;
-  object-fit: contain;            /* не растягиваем, сохраняем пропорции */
-  flex: 0 0 351px;                /* фикс ширина, не сжимать */
+  object-fit: contain;            
+  flex: 0 0 351px;               
 }
 
-/* твои стили можно оставить, но лучше без margin-left у info_text */
 .info_text{
   margin-top: 20px;
   font-family: sans-serif;
@@ -132,7 +129,7 @@ body {
 .discription{
   font-size: 25px;
   margin-top: 30px;
-  max-width: 800px;               /* вместо width: 800px */
+  max-width: 800px;               
 }
 
 .static_text{
@@ -143,6 +140,10 @@ body {
   gap: 55px;
 }
 
+.end_line {
+  margin-top: 40px;
+}
+
 /* ПРЕИМУЩЕСТВА СЕКЦИЯ */
 
 .advantages_section {
@@ -150,8 +151,259 @@ body {
     margin-top: 54px;
 }
 
+.name_card {
+  display: flex;
+  align-items: start;
+  justify-content: row;
+}
+
+.img_card {
+  width: 50px;
+  height: 50px;
+}
+
 .advantages_section h2 {
     font-size: 30px;
     font-weight: bold;
-    padding: 0 88px;
+    padding: 0 20px;
+    margin-top: 10px;
 }
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 100px;
+}
+
+.card {
+  background-color: #D9D9D9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  margin-top: 40px;
+  display: flex; 
+  align-items: center; 
+  gap: 15px; 
+}
+
+.card img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 35px;
+}
+
+.head {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 0; 
+}
+
+.end_line_two {
+  margin-top: 80px;
+}
+
+/* ЗАДАЧА СЕКЦИЯ */
+
+.about_us {
+  padding: 0 40px;
+  margin-top: 54px;
+}
+
+.about_us h2 {
+    display: flex;
+    align-items: start;
+    justify-content: row;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-top: 10px;
+    gap: 50px
+}
+
+.column_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 25px;
+    width: 75rem;
+    margin-top: 40px;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+.example, .about_the_website {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    width: 48%;
+}
+
+.example > div, .about_the_website > div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.titles {
+    display: flex;
+    justify-content: space-between; 
+    width: 75rem;
+    margin: 0 auto;
+    gap: 0; 
+}
+
+.title2 {
+    margin-right: 180px;
+}
+
+/* ЭБАУТ СЕКЦИЯ */
+
+.about {
+    padding: 0 40px;
+    margin-top: 54px;
+}
+
+.text_head_about {
+    display: flex;
+    align-items: start;
+    justify-content: row;
+}
+
+.about h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+    margin-top: 5px;
+}
+
+.about p {
+    font-size: 25px;
+    margin-top: 16px;
+    width: 1256px;
+}
+
+/* ФУТЕР */
+
+/* ФУТЕР */
+.footer {
+    background-color: #000000;
+    padding: 40px 20px;
+    color: white;
+    margin-top: 80px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.col-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.shapter-content ul,
+.instruments-content ul,
+.community-content ul {
+    list-style: none;
+}
+
+.shapter-content li,
+.instruments-content li,
+.community-content li {
+  line-height: 30px;
+}
+
+
+.shapter-content a,
+.community-content a, 
+.instruments-content a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.shapter-content a:hover,
+.community-content a:hover, 
+.instruments-content a:hover {
+    color: #1867a4;
+    text-decoration:wavy;
+}
+
+.community-content img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.button_ex {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+    margin-top: 40px;
+}
+
+.button_ex a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.button_ex:hover {
+    background-color: #0056b3;
+}
+
+.version {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.end_line_three {
+  background-color: #6c757d;
+  opacity: 50%;
+  margin-top: 50px;
+}
+
+.footer-bottom p:first-child {
+    margin-bottom: 5px;
+}
+
+.footer-bottom a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: wavy;
+    color: #1867a4;
+}
+

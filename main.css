@@ -10,5 +10,13 @@
 @import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
 
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-
+section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
