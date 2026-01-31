@@ -56,14 +56,14 @@
 .title_sec {
     font-size: 30px;
     font-weight: bold;
-    text-align: center;
+    padding: 0 20px;
 }
 
 .structure {
     display: flex;
     justify-content: center;
     gap: 70px;
-    margin-top: 30px;
+    margin-top: 45px;
     flex-wrap: wrap;
 }
 
@@ -101,7 +101,98 @@
     padding: 15px;
     margin-top: 15px;
     border-radius: 4px;
-    font-family: 'Courier New', monospace;
     font-size: 14px;
-    overflow-x: auto; /* если код не влезает - скролл */
+    overflow-x: visible; 
+    word-wrap: break-word;
+    white-space: pre-wrap; 
+}
+
+.test_sec {
+    margin-top: 30px;
+}
+
+.use_sec {
+    padding: 0 40px;
+    margin-top: 50px;
+}
+
+.title_sec2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+}
+
+.one_use {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block_content {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.use_txt {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.block {
+    width: 300px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.block2 {
+    width: 200px;
+    background-color: #D9D9D9;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.block3 {
+    width: 300px;
+    background-color: #D9D9D9;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+}
+
+.title_sec3 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    margin-top: 30px;
+}
+
+
+.one_block p,
+.two_block p {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.one_block label,
+.two_block label {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.test_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 117px;
+    margin-top: 100px;
+    background-color: #F6F6F6;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    margin: 30px;
 }
