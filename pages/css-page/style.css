@@ -1,0 +1,24 @@
+.lections2 img {
+  position: absolute;
+  left: 900px; /* Отступ от левого края списка */
+  top: 450px;
+  width: 450px;
+}
+
+.lections2 {
+    font-size: 25px;
+    line-height: 40px;
+    margin-left: 79px;
+    margin-top: 16px;
+}
+
+.lections2 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.lections2 a:hover {
+    color: #4ECDC4;
+    text-decoration: underline;
+    cursor: pointer;
+}
