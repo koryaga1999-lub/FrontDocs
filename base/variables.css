@@ -1,25 +1,23 @@
 /* Переменные */
 
- :root {
-    /* COLOR VARIABLES */
 
-        --background-color: #d9d9d9; /* цвет для фона  */
-        --advantage-color: #D9D9D9; /* цвет для карточек  */
-        --footer-color: #000000; /* цвет для футера */
+:root {
+    /* COLOR VARIABLES */
+    --background-color: white; /* цвет для фона */
+    --advantage-color: #d9d9d9; /* цвет для карточек */
+    --footer-color: #000000; /* цвет для футера */
 
     /* SIZE VARIABLES */
-
-    --hs-size: 40px;  /* размер заголовков  */
-    --underhs-size: 30px; /* размер подзаголовков  */
-    --text-size: 25px; /* размер текста */
-    --lect-size: 25px; /* размер названия лекций  */
-    --hsfooter: 20px; /* размер заголовков в футере */
-    --footer-font-size: 10px; /* размер текст в футере  */
-    --pagenames-size: 25px; /* размер названия страниц в меню  */
+    --hs-size: 40px; /* размер заголовков */
+    --undershsize: 30px; /* размер подзаголовков */
+    --textsize: 25px; /* размер текста */
+    --lectsize: 25px; /* размер названия лекций */
+    --hfsfooter: 20px; /* размер заголовков в футере */
+    --footer-fontsize: 14px; /* размер текст в футере */
+    --pagenamesize: 18px; /* размер названия страниц в меню */
 
     /* Прозрачность (opacity) */
-    --opacity-low: 0.25;                      /* Низкая прозрачность (второстепенный текст) */
-    --opacity-medium: 0.3;                    /* Средняя прозрачность (полупрозрачные элементы) */
-    --opacity-high: 0.5;                      /* Высокая прозрачность (почти прозрачные элементы */
-
- }
+    --opacity-low: 0.25;
+    --opacity-medium: 0.3;
+    --opacity-high: 0.5;
+}

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: var(--hs-size);
     font-weight: bold;
     margin-top: 20px;
 }
@@ -13,7 +13,7 @@
 }
 
 .title {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .lections {
-    font-size: 25px;
+    font-size: var(--lectsize);
     line-height: 40px;
     margin-left: 79px;
     margin-top: 16px;

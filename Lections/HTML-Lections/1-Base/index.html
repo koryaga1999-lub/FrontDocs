@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="./head.html">Главная</a></li>
+                    <li><a href="./FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="./HtmlPage.html">HTML5</a></li>
+                    <li><a href="./cssPage.html">CSS3</a></li>
+                    <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="./GitPage.html">Git</a></li>
+                    <li><a href="/FrontDocs/pages/">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="./images/icon.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="title_lection1">Основы работы с HTML</h1>
+        <section class="html-basics">
+                <p class="discription1"><strong>HTML</strong> - это язык разметки, с помощью которого создаётся структура веб-страницы. </p>
+                <div>
+                    <p class="title_txt1"><strong>Простыми словами:</strong></p>
+                    <p class="discription2">HTML говорит браузеру: «вот здесь будет заголовок», «здесь - картинка», «тут - кнопка», «а здесь - список».</p>
+                </div>
+                    <p class="title_code1"><strong>Например:</strong></p>
+                    <p class="code_html_1">
+                        <code>&lt;h1&gt;Мой первый сайт&lt;/h1&gt;</code> → Это заголовок (h = head)<br>
+                        <code>&lt;p&gt;Привет, мир!&lt;/p&gt;</code> → Это абзац текста (p = paragraph)<br>
+                        <code>&lt;img src="cat.jpg"&gt;</code> → Это картинка котика<br>
+                        <code>&lt;a href="https://ya.ru"&gt;Ссылка на Яндекс&lt;/a&gt;</code> → Это ссылка
+                    </p>
+                    <p class="discription_code_html">Браузер читает этот код и рисует страницу с заголовком, текстом, картинкой и ссылкой.</p>
+        </section>
+
+        <section class="html-tegs">
+            <h2 class="title_lection2">Что такое теги?</h2>
+            <p class="txt_title2">В HTML эти угловые скобки (<code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>) называются тегами. Теги оборачивают наш контент (текст, картинки, ссылки), чтобы браузер понимал, что это такое.</p>
+            <p class="txt_title2">Например, тег <code>&lt;section&gt;</code> создаёт секцию на сайте, внутри которой может быть текст, картинки и другие элементы.</p>
+            <p class="txt_title2">Каждый тег можно использовать бесконечное количество раз и много раз вкладывать их в секцию.</p>
+            <p class="txt_title2">Иногда вложенность - главная часть разметки, например при построении таблиц, о которых Вы узнаете позже.</p>
+            <div>
+                <p class="title_code2">Вот к примеру список:</p>
+                    <p class="code_html_2">
+                        <code>&lt;ul&gt;</code><br>
+                            <code>&lt;li&gt;Первый элемент списка&lt;/li&gt;</code><br>
+                            <code>&lt;li&gt;Второй элемент списка&lt;/li&gt;</code><br>
+                            <code>&lt;li&gt;Третий элемент списка&lt;/li&gt;</code><br>
+                        <code>&lt;/ul&gt;</code>
+                    </p>
+                <p class="discription_code_html2">Браузер выведет эту HTML-разметку следующим образом:</p>
+                    <ul>
+                        <li>Первый элемент списка</li>
+                        <li>Второй элемент списка</li>
+                        <li>Третий элемент списка</li>
+                    </ul>
+                <p>Без тегов <code><li>&lt;li&gt;</li></code> браузер не сможет отличить простой текст от элементов списка.</p>
+            </div>
+        </section>
+
+        <section class="html-attributes">
+            <h2 class="title_lection2">Атрибуты</h2>
+            <p>Атрибуты - это просто дополнительная информация для браузера.</p>
+            <p>В HTML вы можете использовать ссылки, чтобы перемещаться по интернету.<br>Недостаточно просто указать тег ссылки <code>&lt;a&gt;&lt;/a&gt;</code> и текст внутри.</p>
+            <p><code>&lt;a&gt;Текст ссылки&lt;/a&gt;</code> - ничего не произойдёт и Вас к сожалению никуда не перенаправят самостоятельно :(</p>
+            <p>Чтобы перенаправить пользователя по ссылке, к тегу <code>&lt;a&gt;</code> нужен специальный атрибут <code>href</code>, значением которого является нужная Вам ссылка:</p><pre><code>&lt;a href="https://twitch.tv"&gt;Пойти смотреть стримы!&lt;/a&gt;</code></pre>
+            <p>Теперь, при клике на текст (указанный в атрибуте) Вы будете перенаправлены на ссылку, которую указали.</p>
+        </section>
+
+        <button class="button_next"><a href="">Дальше</a></button>
+
+        <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="/FrontDocs/">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                            <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                            <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                            <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                            <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                            <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                            <li><a href="">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="">GitHub <img src="./images/Icon (15).png" alt=""></a></li>
+                            <li><a href="">Telegram <img src="./images/Icon (16).png" alt=""></a></li>
+                            <li><a href="">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

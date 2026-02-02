@@ -6,7 +6,7 @@
 }
 
 .lections_section4 {
-    font-size: 25px;
+    font-size: var(--lectsize);
     line-height: 40px;
     margin-left: 79px;
     margin-top: 16px;
@@ -14,7 +14,7 @@
 
 .lections_section4 a {
     text-decoration: none;
-    color: #000000;
+    color: #000000; 
 }
 
 .lections_section4_dop {

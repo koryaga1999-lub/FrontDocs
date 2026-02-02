@@ -14,6 +14,7 @@ html, body {
 body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
+  background-color: var(--background-color);
 }
 .header {
   position: sticky;
@@ -21,7 +22,7 @@ body {
   z-index: 1000;
   height: 100px;
   width: 100%;
-  background-color: #D9D9D9;
+  background-color: var(--advantage-color);
 }
 
 .header-inner {
@@ -73,7 +74,7 @@ body {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 25px;
+  font-size: var(--textsize);
   white-space: nowrap;
 }
 
@@ -115,7 +116,7 @@ body {
 }
 
 .h1_head{
-  font-size: 40px;
+  font-size: var(--hs-size);
   font-weight: bold;
 }
 
@@ -127,7 +128,7 @@ body {
 }
 
 .discription{
-  font-size: 25px;
+  font-size: var(--textsize);
   margin-top: 30px;
   max-width: 800px;               
 }
@@ -136,7 +137,7 @@ body {
   display: flex;
   margin-top: 40px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: var(--hfsfooter);
   gap: 55px;
 }
 
@@ -163,7 +164,7 @@ body {
 }
 
 .advantages_section h2 {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 20px;
     margin-top: 10px;
@@ -189,7 +190,7 @@ body {
 }
 
 .card {
-  background-color: #D9D9D9;
+  background-color: var(--advantage-color);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   padding: 20px;
   border-radius: 12px;
@@ -207,7 +208,7 @@ body {
 }
 
 .head {
-  font-size: 20px;
+  font-size: var(--hfsfooter);
   font-weight: bold;
   margin-bottom: 10px;
   margin-left: 0; 
@@ -228,7 +229,7 @@ body {
     display: flex;
     align-items: start;
     justify-content: row;
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 20px;
     margin-top: 10px;
@@ -239,7 +240,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    font-size: 25px;
+    font-size: var(--textsize);
     width: 75rem;
     margin-top: 40px;
     margin-left: auto; 
@@ -288,21 +289,21 @@ body {
 }
 
 .about h2 {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 20px;
     margin-top: 5px;
 }
 
 .about p {
-    font-size: 25px;
+    font-size: var(--textsize);
     margin-top: 16px;
     width: 1256px;
 }
 
 /* ФУТЕР */
 .footer {
-    background-color: #000000;
+    background-color: var(--footer-color);
     padding: 40px 20px;
     color: white;
     margin-top: 80px;
@@ -324,7 +325,7 @@ body {
 
 .col-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: var(--pagenamesize);
     margin: 0 0 10px 0;
 }
 
@@ -368,7 +369,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: var(--footer-fontsize);
     text-align: center;
     margin: 5px 0;
     margin-top: 40px;
@@ -394,13 +395,13 @@ body {
     text-align: center;
     margin-top: 40px;
     padding-top: 20px;
-    font-size: 14px;
+    font-size: var(--footer-fontsize);
     color: #6c757d;
 }
 
 .end_line_three {
   background-color: #6c757d;
-  opacity: 50%;
+  opacity: var(--opacity-high);
   margin-top: 50px;
 }
 
@@ -417,4 +418,3 @@ body {
     text-decoration: wavy;
     color: #1867a4;
 }
-

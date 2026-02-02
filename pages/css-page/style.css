@@ -6,7 +6,7 @@
 }
 
 .lections2 {
-    font-size: 25px;
+    font-size: var(--lectsize);
     line-height: 40px;
     margin-left: 79px;
     margin-top: 16px;

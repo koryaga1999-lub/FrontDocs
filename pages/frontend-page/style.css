@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: var(--hs-size);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -24,7 +24,7 @@
     background-color: #000;
     margin-top: 60px;
     flex: 0 0 auto;
-    opacity: 50%;
+    opacity: var(--opacity-high);
 }
 
 .text_head {
@@ -40,11 +40,12 @@
 }
 
 .text_head h2 {
-    font-size: 30px;
+    font-size: var(--undershsize);
 }
 
 .txt {
     margin-top: 25px;
+    font-size: var(--textsize);
 }
 
 .code {
@@ -54,7 +55,7 @@
 /* ФРОНТЕНД СЕКЦИЯ */
 
 .title_sec {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 20px;
 }
@@ -78,6 +79,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
+    font-size: var(--textsize);
 }
 
 .code_js {
@@ -131,13 +133,13 @@
 }
 
 .title_sec2 {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 40px;
 }
 
-.one_use {
-    font-size: 20px;
+.one_use1 {
+    font-size: var(--hfsfooter);
     font-weight: bold;
 }
 
@@ -156,7 +158,7 @@
 
 .block {
     width: 300px;
-    background-color: #D9D9D9;
+    background-color: var(--advantage-color);
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -164,7 +166,7 @@
 
 .block2 {
     width: 200px;
-    background-color: #D9D9D9;
+    background-color: var(--advantage-color);
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -172,7 +174,7 @@
 
 .block3 {
     width: 300px;
-    background-color: #D9D9D9;
+    background-color: var(--advantage-color);
     padding: 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
@@ -191,7 +193,7 @@
 }
 
 .title_sec3 {
-    font-size: 30px;
+    font-size: var(--undershsize);
     font-weight: bold;
     padding: 0 40px;
     margin-top: 30px;
@@ -200,14 +202,14 @@
 
 .one_block p,
 .two_block p {
-    font-size: 25px;
+    font-size: var(--textsize);
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .one_block label,
 .two_block label {
-    font-size: 20px;
+    font-size: var(--hfsfooter);
     line-height: 30px;
 }
 
@@ -222,5 +224,3 @@
     padding: 30px;
     margin: 30px;
 }
-
-

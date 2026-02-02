@@ -1,0 +1,20 @@
+.title_lection1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--hs-size);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+main {
+    padding: 0 20px;
+}
+
+.html-basics {
+    margin-top: 54px;
+}
+
+.discription1 {
+    font-size: var(--);
+}
