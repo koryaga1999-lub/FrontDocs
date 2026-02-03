@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="/FrontDocs/pages/">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="header_lection3">Основы редактирования текста в HTML</h1>
+        <h2 class="title_lection3">(Ну или как сделать текст в HTML понятным)</h2>
+        <section class="start_sec">
+            <h3 class="title1">Зачем нужна структура текста?</h2>
+            <p class="discription1_lec3">Без структуры текст - это сплошная стена слов, которую никто не захочет читать.</p>
+            <p class="title_code2">Пример:</p>
+                <p class="txt1">Стена текста (без структуры):</p>
+                <p class="tx2">Всем привет Сегодня такие планы: покушать, сходить погулять Как ваши дела?</p>
+                <p class="txt3">Со структурой:</p>
+                <div class="lection3_code">
+                    <p>Всем привет!</p>
+                    <p>Сегодня такие планы: </p>
+                    <ul>
+                        <li>покушать</li>
+                        <li>сходить погулять</li>
+                    </ul>
+                    <p>Как ваши дела?</p>
+                </div>
+                <div>
+                    <p>Зачем структура:</p>
+                    <ul>
+                        <li>Люди быстро находят нужное</li>
+                        <li>Google лучше понимает о чём страница</li>
+                        <li>Слабовидящие могут слушать текст по частям</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="sec3_lection3">
+            <h2>Заголовки: h1 - h6</h2>
+            <div>
+                <p>Это как в книге:</p>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> - название книги (как заголовок, один на страницу!)</li>
+                    <li><code>&lt;h2&gt;</code> - названия глав</li>
+                    <li><code>&lt;h3&gt;</code> - подразделы в главах</li>
+                </ul>
+            </div>
+            <p>Пример книги по программированию:</p>
+            <div class="code_sec3_lec3">
+                <p><code>&lt;h1&gt;Основы фронтенда&lt;/h1&gt;              &lt;!-- Главное название --&gt;</code></p>
+                <p><code>&lt;h2&gt;Что такое фронтенд?&lt;/h2&gt;           &lt;!-- Раздел 1 --&gt;</code></p>
+                <p><code>&lt;h2&gt;Как начать кодить?&lt;/h2&gt;           &lt;!-- Раздел 2 --&gt;</code></p>
+                <p><code>&lt;h3&gt;Советы разработчика&lt;/h3&gt;          &lt;!-- Подраздел --&gt;</code></p>
+            </div>
+            <p>Важные правила:</p>
+            <ol>
+                <li>Один <code>&lt;h1&gt;</code> на странице - как одно название у книги</li>
+                <li>Не прыгай через уровни - <code>&lt;h1&gt;</code> → <code>&lt;h2&gt;</code> → <code>&lt;h3&gt;</code>, а не <code>&lt;h1&gt;</code> → <code>&lt;h3&gt;</code></li>
+                <li>Не больше 3-4 уровней - иначе слишком сложно</li>
+            </ol>
+        </section>
+
+        <section class="sec4_lection3">
+            <h2>Списки: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></h2>
+            <p>2 типа списков:</p>
+            <div class="ul_code">
+                <p class="txt_ul_code">1. С точками (порядок не важен):</p>
+                <div class="code_3">
+                    <div class="code_html_3">
+                        <code>&lt;ul&gt;</code><br>
+                            <code class="li">&lt;li&gt;HTML&lt;/li&gt;</code><br>
+                            <code class="li">&lt;li&gt;CSS&lt;/li&gt;</code><br>
+                            <code class="li">&lt;li&gt;JS&lt;/li&gt;</code><br>
+                        <code>&lt;/ul&gt;</code>
+                    </div>
+
+                    <img src="../../../images/Arrow 1.png" alt="">
+
+                    <div>
+                        <ul class="ul_li_tegs_2">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="discription3">Для чего: ингредиенты, перечень, список дел и т.п.</p>
+                <div class="ul_code">
+                    <p class="txt_ol_code">2. С цифрами (порядок важен):</p>
+                    <div class="code_4">
+                        <div class="code_html_4">
+                            <code>&lt;ol&gt;</code><br>
+                                <code class="li">&lt;li&gt;Откройте FrontDocs&lt;/li&gt;</code><br>
+                                <code class="li">&lt;li&gt;Перейдите во вкладку задания&lt;/li&gt;</code><br>
+                                <code class="li">&lt;li&gt;Начните выполнять задания!&lt;/li&gt;</code><br>
+                            <code>&lt;/ol&gt;</code>
+                        </div>
+
+                        <img src="../../../images/Arrow 1.png" alt="">
+
+                        <div class="ul_li_tegs_3">
+                            <ol class="ul_li_tegs_2">
+                                <li>Откройте FrontDocs</li>
+                                <li>Перейдите во вкладку задания</li>
+                                <li>Начните выполнять задания!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <p class="discription4">Для чего: этапы, инструкции, шаги, рецепты и т.п.</p>
+        </section>
+
+        <section>
+            <h2>Выделение: <code>&lt;em&gt;</code> и <code>&lt;strong&gt;</code></h2>
+            <p class="explanation_txt">Не просто "курсив" и "жирный", а со смыслом:</p>
+            <div class="em_strong_code">
+                <div class="em_code_div">
+                    <p class="em_code"><code>&lt;em&gt;</code> - для акцента (как интонация в речи):</p>
+                    <p class="code_html_5"><code>&lt;p&gt;</code> Я <code>&lt;em&gt;</code> очень <code>&lt;em&gt;</code> хочу есть!</p></p> 
+
+                    <img src="../../../images/Arrow 1.png" alt="">
+
+                    <p class="issue_code1"><strong>очень</strong> есть! (с интонацией)</p>
+                </div>
+
+                <div class="strong_code_div">
+                    <p class="strong_code"><code>&lt;strong&gt;</code> - для важного (как крик):</p>
+                    <p class="code_html_6"><code>&lt;p&gt;</code><code>&lt;strong&gt;</code> Осторожно! <code>&lt;strong&gt;</code> Горячо!</p></p> 
+
+                    <img src="../../../images/Arrow 1.png" alt="">
+
+                    <p class="issue_code2"><strong>ОСТОРОЖНО!</strong> Горячо! (важно)</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. СПЕЦИАЛЬНЫЕ СЛУЧАИ: <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code></h2>
+            <p>Когда использовать:</p>
+            <div class="container_code">
+                <div class="em_code_div_1">
+                    <p class="em_code_2"><code>&lt;i&gt;</code> - иностранные слова, термины:</p>
+                    <p class="code_html_5"><code>&lt;p&gt;</code> Это <code>&lt;i&gt;</code>JavaScript<code>&lt;/i&gt;</code> а не Java.<code>&lt;/p&gt;</code></p>
+                    <p class="issue_code3">Это <i>JavaScript</i> а не Java. (иностранный термин)</p>
+                    <img src="../images/Arrow 1.png" alt="">
+
+                </div>
+
+                <div class="em_code_div_2">
+                    <p class="em_code_3"><code>&lt;b&gt;</code> - выделение ключевых слов (без крика):</p>
+                    <p class="code_html_5"><code>&lt;p&gt;</code> Нам нужны: <code>&lt;b&gt;</code>нут<code>&lt;/b&gt;</code>, <code>&lt;b&gt;</code>чеснок<code>&lt;/b&gt;</code>, <code>&lt;b&gt;</code>оливковое масло<code>&lt;/b&gt;</code>.<code>&lt;/p&gt;</code></p>
+                    <p class="issue_code1">Нам нужны: <b>нут</b>, <b>чеснок</b>, <b>оливковое масло</b>. (ключевые слова)</p>
+                    <img src="../images/Arrow 1.png" alt="">
+
+                    
+                </div>
+
+                <div class="em_code_div">
+                    <p class="em_code"><code>&lt;u&gt;</code> - исправления, имена:</p>
+                    <p class="code_html_5"><code>&lt;p&gt;</code> Слово <code>&lt;u&gt;</code>JazaScript<code>&lt;/u&gt;</code> написано неверно, правильно - JavaScript.<code>&lt;/p&gt;</code></p>
+                    <p class="issue_code1">Слово <u>JazaScript</u> написано неверно, правильно - JavaScript. (исправление)</p>
+                    <img src="../images/Arrow 1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>ЗАПОМНИ ЭТИ 7 ТЕГОВ:</h2>
+                    <ol>
+                        <li><strong><code>&lt;h1&gt;</code></strong> — главный заголовок (один!)</li>
+                        <li><strong><code>&lt;h2&gt;</code></strong> — разделы (может быть h2, h3, h4, h5 и h6, но обычно только h2)</li>
+                        <li><strong><code>&lt;p&gt;</code></strong> — абзацы (бесконечное количество)</li>
+                        <li><strong><code>&lt;ul&gt;</code></strong> — списки с точками (• HTML)</li>
+                        <li><strong><code>&lt;ol&gt;</code></strong> — списки с цифрами (1. HTML)</li>
+                        <li><strong><code>&lt;em&gt;</code></strong> — акцент (как интонация)</li>
+                        <li><strong><code>&lt;strong&gt;</code></strong> — важно (как крик)</li>
+                    </ol>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="/FrontDocs/">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                            <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                            <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                            <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                            <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                            <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                            <li><a href="">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+            </div>
+        </footer>
+    </main> 
+</body>
+</html>
