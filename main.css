@@ -10,6 +10,7 @@
 @import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
 
 @import url("./Lections/HTML-Lections/1-Base/style.css"); 
+@import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css");
 
 
 img {

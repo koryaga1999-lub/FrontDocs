@@ -32,11 +32,11 @@
         <h1 class="header_lection3">Основы редактирования текста в HTML</h1>
         <h2 class="title_lection3">(Ну или как сделать текст в HTML понятным)</h2>
         <section class="start_sec">
-            <h3 class="title1">Зачем нужна структура текста?</h2>
+            <h2 class="title1">Зачем нужна структура текста?</h2>
             <p class="discription1_lec3">Без структуры текст - это сплошная стена слов, которую никто не захочет читать.</p>
-            <p class="title_code2">Пример:</p>
+            <p class="title_code3">Пример:</p>
                 <p class="txt1">Стена текста (без структуры):</p>
-                <p class="tx2">Всем привет Сегодня такие планы: покушать, сходить погулять Как ваши дела?</p>
+                <p class="txt2">Всем привет Сегодня такие планы: покушать, сходить погулять Как ваши дела?</p>
                 <p class="txt3">Со структурой:</p>
                 <div class="lection3_code">
                     <p>Всем привет!</p>
@@ -47,9 +47,9 @@
                     </ul>
                     <p>Как ваши дела?</p>
                 </div>
-                <div>
-                    <p>Зачем структура:</p>
-                    <ul>
+                <div class="container">
+                    <p class="what_is_structure">Зачем структура:</p>
+                    <ul class="ul_li_structure">
                         <li>Люди быстро находят нужное</li>
                         <li>Google лучше понимает о чём страница</li>
                         <li>Слабовидящие могут слушать текст по частям</li>
@@ -59,23 +59,26 @@
 
         <section class="sec3_lection3">
             <h2>Заголовки: h1 - h6</h2>
-            <div>
+            <div class="container_h1_h2_h3">
                 <p>Это как в книге:</p>
-                <ul>
+                <ul class="container_list">
                     <li><code>&lt;h1&gt;</code> - название книги (как заголовок, один на страницу!)</li>
                     <li><code>&lt;h2&gt;</code> - названия глав</li>
                     <li><code>&lt;h3&gt;</code> - подразделы в главах</li>
                 </ul>
             </div>
-            <p>Пример книги по программированию:</p>
             <div class="code_sec3_lec3">
-                <p><code>&lt;h1&gt;Основы фронтенда&lt;/h1&gt;              &lt;!-- Главное название --&gt;</code></p>
-                <p><code>&lt;h2&gt;Что такое фронтенд?&lt;/h2&gt;           &lt;!-- Раздел 1 --&gt;</code></p>
-                <p><code>&lt;h2&gt;Как начать кодить?&lt;/h2&gt;           &lt;!-- Раздел 2 --&gt;</code></p>
-                <p><code>&lt;h3&gt;Советы разработчика&lt;/h3&gt;          &lt;!-- Подраздел --&gt;</code></p>
+                <p class="p_title">Пример книги по программированию:</p>
+                <div class="p_container">
+                    <p><code>&lt;h1&gt;Основы фронтенда&lt;/h1&gt;              &lt;!-- Главное название --&gt;</code></p>
+                    <p><code>&lt;h2&gt;Что такое фронтенд?&lt;/h2&gt;           &lt;!-- Раздел 1 --&gt;</code></p>
+                    <p><code>&lt;h2&gt;Как начать кодить?&lt;/h2&gt;           &lt;!-- Раздел 2 --&gt;</code></p>
+                    <p><code>&lt;h3&gt;Советы разработчика&lt;/h3&gt;          &lt;!-- Подраздел --&gt;</code></p>
+                </div>
             </div>
-            <p>Важные правила:</p>
-            <ol>
+
+            <p class="rules_title">Важные правила:</p>
+            <ol class="rules_list">
                 <li>Один <code>&lt;h1&gt;</code> на странице - как одно название у книги</li>
                 <li>Не прыгай через уровни - <code>&lt;h1&gt;</code> → <code>&lt;h2&gt;</code> → <code>&lt;h3&gt;</code>, а не <code>&lt;h1&gt;</code> → <code>&lt;h3&gt;</code></li>
                 <li>Не больше 3-4 уровней - иначе слишком сложно</li>
@@ -83,8 +86,24 @@
         </section>
 
         <section class="sec4_lection3">
-            <h2>Списки: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></h2>
-            <p>2 типа списков:</p>
+            <h2 class="title_sec4">Абзацы: <code>&lt;p&gt;</code></h2>
+            <p class="discription5">Просто оберни текст:</p>
+            <div class="code_1">
+                <p><code>&lt;p&gt;</code>Хумус - это вкусный соус из нута.<code>&lt;p&gt;</code></p>
+                <p><code>&lt;p&gt;</code>Его подают с овощами или питой.<code>&lt;p&gt;</code></p>
+            </div>
+            <div class="discription_code_1">
+                <p class="discription_title">Что даёт:</p>
+                <ul class="list_discription">
+                    <li>Автоматические отступы между абзацами</li>
+                    <li>Текст становится удобным для чтения</li>
+                </ul>
+            </div>
+        </section>
+            
+        <section class="sec5_lection3">
+            <h2 class="title_sec5">Списки: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></h2>
+            <p class="discription6">2 типа списков:</p>
             <div class="ul_code">
                 <p class="txt_ul_code">1. С точками (порядок не важен):</p>
                 <div class="code_3">
@@ -96,9 +115,9 @@
                         <code>&lt;/ul&gt;</code>
                     </div>
 
-                    <img src="../../../images/Arrow 1.png" alt="">
+                    <img class="stick2" src="../../../images/Arrow 1.png" alt="">
 
-                    <div>
+                    <div class="code_result">
                         <ul class="ul_li_tegs_2">
                             <li>HTML</li>
                             <li>CSS</li>
@@ -109,7 +128,7 @@
             </div>
             <p class="discription3">Для чего: ингредиенты, перечень, список дел и т.п.</p>
                 <div class="ul_code">
-                    <p class="txt_ol_code">2. С цифрами (порядок важен):</p>
+                    <p class="txt_ul_code">2. С цифрами (порядок важен):</p>
                     <div class="code_4">
                         <div class="code_html_4">
                             <code>&lt;ol&gt;</code><br>
@@ -133,35 +152,31 @@
                 <p class="discription4">Для чего: этапы, инструкции, шаги, рецепты и т.п.</p>
         </section>
 
-        <section>
+        <section class="sec6_lection3">
             <h2>Выделение: <code>&lt;em&gt;</code> и <code>&lt;strong&gt;</code></h2>
             <p class="explanation_txt">Не просто "курсив" и "жирный", а со смыслом:</p>
             <div class="em_strong_code">
                 <div class="em_code_div">
                     <p class="em_code"><code>&lt;em&gt;</code> - для акцента (как интонация в речи):</p>
                     <p class="code_html_5"><code>&lt;p&gt;</code> Я <code>&lt;em&gt;</code> очень <code>&lt;em&gt;</code> хочу есть!</p></p> 
-
-                    <img src="../../../images/Arrow 1.png" alt="">
-
-                    <p class="issue_code1"><strong>очень</strong> есть! (с интонацией)</p>
                 </div>
-
+                
                 <div class="strong_code_div">
                     <p class="strong_code"><code>&lt;strong&gt;</code> - для важного (как крик):</p>
                     <p class="code_html_6"><code>&lt;p&gt;</code><code>&lt;strong&gt;</code> Осторожно! <code>&lt;strong&gt;</code> Горячо!</p></p> 
-
-                    <img src="../../../images/Arrow 1.png" alt="">
-
-                    <p class="issue_code2"><strong>ОСТОРОЖНО!</strong> Горячо! (важно)</p>
                 </div>
+            </div>
+            <div class="txt_code">
+                <p class="issue_code1">Я <strong>очень</strong> хочу есть! (с интонацией)</p>
+                <p class="issue_code2"><strong>ОСТОРОЖНО!</strong> Горячо! (важно)</p>
             </div>
         </section>
 
-        <section>
-            <h2>6. СПЕЦИАЛЬНЫЕ СЛУЧАИ: <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code></h2>
-            <p>Когда использовать:</p>
+        <section class="sec6_lection3">
+            <h2>6. Специальные случаи: <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;u&gt;</code></h2>
+            <p class="title_sec6">Когда использовать:</p>
             <div class="container_code">
-                <div class="em_code_div_1">
+                <div class="em_code_div1">
                     <p class="em_code_2"><code>&lt;i&gt;</code> - иностранные слова, термины:</p>
                     <p class="code_html_5"><code>&lt;p&gt;</code> Это <code>&lt;i&gt;</code>JavaScript<code>&lt;/i&gt;</code> а не Java.<code>&lt;/p&gt;</code></p>
                     <p class="issue_code3">Это <i>JavaScript</i> а не Java. (иностранный термин)</p>
@@ -169,7 +184,7 @@
 
                 </div>
 
-                <div class="em_code_div_2">
+                <div class="em_code_div1">
                     <p class="em_code_3"><code>&lt;b&gt;</code> - выделение ключевых слов (без крика):</p>
                     <p class="code_html_5"><code>&lt;p&gt;</code> Нам нужны: <code>&lt;b&gt;</code>нут<code>&lt;/b&gt;</code>, <code>&lt;b&gt;</code>чеснок<code>&lt;/b&gt;</code>, <code>&lt;b&gt;</code>оливковое масло<code>&lt;/b&gt;</code>.<code>&lt;/p&gt;</code></p>
                     <p class="issue_code1">Нам нужны: <b>нут</b>, <b>чеснок</b>, <b>оливковое масло</b>. (ключевые слова)</p>
@@ -178,7 +193,7 @@
                     
                 </div>
 
-                <div class="em_code_div">
+                <div class="em_code_div1">
                     <p class="em_code"><code>&lt;u&gt;</code> - исправления, имена:</p>
                     <p class="code_html_5"><code>&lt;p&gt;</code> Слово <code>&lt;u&gt;</code>JazaScript<code>&lt;/u&gt;</code> написано неверно, правильно - JavaScript.<code>&lt;/p&gt;</code></p>
                     <p class="issue_code1">Слово <u>JazaScript</u> написано неверно, правильно - JavaScript. (исправление)</p>
@@ -187,9 +202,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="sec6_lection3">
             <h2>ЗАПОМНИ ЭТИ 7 ТЕГОВ:</h2>
-                    <ol>
+                    <ol class="list">
                         <li><strong><code>&lt;h1&gt;</code></strong> — главный заголовок (один!)</li>
                         <li><strong><code>&lt;h2&gt;</code></strong> — разделы (может быть h2, h3, h4, h5 и h6, но обычно только h2)</li>
                         <li><strong><code>&lt;p&gt;</code></strong> — абзацы (бесконечное количество)</li>
