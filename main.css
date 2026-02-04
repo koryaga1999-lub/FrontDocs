@@ -11,7 +11,7 @@
 
 @import url("./Lections/HTML-Lections/1-Base/style.css"); 
 @import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css");
-
+@import url("./Lections/HTML-Lections/5-Semantics/style.css");
 
 img {
     max-width: 100%;
