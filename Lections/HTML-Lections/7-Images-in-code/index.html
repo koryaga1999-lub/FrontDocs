@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="/FrontDocs/pages/">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sec1_lec7">
+            <h1>Создание изображения в коде</h1>
+            <h2>Как добавить картинку на страницу</h2>
+            <p class="code_sec1_lec7"><code>&lt;img src="путь/к/картинке.jpg" alt="Описание картинки"&gt;</code></p>
+            <ul class="list_sec1_lec7">
+                <li><i>src - откуда брать картинку (путь или URL)</i></li>
+                <li><i>alt - что это за картинка (обязательно!)</i></li>
+            </ul>
+        </section>
+
+        <section class="sec2_lec7">
+            <h2>Обязательный атрибут alt</h2>
+            <p class="title_sec2_lec7">Это не опция, а необходимость:</p>
+            <p class="title_code_1">Так делать можно:</p>
+            <div class="alt_code_1">
+                <p><code>&lt;img src="logo.png" alt="Логотип компании Яндекс"&gt;</code></p>
+                <p><code>&lt;img src="poster.jpg" alt="Афиша кинотеатра Октябрь"&gt;</code></p>
+                <p><code>&lt;img src="decor.png" alt="" - пустой для декоративных картинок &gt;</code></p>
+            </div>
+            <p class="title_code2">Так делать не нужно:</p>
+            <div class="alt_code_1">
+                <p><code>&lt;img src="poster.jpg" alt="картинка" слишком общее"&gt;</code></p>
+                <p><code>&lt;img src="poster.jpg" alt="" - не для информативных картинок&gt;</code></p>
+                <p><code>&lt;img src="poster.jpg" - БЕЗ alt - ОШИБКА&gt;</code></p>
+            </div>
+            <div class="rules_alt">
+                <p class="title_rules">Правила для alt:</p>
+                <ol class="list_rules">
+                    <li>Для информативных картинок - опишите что на картинке</li>
+                    <li>Для декоративных - пустой alt=""</li>
+                    <li>Кратко и по делу - не больше 1-2 предложений</li>
+                    <li>Не начинайте с "Картинка..." - скринридер и так знает что это картинка</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="sec3_lec7">
+            <h2>Размеры картинок</h2>
+            <p class="code_sec3_lec7"><code>&lt;img src="photo.jpg" alt="Фото" width="600" height="400"&gt;</code></p>
+            <ul class="list_sec3_lec7">
+                <li>Ширина и высота помогают браузеру заранее выделить место</li>
+                <li>Не искажайте - используйте оригинальные пропорции</li>
+                <li>Для адаптивности лучше использовать CSS, о котором мы ещё поговорим в дальнейших лекциях</li>
+            </ul>
+        </section>
+
+        <section class="sec4_lec7">
+            <h2><code>&lt;figure&gt;</code> и <code>&lt;figcaption&gt;</code> - для картинок с подписями</h2>
+            <div class="code_sec4_lec7">
+                <p class="figure_code"><code>&lt;figure&gt;</code></p>
+                <div class="figure_code_1">
+                    <p><code>&lt;img src="poster.jpg" alt="Афиша спектакля"&gt;</code></p>
+                    <p><code>&lt;figcaption&gt;</code>Спектакль "Гамлет" - 15 мая 2025<code>&lt;/figcaption&gt;</code></p>
+                </div>
+                <p class="figure_code"><code>&lt;/figure&gt;</code></p>
+            </div>
+            <ul class="list_sec3_lec7">
+                <li><code>&lt;figure&gt;</code> - контейнер для медиаконтента</li>
+                <li><code>&lt;figcaption&gt;</code> - подпись к картинке</li>
+            </ul>
+            <p class="title_end_sec3_lec7">Используйте для диаграмм, схем, иллюстраций и т.п.</p>
+        </section>
+
+        <section class="sec5_lec7">
+            <h2>Какие форматы изображений использовать?</h2>
+            <div class="txt_format">
+                <p><strong>JPEG</strong> - фото, без прозрачности, сжимается с потерями  </p>
+                <p><strong>PNG</strong> - лого, с прозрачностью, без потерь качества  </p>
+                <p><strong>WebP</strong> - современно, меньше вес, с прозрачностью  </p>
+                <p><strong>SVG</strong> - иконки, вектор, масштабируется без потерь  </p>
+                <p><strong>GIF</strong> - простые анимации, 256 цветов  </p>
+                <p><strong>AVIF</strong> - самое лучшее сжатие, но поддержка не везде</p>
+            </div>
+        </section>
+
+        <section class="sec6_lec7">
+            <h2>Картинки в CSS vs HTML</h2>
+            <div class="codes_sec6_lec7">
+                <div class="sec6_lec7_code_1">
+                    <p>.hero {background-image: url('bg-pattern.png');}</p>
+                </div>
+                <p class="bold_text">CSS</p>
+                <div class="sec6_lec7_code_1">
+                    <p><code>&lt;img src="content-image.jpg" alt="Важная информация"&gt;</code></p>
+                </div>
+                <p class="bold_text">HTML</p>
+            </div>
+            <p class="rule_img">Правило:</p>
+            <ul class="list_rule_img">
+                <li>HTML-изображения - для контента (видны всем и индексируются)</li>
+                <li>CSS-изображения - для украшений (не видны поисковикам)</li>
+            </ul>
+        </section>
+
+        <section class="sec7_lec7">
+            <h2>Важные правила для новичков</h2>
+            <ol class="list_ol_sec7">
+                <li>Всегда добавляйте alt - даже если картинка декоративная (alt="")</li>
+                <li>Проверяйте пути - src="images/photo.jpg" а не src="photo.jpg"</li>
+                <li>Сжимайте картинки - используйте TinyPNG или Squoosh</li>
+                <li>Давайте понятные имена файлов:</li>
+            </ol>
+            <ul class="list_ul_sec7">
+                <li>hamlet-poster-2025.jpg</li>
+                <li>IMG_12345.jpg</li>
+            </ul>
+        </section>
+        <div class="nav-buttons">
+            <button class="button_previous"><a href="../../../Lections/HTML-Lections/4-indents-borders-sizes/">Предыдущая лекция</a></button>
+            <button class="button_next"><a href="../../../Lections/HTML-Lections/6-Hyperlinks-in-code/">Дальше</a></button>
+        </div>
+        <footer class="footer">
+                <div class="footer-columns">
+                    <!-- Колонка 1: FrontDocs -->
+                    <div class="footer-col">
+                        <h3 class="col-title">FrontDocs</h3>
+                        <div class="frontdocs-content">
+                            <p>База по фронтенду: <br> теория - примеры - задания</p>
+                            <button class="button_ex"><a href="/FrontDocs/">Перейти к заданиям</a></button>
+                            <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2: Разделы -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Разделы</h3>
+                        <div class="shapter-content">
+                            <ul>
+                                <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                                <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                                <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                                <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                                <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                                <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                                <li><a href="">Задания</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 3: Инструменты -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Инструменты</h3>
+                        <div class="instruments-content">
+                            <ul>
+                                <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 4: Сообщество -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Сообщество</h3>
+                        <div class="community-content">
+                            <ul>
+                                <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                                <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                                <li><a href="">Сообщить об ошибке</a></li>
+                                <li><a href="">Поддержать проект</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="end_line_three">
+                <!-- Нижняя часть футера -->
+                <div class="footer-bottom">
+                    <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                    <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

@@ -43,7 +43,7 @@
     font-size: var(--undershsize);
 }
 
-.txt {
+.txt_1 {
     margin-top: 25px;
     font-size: var(--textsize);
 }
@@ -75,7 +75,7 @@
     border-radius: 8px;
 }
 
-.txt1, .txt2, .txt3 {
+.txt12, .txt22, .txt32 {
     display: flex;
     align-items: center;
     gap: 15px;
