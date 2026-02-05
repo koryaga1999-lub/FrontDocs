@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="/FrontDocs/pages/">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sec1_lec9">
+            <h1>Таблицы в HTML</h1>
+            <h2>Основа таблицы:</h2>
+            <div class="code_sec1_lec9">
+                <p><code>&lt;table&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Заголовок 1&lt;/th&gt; &lt;!-- заголовок (table header) --&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Заголовок 2&lt;/th&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Данные 1&lt;/td&gt; &lt;!-- ячейка (table data) --&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Данные 2&lt;/td&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></p>
+                <p><code>&lt;/table&gt;</code></p>
+            </div>
+        </section>
+
+        <section class="sec2_lec9">
+            <h2>Базовая структура:</h2>
+            <p class="title_sec2_lec9">Обязательные элементы:</p>
+            <ul class="list_sec2_lec9">
+                <li><code>&lt;table&gt;</code> - контейнер таблицы</li>
+                <li><code>&lt;tr&gt;</code> - строка таблицы (может быть много)</li>
+                <li><code>&lt;td&gt;</code> - ячейка с данными</li>
+                <li><code>&lt;th&gt;</code> - ячейка-заголовок (жирный текст)</li>
+            </ul>
+        </section>
+
+        <section class="sec3_lec9">
+            <h2>Добавление заголовка таблицы:</h2>
+            <div class="code_sec3_lec9">
+                <p><code>&lt;table&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;Название таблицы&lt;/caption&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- остальная таблица --&gt;</code></p>
+                <p><code>&lt;/table&gt;</code></p>
+            </div>
+            <p class="title_end_sec3_lec9"><code>&lt;caption&gt;</code> - описание таблицы (видно пользователям и поисковикам)</p>
+        </section>
+
+        <section class="sec4_lec9">
+            <h2>Объединение ячеек:</h2>
+            <div class="code_sec4_lec9">
+                <p><code>&lt;td colspan="2"&gt;Объединяет 2 столбца&lt;/td&gt;</code></p>
+                <p><code>&lt;td rowspan="2"&gt;Объединяет 2 строки&lt;/td&gt;</code></p>
+            </div>
+            <ul class="list_sec4_lec9">
+                <li>colspan - объединение по горизонтали</li>
+                <li>rowspan - объединение по вертикали</li>
+            </ul>
+        </section>
+
+        <section class="sec5_lec9">
+            <h2>Простой рабочий пример:</h2>
+            <div class="code_sec5_lec9">
+                <p><code>&lt;table&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;caption&gt;Маршрут путешествия&lt;/caption&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Город&lt;/th&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Дата&lt;/th&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Бюджет&lt;/th&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Рим&lt;/td&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;10 июня&lt;/td&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;€500&lt;/td&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</code></p>
+                <p><code>&lt;/table&gt;</code></p>
+            </div>
+        </section>
+
+        <section class="sec6_lec9">
+            <h2>Правила для новичков:</h2>
+            <ol class="list_sec6_lec9">
+                <li>Используйте таблицы только для табличных данных (расписания, списки, сравнения)</li>
+                <li>Не используйте таблицы для вёрстки страницы — это устаревший подход</li>
+                <li>Всегда добавляйте <code>&lt;th&gt;</code> для заголовков (улучшает доступность)</li>
+                <li>Используйте <code>&lt;caption&gt;</code> для описания таблицы</li>
+                <li>Проверяйте на мобильных — таблицы должны быть читаемы</li>
+                <li>Упрощайте структуру — избегайте сложных объединений ячеек</li>
+                <li>Добавляйте отступы (padding) для читаемости в CSS</li>
+            </ol>
+            <h2>Чего не нужно делать:</h2>
+            <ol class="list_sec6_lec9">
+                <li>Не верстайте страницу таблицами</li>
+                <li>Не создавайте таблицы без заголовков</li>
+                <li>Не делайте слишком сложные объединения ячеек</li>
+                <li>Не забывайте про адаптивность на мобильных (изучим в основах CSS)</li>
+                <li>Не оставляйте таблицы без стилей CSS (слишком скучно)</li>
+            </ol>
+            <h2>Когда использовать таблицы:</h2>
+            <ol class="list_sec6_lec9">
+                <li>Расписания и календари</li>
+                <li>Сравнительные списки (цена, характеристики)</li>
+                <li>Статистические данные</li>
+                <li>Результаты соревнований</li>
+                <li>Любые данные, которые логично представлять в строках и столбцах</li>
+            </ol>
+            <p class="title_end_sec4_lec5">Запомните: Таблицы — для данных, а не для дизайна. Делайте их простыми, понятными и доступными для всех пользователей.</p>
+        </section>
+        <div class="nav-buttons">
+            <button class="button_previous"><a href="../../../Lections/HTML-Lections/4-indents-borders-sizes/">Предыдущая лекция</a></button>
+            <button class="button_next"><a href="../../../Lections/HTML-Lections/6-Hyperlinks-in-code/">Дальше</a></button>
+        </div>
+        <footer class="footer">
+                <div class="footer-columns">
+                    <!-- Колонка 1: FrontDocs -->
+                    <div class="footer-col">
+                        <h3 class="col-title">FrontDocs</h3>
+                        <div class="frontdocs-content">
+                            <p>База по фронтенду: <br> теория - примеры - задания</p>
+                            <button class="button_ex"><a href="/FrontDocs/">Перейти к заданиям</a></button>
+                            <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2: Разделы -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Разделы</h3>
+                        <div class="shapter-content">
+                            <ul>
+                                <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                                <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                                <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                                <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                                <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                                <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                                <li><a href="">Задания</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 3: Инструменты -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Инструменты</h3>
+                        <div class="instruments-content">
+                            <ul>
+                                <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 4: Сообщество -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Сообщество</h3>
+                        <div class="community-content">
+                            <ul>
+                                <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                                <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                                <li><a href="">Сообщить об ошибке</a></li>
+                                <li><a href="">Поддержать проект</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="end_line_three">
+                <!-- Нижняя часть футера -->
+                <div class="footer-bottom">
+                    <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                    <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

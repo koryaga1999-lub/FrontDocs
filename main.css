@@ -9,10 +9,11 @@
 @import url('./pages/html-page/style.css'); /* файл с главной страницей модуля html */
 @import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
  
-@import url("./Lections/HTML-Lections/1-Base/style.css");
-@import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css");
-@import url("./Lections/HTML-Lections/5-Semantics/style.css");
-@import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); 
+@import url("./Lections/HTML-Lections/1-Base/style.css"); /* 1 лекция */
+@import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css"); /* 3 лекция */
+@import url("./Lections/HTML-Lections/5-Semantics/style.css"); /* 5 лекция */
+@import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); /* 7 лекция */
+@import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
 
 img {
     max-width: 100%;
