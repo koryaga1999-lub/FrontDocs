@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="/FrontDocs/pages/">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="sec1_lec11">
+            <h1>Формы - взаимодействие с пользователем</h1>
+            <h2>Базовая структура формы:</h2>
+            <div class="code1_sec1_lec11">
+                <p><code>&lt;form action="/обработчик" method="POST"&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Поля формы --&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;button type="submit"&gt;Отправить&lt;/button&gt;</code></p>
+                <p><code>&lt;/form&gt;</code></p>
+            </div>
+            <ul class="list_sec1_lec11">
+                <li><code>action</code> - куда отправлять данные</li>
+                <li><code>method</code> - способ отправки (POST или GET)</li>
+                <li><code>POST</code> - для паролей, личных данных</li>
+                <li><code>GET</code> - для поиска, фильтров (данные видны в URL)</li>
+            </ul>
+        </section>
+
+        <section class="sec2_lec11">
+            <h2>Все важные атрибуты, использующиеся в формах:</h2>
+            <p class="title_sec2_lec11"><code>name</code> — имя для данных при отправке<br>
+            <code>id</code> — уникальный ярлык элемента<br>
+            <code>value</code> — предзаполненный текст в поле<br>
+            <code>placeholder</code> — серая подсказка в пустом поле<br>
+            <code>required</code> — обязательно к заполнению<br>
+            <code>type</code> — вид поля (текст, пароль, email)<br>
+            <code>for</code> — связь label с полем по id<br>
+            <code>action</code> — куда отправлять форму<br>
+            <code>method</code> — способ отправки (GET/POST)<br>
+            <code>disabled</code> — поле отключено<br>
+            <code>readonly</code> — только чтение<br>
+            <code>maxlength</code> — лимит символов<br>
+            <code>min/max</code> — минимальное/максимальное значение<br>
+            <code>pattern</code> — шаблон для проверки текста<br>
+            <code>autocomplete</code> — всплывающие подсказки<br>
+            <code>autofocus</code> — автофокус при загрузке<br>
+            <code>multiple</code> — можно выбрать несколько вариантов<br>
+            <code>rows/cols</code> — размеры текстового поля<br>
+            <code>selected</code> — выбранный пункт по умолчанию<br>
+            <code>checked</code> — отмеченная галочка/кнопка</p>
+        </section>
+
+        <section class="sec3_lec11">
+            <h2>Основные элементы формы:</h2>
+            <div class="code2_sec2_lec11">
+                <p><code>&lt;input type="text" placeholder="Ваше имя" required&gt;</code></p>
+                <p><code>&lt;input type="email" placeholder="Email"&gt;</code></p>
+                <p><code>&lt;input type="password" placeholder="Пароль"&gt;</code></p>
+            </div>
+            <ul class="list_sec2_lec11">
+                <li><code>required</code> - делает обязательное поле для заполнения </li>
+                <li><code>placeholder</code> - подсказка внутри заполняемого поля</li>
+            </ul>
+            <h2>Чекбоксы и радиокнопки:</h2>
+            <div class="code3_sec2_lec11">
+                <p>Радиокнопки (только один выбор)</p>
+                <p><code>&lt;input type="radio" name="gender" value="male" id="male"&gt;</code></p>
+                <p><code>&lt;label for="male"&gt;Мужской&lt;/label&gt;</code></p>
+            </div>
+            <div class="code4_sec2_lec11">
+                <p>Чекбоксы (несколько выборов)</p>
+                <p><code>&lt;input type="checkbox" name="interests" value="sports" id="sports"&gt;</code></p>
+                <p><code>&lt;label for="sports"&gt;Спорт&lt;/label&gt;</code></p>
+            </div>
+            <h2>Выпадающий список:</h2>
+            <div class="code5_sec2_lec11">
+                <p><code>&lt;select name="city"&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&lt;option value=""&gt;Выберите город&lt;/option&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&lt;option value="moscow"&gt;Москва&lt;/option&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&lt;option value="spb"&gt;Санкт-Петербург&lt;/option&gt;</code></p>
+                <p><code>&lt;/select&gt;</code></p>
+            </div>
+            <h2>Многострочный ввод:</h2>
+            <div class="code_5_sec2_lec11_1">
+                <p><code>&lt;textarea rows="4" cols="50" placeholder="Ваш комментарий"</textarea>&gt;</code></p>
+            </div>
+        </section>
+
+        <section class="sec3_lec11">
+            <h2>Доступность форм - обязательно:</h2>
+            <p class="title_sec3_lec11">Связываем label с input:</p>
+            <div class="code6_sec3_lec11">
+                <p><code>&lt;label for="username">Имя пользователя: &lt;/label</textarea>&gt;</code></p>
+                <p><code>&lt;input type="text" id="username" name="username"</textarea>&gt;</code></p>
+            </div>
+            <ul class="list_sec3_lec11">
+                <li>for в label должен совпадать с id в input</li>
+                <li>Увеличивает область клика - можно кликнуть на текст label</li>
+                <li>Необходимо для скринридеров</li>
+            </ul>
+            <p class="title2_sec3_lec11">Группировка полей:</p>
+            <div class="code7_sec3_lec11">
+                <p><code>&lt;fieldset&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&lt;legend&gt;Контактная информация&lt;/legend&gt;</code></p>
+                <p><code>&nbsp;&nbsp;&lt;-- поля формы --&gt;</code></p>
+                <p><code>&lt;/fieldset&gt;</code></p>
+            </div>
+        </section>
+
+        <section class="sec4_lec11">
+            <h2>Типы кнопок:</h2>
+            <div class="code8_sec4_lec11">
+                <p><code>&lt;button type="submit">Отправить &lt;/button</textarea>&gt;</code> - отправка формы</p>
+                <p><code>&lt;button type="reset">Очистить &lt;/button</textarea>&gt;</code> - сброс полей</p>
+                <p><code>&lt;button type="button">Просто кнопка &lt;/button</textarea>&gt;</code> - для JS</p>
+            </div>
+        </section>
+
+        <section class="sec5_lec11">
+            <h2>Валидация (проверка данных):</h2>
+            <p class="title_sec5_lec11">Браузерная валидация:</p>
+            <div class="code10_sec5_lec11">
+                <p><code>&lt;button type="submit">Отправить /button - отправка формы</textarea>&gt;</code></p>
+                <p><code>&lt;button type="reset">Очистить /button - сброс полей</textarea>&gt;</code></p>
+                <p><code>&lt;button type="button">Просто кнопка /button - для JS</textarea>&gt;</code></p>
+            </div>
+            <h2>Пример полностью рабочей формы:</h2>
+<div class="code10_sec5_lec11">
+<pre><code>&lt;form action="/subscribe" method="POST"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;Выбор темы новостей с рассылкой&lt;/legend&gt;
+        
+        &lt;label for="name"&gt;Имя:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name" required&gt;
+        
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+        
+        &lt;select id="news" name="news"&gt;
+            &lt;option value="cooking"&gt;Кулинария&lt;/option&gt;
+            &lt;option value="travel"&gt;Путешествия&lt;/option&gt;
+        &lt;/select&gt;
+        
+        &lt;button type="submit"&gt;Подписаться&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>  
+</div>       
+
+        <img class="arrow" src="../../../images/Arrow 5.png" alt="">
+
+        <img class="form_img"  src="../../../images/form.png" alt="">
+        </section>
+
+        <section class="sec6_lec11">
+            <h2>CSS для стилизации форм:</h2>
+
+    <div class="flex_container">
+        <div class="code11_sec5_lec11">
+            <pre><code>
+            /* Базовая стилизация */
+            input, select, textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+            /* Стиль при фокусе */
+            input:focus, textarea:focus {
+                border-color: #4a6fa5;
+                outline: none;
+                box-shadow: 0 0 5px rgba(74, 111, 165, 0.3);
+            }
+
+            /* Стиль для невалидных полей */
+            input:invalid, textarea:invalid {
+                border-color: #e74c3c;
+            }
+
+            /* Стиль кнопок */
+            button {
+                background-color: #4a6fa5;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #3a5a80;
+            }</code></pre>
+            </div>
+
+            <img class="bracket" src="../../../images/bracket.png" alt="">
+            <h2 class="bracket_title">Подробнее в основах CSS</h2>
+    </div>
+            
+
+            <h2>Главные правила для новичков:</h2>
+            <p class="title3_sec5_lec11">Всегда:</p>
+                <ol class="list_sec5_lec11">
+                    <li>Используйте <code>&lt;label&gt;</code> для каждого поля</li>
+                    <li>Добавляйте id для полей и связывайте с for в label</li>
+                    <li>Используйте <code>&lt;fieldset&gt;</code> и <code>&lt;legend&gt;</code> для группировки</li>
+                    <li>Проверяйте валидацию (required, type="email")</li>
+                    <li>Тестируйте клавиатурную навигацию (Tab, Enter)</li>
+                </ol>
+            <p class="title3_sec5_lec11">Никогда:</p>
+                 <ol class="list_sec5_lec11">
+                    <li>Не создавайте формы без label</li>
+                    <li>Не используйте таблицы для вёрстки форм</li>
+                    <li>Не полагайтесь только на браузерную валидацию</li>
+                    <li>Не забывайте про мобильные устройства</li>
+                    <li>Не делайте слишком длинные формы</li>
+                </ol>
+
+            <h2>Вопросы для самопроверки вашей формы:</h2>
+                <ol class="list_sec5_lec11">
+                    <li>Есть ли у всех полей <code>&lt;label&gt;</code>?</li>
+                    <li>Совпадают ли id и for?</li>
+                    <li>Работает ли навигация с Tab?</li>
+                    <li>Понятны ли сообщения об ошибках?</li>
+                    <li>Адаптирована ли форма для мобильных?</li>
+                </ol>
+
+                <p class="title_end_sec4_lec5"><i>Запомните: У каждого тега своя задача. Правильно подобранные теги делают форму понятной для пользователей, скринридеров и поисковиков!</i></p>
+
+                <div class="nav-buttons">
+                    <button class="button_previous"><a href="../../../Lections/HTML-Lections/4-indents-borders-sizes/">Предыдущая лекция</a></button>
+                    <button class="button_next"><a href="../../../Lections/HTML-Lections/6-Hyperlinks-in-code/">Дальше</a></button>
+                </div>
+        </section>
+
+        <footer class="footer">
+                <div class="footer-columns">
+                    <!-- Колонка 1: FrontDocs -->
+                    <div class="footer-col">
+                        <h3 class="col-title">FrontDocs</h3>
+                        <div class="frontdocs-content">
+                            <p>База по фронтенду: <br> теория - примеры - задания</p>
+                            <button class="button_ex"><a href="/FrontDocs/">Перейти к заданиям</a></button>
+                            <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2: Разделы -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Разделы</h3>
+                        <div class="shapter-content">
+                            <ul>
+                                <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                                <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                                <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                                <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                                <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                                <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                                <li><a href="">Задания</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 3: Инструменты -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Инструменты</h3>
+                        <div class="instruments-content">
+                            <ul>
+                                <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 4: Сообщество -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Сообщество</h3>
+                        <div class="community-content">
+                            <ul>
+                                <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                                <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                                <li><a href="">Сообщить об ошибке</a></li>
+                                <li><a href="">Поддержать проект</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="end_line_three">
+                <!-- Нижняя часть футера -->
+                <div class="footer-bottom">
+                    <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                    <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+                </div>
+        </footer>
+    </main>
+</body>
+</html>

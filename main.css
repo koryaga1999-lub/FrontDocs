@@ -14,6 +14,7 @@
 @import url("./Lections/HTML-Lections/5-Semantics/style.css"); /* 5 лекция */
 @import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); /* 7 лекция */
 @import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
+@import url("./Lections/HTML-Lections/11-Forms-in-HTML/style.css");
 
 img {
     max-width: 100%;
