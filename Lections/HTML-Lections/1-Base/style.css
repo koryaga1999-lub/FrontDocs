@@ -4,14 +4,21 @@
     justify-content: center;
     font-size: var(--hs-size);
     font-weight: bold;
+    margin-top: 20px;
     margin-top: 40px;
 }
+
+main {
+    padding: 0 20px;
+}
+
 
 .html-basics {
     margin-top: 54px;
 }
 
 .discription1 {
+    font-size: var(--);
     font-size: var(--textsize);
 }
 
@@ -164,40 +171,4 @@
 .button_next:hover {
     background-color: #0056b3;
     cursor: pointer;
-}
-
-.button_previous {
-    display: block;     
-    margin-left: 20px;       
-    margin-right: 20px;     
-    padding: 18px 45px; 
-    font-size: 22px;          
-    background-color: #007bff;   
-    color: white;               
-    border: none;               
-    border-radius: 10px;    
-    text-decoration: none; 
-    margin-top: 20px;
-}
-
-.button_previous a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.button_previous:hover {
-    background-color: #0056b3;
-    cursor: pointer;
-}
-
-.nav-buttons {
-    display: flex;
-    margin-top: 30px;
-}
-.button_previous {
-    margin-right: auto; /* прижимает влево */
-}
-.button_next {
-    margin-left: auto; /* прижимает вправо */
 }
