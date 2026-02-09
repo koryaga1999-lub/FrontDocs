@@ -35,6 +35,7 @@
     border: 1px solid black;
     border-radius: 10px;
     height: 155px;
+    position: relative; /* для позиционирования кнопки */
 }
 
 .test_header {
@@ -53,17 +54,25 @@
 }
 
 .begin {
-    margin-left: 850px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
     border: 1px solid black;
     border-radius: 10px;
     font-size: var(--textsize);
     width: 245px;
     height: 58px;
     background-color: #FCC204;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 
 .begin:hover {
-    cursor: pointer;
     background-color: #c5a438;
     color: black;
 }
