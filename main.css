@@ -1,6 +1,8 @@
 @import url('./base/reset.css'); /* подключение файла со сбросом базовых стилей браузера */
 @import url('./base/variables.css'); /* подключение файла с переменными */
 
+@import url("./theme/theme.css"); /* подключение файла с темами */
+
  /* подключение файлов стилей для главных страниц каждого раздела лекций  */
 @import url('./pages/css-page/style.css'); /* файл с главной страницей модуля css */
 @import url('./pages/main-page/style.css'); /* файл с главной страницей всего сайта */
@@ -8,7 +10,7 @@
 @import url('./pages/git-page/style.css'); /* файл с главной страницей модуля git */
 @import url('./pages/html-page/style.css'); /* файл с главной страницей модуля html */
 @import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
-@import url('./pages/test-page/style.css');
+@import url('./pages/test-page/style.css'); 
  
 /* Подключение файлов с лекциями */
 @import url("./Lections/HTML-Lections/1-Base/style.css"); /* 1 лекция */

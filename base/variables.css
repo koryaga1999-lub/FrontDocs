@@ -21,3 +21,16 @@
     --opacity-medium: 0.3;
     --opacity-high: 0.5;
 }
+
+.dark-theme {
+            --text-color: #FFFFFF;                    /* Белый текст */                  
+            --button-text: #FFFFFF;                   /* Белый текст на кнопках */
+            --bg-color: #303030;                      /* Темный фон страницы */
+            --accent-color: #252525;                  /* Желтый акцент */
+            --accent-blue: #4A90E2;                   /* Синий акцент */
+            --gray-light: #252525;                    /* Темно-серый */
+            --gray-medium: #424242;                    /* Средне-серый */
+            --footer-bg: #252525;                     /* Очень темный фон футера */
+            --card-bg: #1E1E1E;                       /* Фон карточек */
+            --input-bg: #2D2D2D;                      /* Фон полей ввода */
+}
