@@ -1,8 +1,6 @@
 @import url('./base/reset.css'); /* подключение файла со сбросом базовых стилей браузера */
 @import url('./base/variables.css'); /* подключение файла с переменными */
 
-@import url("./theme/theme.css"); /* подключение файла с темами */
-
  /* подключение файлов стилей для главных страниц каждого раздела лекций  */
 @import url('./pages/css-page/style.css'); /* файл с главной страницей модуля css */
 @import url('./pages/main-page/style.css'); /* файл с главной страницей всего сайта */
@@ -32,6 +30,9 @@
 @import url('./Tests/8-Audio-And-Video-Tests/style.css'); /* тесты по аудио и видео */
 @import url('./Tests/9-Tables-Tests/style.css'); /* тесты по таблицам */
 @import url('./Tests/10-Forms-Tests/style.css'); /* тесты по формам */
+
+@import url("./theme/theme.css"); /* подключение файла с темами */
+
 
 img {
     max-width: 100%;

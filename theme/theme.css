@@ -1,1 +1,37 @@
+/* Применение переменных */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme header {
+    background-color: #514e4e;
+}
+
+.dark-theme button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.card {
+    background-color: var(--card-bg);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.dark-theme img { 
+    background-color: rgb(117, 159, 195);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dark-theme hr {
+    background-color: var(--accent-blue);
+}
 
