@@ -22,15 +22,70 @@
     --opacity-high: 0.5;
 }
 
-.dark-theme {
-            --text-color: #FFFFFF;                    /* Белый текст */                  
-            --button-text: #FFFFFF;                   /* Белый текст на кнопках */
-            --bg-color: #303030;                      /* Темный фон страницы */
-            --accent-color: #252525;                  /* Желтый акцент */
-            --accent-blue: #4A90E2;                   /* Синий акцент */
-            --gray-light: #252525;                    /* Темно-серый */
-            --gray-medium: #424242;                    /* Средне-серый */
-            --footer-bg: #252525;                     /* Очень темный фон футера */
-            --card-bg: #1E1E1E;                       /* Фон карточек */
-            --input-bg: #2D2D2D;                      /* Фон полей ввода */
+
+/* Тёмная тема */
+
+.dark-theme{
+  --text-color: #FFFFFF;
+  --bg-color: #303030;
+  --accent-color: #252525;
+  --accent-blue: #4A90E2;
+  --gray-light: #252525;
+  --gray-medium: #424242;
+  --footer-bg: #252525;
+  --card-bg: #1E1E1E;
+  --input-bg: #2D2D2D;
+  --primary-color: rgb(54, 93, 210);
+  --border-radius: 10px;
+  --box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  --header-bg: #514e4e;
+  --code-bg: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  --code-text: #e6e6e6;
+  --code-accent: rgb(54, 93, 210);
+  --code-blue: #64b5f6;
+  --code-blue-bg: rgba(100, 181, 246, 0.1);
+  --icon-bg: rgba(5, 220, 249, 0.35);
+}
+ 
+:root {
+  /* базовые */
+  --bg-color: #ffffff;
+  --text-color: #111111;
+
+  /* header / nav */
+  --header-bg: #ffffff;
+  --nav-icon-bg-dark: rgb(117, 159, 195);
+
+  /* кнопки */
+  --primary-color: #3d8bfd;
+  --button-text-color: #ffffff;
+  --border-radius: 8px;
+
+  /* карточки/контейнеры */
+  --card-bg: #ffffff;
+  --box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+  /* линия-разделитель */
+  --divider-color: rgb(88, 84, 84);
+
+  /* акцент текста */
+  --hcj-color: rgb(119, 119, 191);
+
+  /* код-блоки (dark) */
+  --code-border: #555;
+  --code-border-left: #3d8bfd;
+  --code-bg: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+  --code-text: #e6e6e6;
+  --code-shadow: 0 2px 10px rgba(0,0,0,.5);
+
+  /* подсветка тегов внутри code */
+  --code-token: #64b5f6;
+  --code-token-bg: rgba(100, 181, 246, 0.1);
+
+  /* прочее (dark) */
+  --header-bg-dark: #514e4e;
+  --nav-buttons-bg-dark: rgb(22, 71, 114);
+  --hover-link-dark: rgb(38, 138, 184);
+  --result-border-dark: #555;
+  --result-shadow-dark: 0 2px 10px rgba(0,0,0,.35);
 }

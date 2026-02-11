@@ -8,11 +8,9 @@
 </head>
 <body>
     <header class="header">
-        <button class="theme-btn">🌙 theme</button>
-        <div class="header-inner">
+            <div class="header-inner">
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
-            <button class="theme-btn">🌙</button>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="../../../head.html">Главная</a></li>
@@ -27,6 +25,7 @@
                 <img class="nav-icon" src="../../../images/icon.png" alt="">
             </nav>
         </div>
+        <button class="theme-btn">🌙</button>
     </header>
 
     <main>
@@ -39,12 +38,14 @@
                 </div>
                 <div class="code">
                     <p class="title_code1">Например:</p>
-                    <p class="code_html_1">
-                        <code>&lt;h1&gt;Мой первый сайт&lt;/h1&gt;</code> → Это заголовок (h = head)<br>
-                        <code>&lt;p&gt;Привет, мир!&lt;/p&gt;</code> → Это абзац текста (p = paragraph)<br>
-                        <code>&lt;img src="cat.jpg"&gt;</code> → Это картинка котика<br>
-                        <code>&lt;a href="https://ya.ru"&gt;Ссылка на Яндекс&lt;/a&gt;</code> → Это ссылка
-                    </p>
+                    <div class="code_container">
+                        <p class="code_html_1">
+                            <code>&lt;h1&gt;Мой первый сайт&lt;/h1&gt;</code> → Это заголовок (h = head)<br>
+                            <code>&lt;p&gt;Привет, мир!&lt;/p&gt;</code> → Это абзац текста (p = paragraph)<br>
+                            <code>&lt;img src="cat.jpg"&gt;</code> → Это картинка котика<br>
+                            <code>&lt;a href="https://ya.ru"&gt;Ссылка на Яндекс&lt;/a&gt;</code> → Это ссылка
+                        </p>
+                    </div>
                     <p class="discription_code_html">Браузер читает этот код и рисует страницу с заголовком, текстом, картинкой и ссылкой.</p>
                 </div>
         </section>
@@ -59,6 +60,7 @@
             </div>
             <div>
                 <p class="title_code2">Вот к примеру список:</p>
+                <div class="code_container">
                     <p class="code_html_2">
                         <code>&lt;ul&gt;</code> - объявление списка<br>
                             <code class="li">&lt;li&gt;Первый элемент списка&lt;/li&gt;</code><br>
@@ -66,6 +68,7 @@
                             <code class="li">&lt;li&gt;Третий элемент списка&lt;/li&gt;</code><br>
                         <code>&lt;/ul&gt;</code>
                     </p>
+                </div>
                 <p class="discription_code_html2">Браузер выведет эту HTML-разметку следующим образом:</p>
                     <ul class="ul_li_tegs">
                         <li><i>Первый элемент списка</i></li>

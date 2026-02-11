@@ -35,6 +35,36 @@ body {
   justify-content: space-between;
 }
 
+.theme-btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.theme-btn:hover {
+    background: #f0f0f0;
+}
+
+body.dark-theme .theme-btn {
+    border-color: #555;
+    color: #ffd700;
+}
+
+body.dark-theme .theme-btn:hover {
+    background: #333;
+}
+
 .page {
   max-width: var(--container-width);
   margin: 0 auto;
