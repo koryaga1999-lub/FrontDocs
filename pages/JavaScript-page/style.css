@@ -1,24 +1,140 @@
-.lections3 img {
-  position: absolute;
-  left: 900px; /* Отступ от левого края списка */
-  top: 200px;
-  width: 270px;
+.section_development {
+    height: 50px;
 }
 
-.lections3 {
-    font-size: var(--lectsize);
-    line-height: 40px;
-    margin-left: 79px;
-    margin-top: 16px;
+.title_development {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--hs-size);
+    font-weight: bold;
+    margin-top: 100px;
 }
 
-.lections3 a {
+.title_development2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--hs-size);
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+/* футер для секций которые не готовы */
+
+.footer_1 {
+    background-color: var(--footer-color);
+    padding: 40px 20px;
+    color: white;
+    margin-top: 400px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.col-title {
+    font-weight: bold;
+    font-size: var(--pagenamesize);
+    margin: 0 0 10px 0;
+}
+
+.shapter-content ul,
+.instruments-content ul,
+.community-content ul {
+    list-style: none;
+}
+
+.shapter-content li,
+.instruments-content li,
+.community-content li {
+  line-height: 30px;
+}
+
+
+.shapter-content a,
+.community-content a, 
+.instruments-content a {
+    color: #6c757d;
     text-decoration: none;
-    color: #000000;
 }
 
-.lections3 a:hover {
-    color: #4ECDC4;
-    text-decoration: underline;
+.shapter-content a:hover,
+.community-content a:hover, 
+.instruments-content a:hover {
+    color: #1867a4;
+    text-decoration:wavy;
+}
+
+.community-content img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.button_ex {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: var(--footer-fontsize);
+    text-align: center;
+    margin: 5px 0;
+    margin-top: 40px;
+}
+
+.button_ex a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.button_ex:hover {
+    background-color: #0056b3;
+}
+
+.version {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 40px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    font-size: var(--footer-fontsize);
+    color: #6c757d;
+}
+
+.end_line_three {
+  background-color: #6c757d;
+  opacity: var(--opacity-high);
+  margin-top: 50px;
+}
+
+.footer-bottom p:first-child {
+    margin-bottom: 5px;
+}
+
+.footer-bottom a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: wavy;
+    color: #1867a4;
 }

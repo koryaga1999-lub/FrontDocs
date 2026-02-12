@@ -7,6 +7,19 @@
     margin-top: 20px;
 }
 
+.title_make {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--hs-size);
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.footer_1 {
+    margin-top: 100px;
+}
+
 .section_one {
     padding: 0 20px;
     margin-top: 54px; 
