@@ -19,6 +19,9 @@
 @import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
 @import url("./Lections/HTML-Lections/11-Forms-in-HTML/style.css"); /* 11 лекция */
 
+/* Подключение файлов с каптчей */
+@import url("./Captcha-Page/style.css");
+
 /* Подключение файлов с тестами */
 @import url('./Tests/1-Main-Page-Of-Tests/style.css'); /* файл с главной страницей тестов */
 @import url('./Tests/2-Base-Tests/style.css'); /* тесты по основам HTML */
