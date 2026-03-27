@@ -499,7 +499,10 @@ body.dark-theme .theme-btn:hover {
     color: #1867a4;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 66e8318fe20802e648fbb007464ee86ca0e5f889
 @media (max-width: 1200px) {
   .logo {
     font-size: 40px;
@@ -805,7 +808,11 @@ body.dark-theme .theme-btn:hover {
   .footer-col {
     min-width: 100%;
     text-align: center;
+<<<<<<< HEAD
   }
+=======
+  }}
+>>>>>>> 66e8318fe20802e648fbb007464ee86ca0e5f889
 
   .button_ex {
     width: 100%;
@@ -818,7 +825,11 @@ body.dark-theme .theme-btn:hover {
     padding-top: 16px;
     text-align: center;
   }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 66e8318fe20802e648fbb007464ee86ca0e5f889
 
 /* МАЛЕНЬКИЕ ТЕЛЕФОНЫ */
 @media (max-width: 480px) {
@@ -875,8 +886,12 @@ body.dark-theme .theme-btn:hover {
     font-size: 14px;
     padding: 8px 16px;
   }
+<<<<<<< HEAD
 }
 
 
 
 
+=======
+}
+>>>>>>> 66e8318fe20802e648fbb007464ee86ca0e5f889
