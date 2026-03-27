@@ -498,3 +498,380 @@ body.dark-theme .theme-btn:hover {
     text-decoration: wavy;
     color: #1867a4;
 }
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .nav-list {
+    gap: 20px;
+  }
+
+  .nav-list a {
+    font-size: 16px;
+  }
+
+  .information_section {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .hero_img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 30px;
+  }
+
+  .column_flex, 
+  .titles {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-columns {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-col {
+    min-width: 240px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-list {
+    justify-content: center;
+    gap: 16px 20px;
+    flex-wrap: wrap;
+  }
+
+  .information_section {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero_left {
+    align-items: center;
+    text-align: center;
+  }
+
+  .discription {
+    max-width: 100%;
+  }
+
+  .static_text {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .hero_img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .advantages_section,
+  .about_us,
+  .about {
+    padding: 0 16px;
+  }
+
+  .card_grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .titles {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .title22 {
+    margin-right: 0;
+  }
+
+  .column_flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .example, 
+  .about_the_website {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 20px 16px 120px;
+  }
+
+  .theme-btn {
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+  }
+
+  .logo {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .nav-list {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list a {
+    font-size: 14px;
+  }
+
+  .nav-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .information_section {
+    padding: 24px 16px;
+    gap: 24px;
+    flex-direction: column-reverse;
+  }
+
+  .h1_head {
+    font-size: 32px;
+  }
+
+  .hcj {
+    font-size: 14px;
+  }
+
+  .discription {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  .static_text {
+    gap: 16px;
+    margin-top: 30px;
+    font-size: 16px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .static_text p {
+    background-color: #f0f0f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+
+  .hero_img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .advantages_section h2,
+  .about_us h2,
+  .about h2 {
+    font-size: 28px;
+  }
+  
+  .name_card,
+  .text_head_about {
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img_card {
+    width: 36px;
+    height: 36px;
+  }
+
+  .card_grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    margin-top: 0;
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .head {
+    font-size: 18px;
+  }
+
+  .column_flex {
+    margin-top: 24px;
+  }
+
+  .example,
+  .about_the_website {
+    padding: 16px;
+  }
+
+  .example div,
+  .about_the_website div {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .example img,
+  .about_the_website img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .text_head_about {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 30px 16px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-col {
+    min-width: 100%;
+    text-align: center;
+  }}
+
+  .button_ex {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    padding-top: 16px;
+    text-align: center;
+  }
+
+
+/* МАЛЕНЬКИЕ ТЕЛЕФОНЫ */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .h1_head {
+    font-size: 28px;
+  }
+
+  .advantages_section h2,
+  .about_us h2,
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .discription,
+  .about p,
+  .example p,
+  .about_the_website p,
+  .nav-list a {
+    font-size: 14px;
+  }
+
+  .hero_img {
+    width: 170px;
+    height: 170px;
+  }
+
+  .static_text {
+    font-size: 14px;
+    gap: 12px;
+  }
+
+  .static_text p {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .card {
+    gap: 12px;
+  }
+
+  .head {
+    font-size: 16px;
+  }
+
+  .col-title {
+    font-size: 18px;
+  }
+
+  .button_ex {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
