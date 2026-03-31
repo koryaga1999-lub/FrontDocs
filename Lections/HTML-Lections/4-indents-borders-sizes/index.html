@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="../../../js/script.js"></script>
     <link rel="stylesheet" href="../../../main.css">
 </head>
 <body>
@@ -29,18 +30,18 @@
     </header>
 <main>
     <h1 class="header_lection3">Отступ, граница, размер</h1>
-    <p class="title_lection4">Вся страница — это коробки в коробках.Каждый элемент HTML — это прямоугольная коробка, которая ведёт себя по своим правилам.</p>
+    <p class="discription1">Вся страница — это коробки в коробках. Каждый элемент HTML — это прямоугольная коробка, которая ведёт себя по своим правилам.</p>
     <section class="box_section">
         <h2 class="title1_lec4">Два типа “коробок”:</h2>
         <p class="title2_lec4">Блочные элементы (как большие коробки):</p>
         <div class="flex_container_lec4">
-            <div>
+            <div class="flex_border_container">
                 <p>📦 Коробка 1</p>
                 <p>📦 Коробка 2</p>
                 <p>📦 Коробка 3</p>
             </div>
 
-            <div>
+            <div class="flex_ul_container">
                 <ul>
                     <li>Занимают всю ширину</li>
                     <li>Стоят друг под другом</li>
@@ -52,7 +53,7 @@
         <div class="title_container">
             <p>📦 📦 📦 📦 📦 (все в одной строке)</p>
         </div>
-        <ul>
+        <ul class="ul_container">
             <li>Занимают только место под содержимое</li>
             <li>Стоят рядом в строке</li>
             <li>Примеры: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
@@ -71,7 +72,7 @@
                     <li>Margin — внешний отступ (отделяет от соседних коробок)</li>
                 </ol>
             </div>
-            <img src="/FrontDocs/images/box.png" alt="Коробка (отступ, граница, размер)">
+            <img src="../../../images/box.png" alt="Коробка (отступ, граница, размер)">
         </div>
     </section>
 
@@ -94,7 +95,7 @@
         </div>
     </section>
 
-    <section>
+    <section class="sec_rules">
         <h2>Важные правила</h2>
         <p>Что можно:</p>
         <div class="code_html_3">
@@ -111,7 +112,7 @@
                 &lt;p&gt;Нажми &lt;a href="#"&gt;здесь&lt;/a&gt;&lt;/p&gt;
             </pre>
         </div>
-        <p>Что нельзя:</p>
+        <p class="title4_lec4">Что нельзя:</p>
         <div class="code_html_3">
             <pre>
                 &lt;!-- Блочный внутри строчного - НЕТ! --&gt;
@@ -139,7 +140,7 @@
         </ul>
     </section>
 
-    <section>
+    <section class="end_sec_lec4">
         <h2>Как управлять размерами и отступами:</h2>
         <div class="code_html_3">
             <pre>
@@ -158,7 +159,8 @@
         <button class="button_next"><a href="../../HTML-Lections/2-All-Of-Head/index.html">Дальше</a></button>
         <button class="button_previous"><a href="../../../Lections/HTML-Lections/2-All-Of-Head/">Предыдущая лекция</a></button>
     </div>
-    <footer class="footer">
+</main>
+ <footer class="footer">
             <div class="footer-columns">
                 <!-- Колонка 1: FrontDocs -->
                 <div class="footer-col">
@@ -216,4 +218,5 @@
                 <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
             </div>
         </footer>
-</main>
+    </body>
+    </html>
