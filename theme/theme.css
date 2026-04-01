@@ -172,8 +172,8 @@ body.dark-theme .structure .code_js {
   color: var(--text-color);
   background-color: var(--card-bg);
   transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    all 1s cubic-bezier(0.4, 0, 0.2, 1),
+    color 1s cubic-bezier(0.4, 0, 0.2, 1),
     background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -269,33 +269,25 @@ body.dark-theme section .test_container_ label {
   border-color: #514e4e;
 }
 
-/* transition */
+/* transition для светлой темы */
 .code_html_1,
 .code_html_2,
 .code_html_3,
 .code_html_4,
 .code_html_5,
 .code_html_6,
-
 .code_1,
-
 .sec6_lec7_code_1,
-
-/* лекции: картинки/таблицы */
 .code_sec1_lec7,
 .alt_code_1,
 .code_sec3_lec7,
 .figure_code_1,
 .code_sec4_lec7,
 .code_sec4_lec9,
-
-/* таблицы */
 .code_sec1_lec9,
 .code_sec3_lec9,
 .code_sec4_lec9,
 .code_sec5_lec9,
-
-/* формы */
 .code1_sec1_lec11,
 .code2_sec2_lec11,
 .code3_sec2_lec11,
@@ -307,33 +299,29 @@ body.dark-theme section .test_container_ label {
 .code8_sec4_lec11,
 .code10_sec5_lec11,
 .code11_sec5_lec11,
-
 .code_sec3_lec3 .p_container {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+/* тёмная тема */
 body.dark-theme .code_html_1,
 body.dark-theme .code_html_2,
 body.dark-theme .code_html_3,
 body.dark-theme .code_html_4,
 body.dark-theme .code_html_5,
 body.dark-theme .code_html_6,
-
 body.dark-theme .code_1,
 body.dark-theme .sec6_lec7_code_1,
-
 body.dark-theme .code_sec1_lec7,
 body.dark-theme .alt_code_1,
 body.dark-theme .code_sec3_lec7,
 body.dark-theme .figure_code_1,
 body.dark-theme .code_sec4_lec7,
 body.dark-theme .code_sec4_lec9,
-
 body.dark-theme .code_sec1_lec9,
 body.dark-theme .code_sec3_lec9,
 body.dark-theme .code_sec4_lec9,
 body.dark-theme .code_sec5_lec9,
-
 body.dark-theme .code1_sec1_lec11,
 body.dark-theme .code2_sec2_lec11,
 body.dark-theme .code3_sec2_lec11,
@@ -345,13 +333,13 @@ body.dark-theme .code7_sec3_lec11,
 body.dark-theme .code8_sec4_lec11,
 body.dark-theme .code10_sec5_lec11,
 body.dark-theme .code11_sec5_lec11,
-
 body.dark-theme .code_sec3_lec3 .p_container {
   border-color: #555;
   border-left-color: #3d8bfd;
   background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   color: #e6e6e6;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1); /* ← ДОБАВЛЕНО */
 }
 
 body.dark-theme .code_html_1 code,

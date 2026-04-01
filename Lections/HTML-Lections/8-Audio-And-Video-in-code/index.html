@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+    <script defer src="../../../js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="../../../testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+
+    <main>
+        <h1 class="title_lection1">Создание видео и аудио в коде</h1>
+        <section class="video_sec">
+            <h2>Видео: тег <code>&lt;video&gt;</code></h2>
+            <div class="code_html_3">
+                <pre>
+                    &lt;video controls width="600"&gt;
+                        &lt;source src="video.mp4" type="video/mp4"&gt;
+                        &lt;source src="video.webm" type="video/webm"&gt;
+                        Ваш браузер не поддерживает видео
+                    &lt;/video&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="audio_sec">
+            <h2>Аудио: тег <code>&lt;audio&gt;</code></h2>
+            <div class="code_html_3">
+                <pre>
+                    &lt;audio controls&gt;
+                        &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+                        &lt;source src="audio.ogg" type="audio/ogg"&gt;
+                        Ваш браузер не поддерживает аудио
+                    &lt;/audio&gt;
+                </pre>
+            </div>
+
+            <h2>Обязательные атрибуты:</h2>
+
+            <div class="attributes_lec8">
+                <p><strong>controls </strong>- добавляет кнопки управления (воспроизведение, громкость)</p>
+                <p><strong><code>&lt;source&gt;</code></strong> внутри - указывает разные форматы файлов для совместимости</p>
+            </div>
+
+            <h2>Дополнительные атрибуты:</h2>
+            <ol>
+                <li><strong>autoplay </strong>- начать автоматически (осторожно! Раздражает пользователей)</li>
+                <li><strong>loop </strong>- повторять бесконечно</li>
+                <li><strong>muted </strong>- без звука по умолчанию</li>
+                <li><strong>poster </strong>(только для видео) - картинка-превью перед воспроизведением</li>
+                <li><strong>width/height </strong>(только для видео) - размеры плеера</li>
+            </ol>
+        </section>
+        
+        <section class="format_file_sec">
+            <h2>Форматы файлов - что использовать:</h2>
+
+            <p>Видео:</p>
+            <ul>
+                <li>MP4 (video/mp4) - работает везде (Safari, Chrome, Firefox)</li>
+                <li>WebM (video/webm) - современный, меньше размер</li>
+                <li>Всегда указывайте оба через <source></li>
+            </ul>
+
+            <p>Аудио:</p>
+            <ul>
+                <li>MP3 (audio/mpeg) - работает везде</li>
+                <li>OGG (audio/ogg) - альтернатива для Firefox/Chrome</li>
+                <li>WAV (audio/wav) - без сжатия, большой размер</li>
+            </ul>
+        </section>
+
+        <section class="availability_sec">
+            <h2>Доступность: субтитры <code>&lt;track&gt;</code></h2>
+            <div class="code_html_3">
+                <pre>
+                    &lt;video controls&gt;
+                        &lt;source src="video.mp4" type="video/mp4"&gt;
+                        &lt;track kind="subtitles" src="subtitles.vtt" srclang="ru" label="Русский"&gt;
+                    &lt;/video&gt;
+                </pre>
+            </div>
+
+            <ul>
+                <li>kind="subtitles" - перевод диалогов</li>
+                <li>kind="captions" - описание звуков для слабослышащих</li>
+                <li>Формат WebVTT (файл .vtt) с таймингом</li>
+                <li>Улучшает SEO - поисковики читают текст</li>
+            </ul>
+        </section>
+
+        <section class="rules_sec">
+            <h2>Правила для новичков:</h2>
+            <ol>    
+                <li>Всегда добавляйте controls - без них пользователь не сможет управлять</li>
+                <li>Не используйте autoplay с громким звуком - это раздражает</li>
+                <li>Указывайте несколько форматов через <code>&lt;source&gt;</code> для совместимости</li>
+                <li>Добавляйте резервный текст между тегами для старых браузеров</li>
+                <li>Сжимайте файлы - видео должны быть оптимизированы</li>
+                <li>Для субтитров создавайте файлы .vtt с таймингом</li>
+            </ol>
+        </section>
+
+        <section class="example_sec">
+            <h2>Быстрый пример работающего видео:</h2>
+            <div class="code_html_3">
+                <pre>
+                    &lt;video controls width="100%" poster="preview.jpg"&gt;
+                        &lt;source src="travel.mp4" type="video/mp4"&gt;
+                        &lt;source src="travel.webm" type="video/webm"&gt;
+                        &lt;track kind="subtitles" src="subtitles.vtt" srclang="ru"&gt;
+                        &lt;p&gt;Скачайте &lt;a href="travel.mp4"&gt;видео о путешествиях&lt;/a&gt;&lt;/p&gt;
+                    &lt;/video&gt;
+                </pre>
+            </div>
+        </section>
+
+        <section class="rules2_sec">   
+            <h2>Чего не нужно делать:</h2>
+            <ol>
+                <li>Не использовать один формат</li>
+                <li>Не забывать про controls</li>
+                <li>Не включать громкий autoplay</li>
+                <li>Не загружать гигантские файлы без сжатия</li>
+                <li>Не игнорировать субтитры</li>
+            </ol>
+
+            <p class="end_title">Запомните: Видео и аудио делают сайт живым, но должны быть удобными для всех пользователей — с кнопками управления, разными форматами и субтитрами.</p>
+        </section>
+            <div>
+                <button class="button_next"><a href="../../HTML-Lections/2-All-Of-Head/index.html">Дальше</a></button>
+                <button class="button_previous"><a href="../../../Lections/HTML-Lections/2-All-Of-Head/">Предыдущая лекция</a></button>
+            </div>
+    </main>
+
+    <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="../../../testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                            <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                            <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                            <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                            <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                            <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                            <li><a href="">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+            </div>
+        </footer>
+</body>
+</html>

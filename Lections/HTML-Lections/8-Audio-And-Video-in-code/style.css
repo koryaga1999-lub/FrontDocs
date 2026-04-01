@@ -1,0 +1,126 @@
+.video_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.video_sec .code_html_3 {
+    width: 800px;
+    height: 200px;
+}
+
+.video_sec .code_html_3 pre {
+    margin-left: -290px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.audio_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.audio_sec .code_html_3 {
+    width: 800px;
+    height: 180px;
+    font-size: 25px;
+}
+
+.audio_sec .code_html_3 pre {
+    margin-left: -290px;
+}
+
+.audio_sec .attributes_lec8 {
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: var(--textsize);
+}
+
+.audio_sec ol {
+    margin-top: 10px;
+    margin-left: 45px;
+    font-size: var(--textsize);
+}
+
+.format_file_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.format_file_sec p {
+    font-size: var(--textsize);
+    margin-top: 10px;
+}
+
+.format_file_sec ul {
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.format_file_sec li {
+    font-size: var(--textsize);
+}
+
+.availability_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.availability_sec .code_html_3 pre {
+    font-size: 25px;
+    margin-left: -290px;
+}
+
+.availability_sec .code_html_3 {
+    width: 1220px;
+    height: 160px;
+}
+
+.availability_sec ul {
+    margin-top: 10px;
+    margin-left: 75px;
+    font-size: var(--textsize);
+    line-height: 30px
+}
+
+.rules_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.rules_sec ol {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 45px;
+    line-height: 35px
+}
+
+.example_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.example_sec .code_html_3 {
+    font-size: 25px;
+    height: 220px;
+    width: 1050px;
+}
+
+.example_sec .code_html_3 pre {
+    margin-left: -290px;
+}
+
+.rules2_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.rules2_sec ol {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+
+.rules2_sec .end_title {
+    margin-top: 40px;
+}
