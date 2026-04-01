@@ -20,7 +20,9 @@
 @import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); /* 7 лекция */
 @import url("./Lections/HTML-Lections/8-Audio-And-Video-in-code/style.css"); /* 8 лекция */
 @import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
+@import url('./Lections/HTML-Lections/10-More-About-Tables/style.css'); /* 10 лекция */
 @import url("./Lections/HTML-Lections/11-Forms-in-HTML/style.css"); /* 11 лекция */
+@import url('./Lections/HTML-Lections/12-Project-On-HTML/style.css'); /* 12 лекция */
 
 /* Подключение файлов с каптчей */
 @import url("./Captcha-Page/style.css");
