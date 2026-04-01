@@ -8,31 +8,36 @@
     <link rel="stylesheet" href="../../../main.css">
 </head>
 <body>
-    <header class="header">
-            <div class="header-inner">
+<header class="header">
+        <div class="header-inner">
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="../../../head.html">Главная</a></li>
-                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
-                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
-                    <li><a href="../../../cssPage.html">CSS3</a></li>
-                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
-                    <li><a href="../../../GitPage.html">Git</a></li>
-                    <li><a href="../../../testPage.html">Задания</a></li>
-                </ul>
+          <nav class="nav">
+    <button class="burger-btn" aria-label="Меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
 
-                <img class="nav-icon" src="../../../images/icon.png" alt="">
-            </nav>
+    <ul class="nav-list">
+        <li><a href="./head.html">Главная</a></li>
+        <li><a href="./FrontendPage.html">Фронтенд</a></li>
+        <li><a href="./HtmlPage.html">HTML5</a></li>
+        <li><a href="./cssPage.html">CSS3</a></li>
+        <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+        <li><a href="./GitPage.html">Git</a></li>
+        <li><a href="./testPage.html">Задания</a></li>
+    </ul>
+
+    <img class="nav-icon" src="./images/icon.png" alt="">
+</nav>
         </div>
         <button class="theme-btn">🌙</button>
     </header>
-
     <main>
         <h1 class="title_lection1">Основы работы с HTML</h1>
         <section class="html-basics">
-                <p class="discription1"><strong>HTML</strong> - это язык разметки, с помощью которого создаётся структура веб-страницы. </p>
+                <p class="discription2"><strong>HTML</strong> - это язык разметки, с помощью которого создаётся структура веб-страницы. </p>
                 <div class="title_txt">
                     <p class="title_txt1"><strong>Простыми словами:</strong></p>
                     <p class="discription2">HTML говорит браузеру: «вот здесь будет заголовок», «здесь - картинка», «тут - кнопка», «а здесь - список».</p>
@@ -91,10 +96,9 @@
                 <p>Теперь, при клике на текст (указанный в атрибуте) Вы будете перенаправлены на ссылку, которую указали.</p>
             </div>
         </section>
-
         <button class="button_next"><a href="../../HTML-Lections/2-All-Of-Head/index.html">Дальше</a></button>
-
-        <footer class="footer">
+    </main>
+    <footer class="footer">
             <div class="footer-columns">
                 <!-- Колонка 1: FrontDocs -->
                 <div class="footer-col">
@@ -152,7 +156,7 @@
                 <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
             </div>
         </footer>
-    </main>
-    <script src="../../../js/script.js"></script>
+    <script src="../../../Theme-JS/script.js"></script>
+    <script src="/Burger-Menu-Js/burger.js"></script>
 </body>
 </html>

@@ -1,0 +1,131 @@
+.start_sec_lec6 h1 {
+    font-size: var(--hs-size);
+    font-weight: bold;
+    margin-top: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start_sec_lec6 h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.start_sec_lec6 p {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    width: 950px;
+}
+
+.create_href_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.create_href_sec p {
+    font-size: var(--textsize);
+    margin-top: 10px;
+}
+
+.create_href_sec .code_html_3 {
+    width: 650px;
+}
+
+.create_href_sec .code_html_3 p {
+    margin-bottom: 10px;
+    width: 900px;
+}
+
+.title_code_href {
+    font-size: var(--textsize);
+    margin-top: 30px;
+}
+
+.code_container_href .code_html_3 pre {
+    font-size: 25px;
+    margin-left: -360px;
+}
+
+.code_container_href .code_html_3 {
+    width: 800px;
+    height: 130px;
+}
+
+.attributes_sec_lec6 h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.attributes_sec_lec6 ol {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.attributes_sec_lec6 .code_html_3 {
+    width: 1250px;
+    margin-bottom: 30px;
+}
+
+.type_adress_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.type_adress_sec ul {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 800px;
+}
+
+.type_adress_sec ul li {
+    margin-top: 10px;
+}
+
+.type_adress_sec p {
+    font-size: var(--textsize);
+    margin-top: 10px;
+}
+
+.type_href_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.type_href_sec ol {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.type_href_sec li {
+    font-size: 25px;
+    margin-bottom: 20px; 
+}
+
+.type_href_sec .code_html_3 {
+    width: 800px;
+    margin-top: 10px; 
+}
+
+.type_href_sec pre {
+    height: 200px; 
+}
+
+.type_href_sec li:nth-last-child(-n+2) pre {
+    height: 70px; 
+}
+
+.rules_sec h2 {
+    font-size: var(--undershsize);
+    margin-top: 39px;
+}
+
+.rules_sec ol {
+    font-size: var(--textsize);
+    margin-top: 10px;
+    margin-left: 45px;
+}

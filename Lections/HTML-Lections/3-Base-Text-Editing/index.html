@@ -7,23 +7,29 @@
     <link rel="stylesheet" href="../../../main.css">
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="header-inner">
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="../../../head.html">Главная</a></li>
-                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
-                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
-                    <li><a href="../../../cssPage.html">CSS3</a></li>
-                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
-                    <li><a href="../../../GitPage.html">Git</a></li>
-                    <li><a href="../../../testPage.html">Задания</a></li>
-                </ul>
+          <nav class="nav">
+    <button class="burger-btn" aria-label="Меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
 
-                <img class="nav-icon" src="../../../images/icon.png" alt="">
-            </nav>
+    <ul class="nav-list">
+        <li><a href="./head.html">Главная</a></li>
+        <li><a href="./FrontendPage.html">Фронтенд</a></li>
+        <li><a href="./HtmlPage.html">HTML5</a></li>
+        <li><a href="./cssPage.html">CSS3</a></li>
+        <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+        <li><a href="./GitPage.html">Git</a></li>
+        <li><a href="./testPage.html">Задания</a></li>
+    </ul>
+
+    <img class="nav-icon" src="./images/icon.png" alt="">
+</nav>
         </div>
         <button class="theme-btn">🌙</button>
     </header>
@@ -217,8 +223,8 @@
             <button class="button_next"><a href="../../HTML-Lections/2-All-Of-Head/index.html">Дальше</a></button>
             <button class="button_previous"><a href="../../../Lections/HTML-Lections/2-All-Of-Head/">Предыдущая лекция</a></button>
         </div>
-
-        <footer class="footer">
+    </main> 
+            <footer class="footer">
             <div class="footer-columns">
                 <!-- Колонка 1: FrontDocs -->
                 <div class="footer-col">
@@ -269,14 +275,13 @@
                     </div>
                 </div>
             </div>
-            <hr class="end_line_three">
             <!-- Нижняя часть футера -->
             <div class="footer-bottom">
                 <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
                 <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
             </div>
         </footer>
-    </main> 
 </body>
-<script src="../../../js/script.js"></script>
+<script src="../../../Theme-JS/script.js"></script>
+<script src="/Burger-Menu-Js/burger.js"></script>
 </html>

@@ -53,8 +53,120 @@
 }
 
 .lections img {
-  position: absolute;
+  /* position: absolute; */
   left: 700px; /* Отступ от левого края списка */
   top: 450px;
   width: 650px;
+}
+
+/* === АДАПТИВНАЯ ВЁРСТКА === */
+
+/* Переменные по умолчанию (можно задать в :root, если ещё не заданы) */
+
+/* Базовая адаптивность шрифтов */
+@media (max-width: 768px) {
+    :root {
+        --hs-size: 24px;
+        --undershsize: 18px;
+        --lectsize: 16px;
+    }
+
+    .title_html {
+        font-size: var(--hs-size);
+        margin-top: 15px;
+    }
+
+    .title {
+        font-size: var(--undershsize);
+    }
+
+    .lections {
+        margin-left: 20px;
+        line-height: 32px;
+        font-size: var(--lectsize);
+    }
+
+    .lections img {
+        position: static;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .section_one {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .lections_section2 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --hs-size: 20px;
+        --undershsize: 16px;
+        --lectsize: 15px;
+    }
+
+    .title_html {
+        font-size: var(--hs-size);
+        margin-top: 10px;
+    }
+
+    .title {
+        font-size: var(--undershsize);
+    }
+
+    .lections {
+        margin-left: 10px;
+        line-height: 28px;
+        font-size: var(--lectsize);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-icon {
+        display: none; /* Или заменить на бургер — см. ниже */
+    }
+
+    .theme-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .footer-col {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .button_ex {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .button_ex a {
+        display: block;
+    }
 }
