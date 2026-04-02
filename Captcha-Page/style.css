@@ -47,7 +47,7 @@ input {
     font-size: var(--footer-fontsize);
 }
 
-
+/* Мобильные устройства (до 767px) */
 @media (max-width: 767px) {
     .title_captcha {
         font-size: 50px;
@@ -81,6 +81,7 @@ input {
     }
 }
 
+/* Планшеты (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .title_captcha {
         font-size: 75px;
