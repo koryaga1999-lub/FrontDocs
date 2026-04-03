@@ -200,6 +200,30 @@ body.dark-theme .test_container {
   background-color: var(--card-bg);
 }
 
+body.dark-theme .begin {
+    background-color: #1f1f1f;
+    border-color: #EEA216;
+    color: #EEA216;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-theme .begin:hover {
+    background-color: #333;
+    color: #EEA216;
+    border-color: #EEA216;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-theme .begin img {
+    filter: brightness(0) invert(1);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.dark-theme .begin:hover img {
+    filter: brightness(0) invert(0.8) sepia(1) hue-rotate(350deg) saturate(5);
+}
+
+
 /* ========== ССЫЛКИ ========== */
 a {
   transition: color 0.5s;

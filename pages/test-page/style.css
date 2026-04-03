@@ -89,12 +89,26 @@
 
 .next_a {
     margin-left: 270px;
-    color: #EEA216;
+    color: #ffffff;
     text-decoration: none;
     margin-bottom: 10px;
     display: block; 
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 250px;
+    width: 127px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.next_a:hover {
+    background-color: #333;
+    color: #c1c0b9;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
 
 .test_tz_1,
 .test_tz_2,

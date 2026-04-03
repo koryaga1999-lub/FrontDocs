@@ -3,13 +3,13 @@
     margin-top: 25px;
     letter-spacing: 5px;
     opacity: 50%;
-    margin-left: 21px;
+    margin-left: 42px;
 }
 
 .header_sec_tests {
     font-size: var(--hs-size);
     margin-top: 1px;
-    margin-left: 21px;
+    margin-left: 42px;
 }
 
 .title_end_tests {
@@ -17,7 +17,7 @@
     margin-top: 1px;
     letter-spacing: 5px;
     opacity: 50%;
-    margin-left: 21px;
+    margin-left: 42px;
 }
 
 .tests {
@@ -62,7 +62,7 @@
     font-size: var(--textsize);
     width: 245px;
     height: 58px;
-    background-color: #FCC204;
+    background-color: #b5b2ad;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,9 +70,13 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .begin:hover {
-    background-color: #c5a438;
+    background-color: #61605d;
     color: black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
