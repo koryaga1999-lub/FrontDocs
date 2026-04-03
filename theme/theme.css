@@ -1,39 +1,37 @@
-body.dark-theme{
+/* ========== ТЕМНАЯ ТЕМА (CSS-переменные) ========== */
+body.dark-theme {
   --bg-color: #303030;
   --text-color: #ffffff;
   --header-bg: var(--header-bg-dark);
-  --card-bg: #1E1E1E;
-  --box-shadow: 0 2px 10px rgba(0,0,0,.35);
+  --card-bg: #1e1e1e;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  --primary-color: #3d8bfd;
+  --border-radius: 5px;
 }
 
-
+/* ========== ГЛОБАЛЬНЫЕ СТИЛИ ========== */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
-  transition:
-    background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* nav links */
+/* ========== НАВИГАЦИЯ ========== */
 .nav-list a {
-  transition:
-    color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .nav-list a {
   color: var(--text-color);
 }
 
-/* nav icon */
 .nav-icon {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .nav-icon {
@@ -42,22 +40,19 @@ body.dark-theme .nav-icon {
   border-radius: 5px;
 }
 
-/* header */
+/* ========== ШАПКА ========== */
 header {
-  transition:
-    background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme header {
   background-color: #514e4e;
 }
 
-/* buttons */
+/* ========== КНОПКИ ========== */
 button {
-  transition:
-    all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
-    transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 body.dark-theme button {
@@ -69,23 +64,19 @@ body.dark-theme button {
   cursor: pointer;
 }
 
-.body.dark-theme .buttun_previous {
+body.dark-theme .button_previous {
   background-color: #3d8bfd;
 }
 
-/* cards */
+/* ========== КАРТОЧКИ ========== */
 .card {
   background-color: var(--card-bg);
   box-shadow: var(--box-shadow);
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card img {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .card img {
@@ -94,11 +85,8 @@ body.dark-theme .card img {
   border-radius: 5px;
 }
 
-/* отдельные картинки */
 .img_card {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .img_card {
@@ -110,9 +98,7 @@ body.dark-theme .img_card {
 .example img,
 .about_the_website img,
 .text_head_about img {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .example img,
@@ -123,7 +109,7 @@ body.dark-theme .text_head_about img {
   border-radius: 5px;
 }
 
-/* линии */
+/* ========== ЛИНИИ ========== */
 .end_line,
 .end_line_two,
 .end_line_three {
@@ -131,21 +117,19 @@ body.dark-theme .text_head_about img {
   height: 1px;
   background-color: rgb(88, 84, 84);
   margin: 20px 0;
-  transition:
-    background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    height 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              height 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* акцентные цвета */
+/* ========== АКЦЕНТНЫЕ ЦВЕТА ========== */
 .hcj {
   color: rgb(119, 119, 191);
-  transition:
-    color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* what_is_a_Frontend */
+/* ========== WHAT IS A FRONTEND ========== */
 body.dark-theme .what_is_a_Frontend .stick {
   background-color: gray;
 }
@@ -156,14 +140,13 @@ body.dark-theme .what_is_a_Frontend .img {
   border-radius: 5px;
 }
 
-/* structure */
+/* ========== STRUCTURE ========== */
 .code_html,
 .code_css,
 .code_js {
-  transition:
-    background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    height 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              height 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .structure .code_html,
@@ -171,19 +154,12 @@ body.dark-theme .structure .code_css,
 body.dark-theme .structure .code_js {
   color: var(--text-color);
   background-color: var(--card-bg);
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* картинки html/css/js */
 .html img,
 .css img,
 .js img {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .structure .html img,
@@ -198,13 +174,11 @@ body.dark-theme .use_text {
   color: var(--text-color);
 }
 
-/* блоки (анимацию НЕ убиваем в dark-theme) */
+/* ========== БЛОКИ ========== */
 .block,
 .block2,
 .block3 {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .block,
@@ -213,22 +187,20 @@ body.dark-theme .block3 {
   background-color: var(--card-bg);
 }
 
-/* тест */
+/* ========== ТЕСТЫ ========== */
 body.dark-theme .test_sec {
   color: var(--text-color);
 }
 
 .test_container {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme .test_container {
   background-color: var(--card-bg);
 }
 
-/* links */
+/* ========== ССЫЛКИ ========== */
 a {
   transition: color 0.5s;
 }
@@ -247,55 +219,44 @@ body.dark-theme .section_one .git_one a:hover {
   color: rgb(38, 138, 184);
 }
 
-/* nav buttons */
+/* ========== NAV BUTTONS ========== */
 body.dark-theme .nav-buttons button {
   background-color: rgb(22, 71, 114);
   color: white;
   border-radius: 5px;
 }
 
-/* тестовые label */
+/* ========== ТЕСТОВЫЕ LABEL ========== */
 section .test_container_ label {
   transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark-theme section .test_container_ label {
-  transition:
-    all 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1),
-    color 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--text-color);
   background-color: #514e4e;
   border-color: #514e4e;
 }
 
-/* transition */
+/* ========== БЛОКИ КОДА (светлая тема) ========== */
 .code_html_1,
 .code_html_2,
 .code_html_3,
 .code_html_4,
 .code_html_5,
 .code_html_6,
-
 .code_1,
-
 .sec6_lec7_code_1,
-
-/* лекции: картинки/таблицы */
 .code_sec1_lec7,
 .alt_code_1,
 .code_sec3_lec7,
 .figure_code_1,
 .code_sec4_lec7,
 .code_sec4_lec9,
-
-/* таблицы */
 .code_sec1_lec9,
 .code_sec3_lec9,
 .code_sec4_lec9,
 .code_sec5_lec9,
-
-/* формы */
 .code1_sec1_lec11,
 .code2_sec2_lec11,
 .code3_sec2_lec11,
@@ -307,33 +268,29 @@ body.dark-theme section .test_container_ label {
 .code8_sec4_lec11,
 .code10_sec5_lec11,
 .code11_sec5_lec11,
-
 .code_sec3_lec3 .p_container {
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ========== БЛОКИ КОДА (тёмная тема) ========== */
 body.dark-theme .code_html_1,
 body.dark-theme .code_html_2,
 body.dark-theme .code_html_3,
 body.dark-theme .code_html_4,
 body.dark-theme .code_html_5,
 body.dark-theme .code_html_6,
-
 body.dark-theme .code_1,
 body.dark-theme .sec6_lec7_code_1,
-
 body.dark-theme .code_sec1_lec7,
 body.dark-theme .alt_code_1,
 body.dark-theme .code_sec3_lec7,
 body.dark-theme .figure_code_1,
 body.dark-theme .code_sec4_lec7,
 body.dark-theme .code_sec4_lec9,
-
 body.dark-theme .code_sec1_lec9,
 body.dark-theme .code_sec3_lec9,
 body.dark-theme .code_sec4_lec9,
 body.dark-theme .code_sec5_lec9,
-
 body.dark-theme .code1_sec1_lec11,
 body.dark-theme .code2_sec2_lec11,
 body.dark-theme .code3_sec2_lec11,
@@ -345,37 +302,40 @@ body.dark-theme .code7_sec3_lec11,
 body.dark-theme .code8_sec4_lec11,
 body.dark-theme .code10_sec5_lec11,
 body.dark-theme .code11_sec5_lec11,
-
 body.dark-theme .code_sec3_lec3 .p_container {
   border-color: #555;
   border-left-color: #3d8bfd;
-  background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+background: #2a2a2a;
   color: #e6e6e6;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ========== ИЗОБРАЖЕНИЯ В ПРИМЕРАХ CSS ========== */
+body.dark-theme .example_css_code img {
+  background-color: rgba(123, 118, 118, 0.459);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========== КОД ВНУТРИ БЛОКОВ ========== */
 body.dark-theme .code_html_1 code,
 body.dark-theme .code_html_2 code,
 body.dark-theme .code_html_3 code,
 body.dark-theme .code_html_4 code,
 body.dark-theme .code_html_5 code,
 body.dark-theme .code_html_6 code,
-
 body.dark-theme .code_1 code,
 body.dark-theme .sec6_lec7_code_1 code,
-
 body.dark-theme .code_sec1_lec7 code,
 body.dark-theme .alt_code_1 code,
 body.dark-theme .code_sec3_lec7 code,
 body.dark-theme .figure_code_1 code,
 body.dark-theme .code_sec4_lec7 code,
 body.dark-theme .code_sec4_lec9 code,
-
 body.dark-theme .code_sec1_lec9 code,
 body.dark-theme .code_sec3_lec9 code,
 body.dark-theme .code_sec4_lec9 code,
 body.dark-theme .code_sec5_lec9 code,
-
 body.dark-theme .code1_sec1_lec11 code,
 body.dark-theme .code2_sec2_lec11 code,
 body.dark-theme .code3_sec2_lec11 code,
@@ -387,13 +347,13 @@ body.dark-theme .code7_sec3_lec11 code,
 body.dark-theme .code8_sec4_lec11 code,
 body.dark-theme .code10_sec5_lec11 code,
 body.dark-theme .code11_sec5_lec11 code,
-
 body.dark-theme .code_sec3_lec3 .p_container code,
 body.dark-theme code.li {
   color: #64b5f6;
   background-color: rgba(100, 181, 246, 0.1);
 }
 
+/* ========== РЕЗУЛЬТАТЫ КОДА ========== */
 .code_result,
 .ul_li_tegs_3 {
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
@@ -402,13 +362,13 @@ body.dark-theme code.li {
 body.dark-theme .code_result,
 body.dark-theme .ul_li_tegs_3 {
   color: var(--text-color);
-
 }
 
 body.dark-theme .ul_li_tegs_2 {
   color: var(--text-color);
 }
 
+/* ========== КОД В СПИСКАХ ========== */
 .list code,
 .list_sec1_lec5 code,
 .list_sec3_lec5 code,
@@ -438,70 +398,71 @@ body.dark-theme .list_rule_img code {
   background-color: rgba(100, 181, 246, 0.1);
 }
 
-.dark-theme .list {
-    background-color: var(--card-bg);
+/* ========== СПИСКИ (тёмная тема) ========== */
+body.dark-theme .list {
+  background-color: var(--card-bg);
 }
 
-.dark-theme .list li{
+body.dark-theme .list li {
   background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   color: #e6e6e6;
   border: 1px solid #555;
   border-left: 4px solid #3d8bfd;
-  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dark-theme .list li code{
+body.dark-theme .list li code {
   color: #64b5f6;
   background-color: rgba(100, 181, 246, 0.1);
 }
 
-.dark-theme .em_code_div,
-.dark-theme .strong_code_div,
-.dark-theme .em_code_div1{
+body.dark-theme .em_code_div,
+body.dark-theme .strong_code_div,
+body.dark-theme .em_code_div1 {
   background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   color: #e6e6e6;
   border: 1px solid #555;
   border-left: 4px solid #3d8bfd;
-  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dark-theme .code_html_5,
-.dark-theme .code_html_6{
+body.dark-theme .code_html_5,
+body.dark-theme .code_html_6 {
   color: #e6e6e6;
 }
 
-.dark-theme .code_html_5 code,
-.dark-theme .code_html_6 code{
+body.dark-theme .code_html_5 code,
+body.dark-theme .code_html_6 code {
   color: #64b5f6;
   background-color: rgba(100, 181, 246, 0.1);
 }
 
-.dark-theme .list_sec1_lec5 li{
+body.dark-theme .list_sec1_lec5 li {
   background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   color: #e6e6e6;
   border: 1px solid #555;
   border-left: 4px solid #3d8bfd;
-  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dark-theme .list_sec1_lec5 li code{
+body.dark-theme .list_sec1_lec5 li code {
   color: #64b5f6;
   background-color: rgba(100, 181, 246, 0.1);
 }
 
-.dark-theme .list_sec3_lec5 {
-    background-color: var(--card-bg);
+body.dark-theme .list_sec3_lec5 {
+  background-color: var(--card-bg);
 }
 
-.dark-theme .list_sec3_lec5 li{
+body.dark-theme .list_sec3_lec5 li {
   background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
   color: #e6e6e6;
   border: 1px solid #555;
   border-left: 4px solid #3d8bfd;
-  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.dark-theme .list_sec3_lec5 li code{
+body.dark-theme .list_sec3_lec5 li code {
   color: #64b5f6;
   background-color: rgba(100, 181, 246, 0.1);
 }

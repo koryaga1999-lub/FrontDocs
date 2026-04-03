@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../main.css">
+    <script src="../../../js/script.js"></script>
+</head>
+<body>
+<header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+          <nav class="nav">
+    <button class="burger-btn" aria-label="Меню">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+    </button>
+
+ <ul class="nav-list">
+                    <li><a href="../../../head.html">Главная</a></li>
+                    <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../cssPage.html">CSS3</a></li>
+                    <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../GitPage.html">Git</a></li>
+                    <li><a href="../../../testPage.html">Задания</a></li>
+                </ul>
+
+    <img class="nav-icon" src="./images/icon.png" alt="">
+</nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+    <main>
+        <h1 class="title_lection1">Итоговое задание по HTML</h1>
+        <section class="creative_example">
+            <h2>Творческое задание (ТЗ):</h2>
+            <p>Задание должно быть выполнено так же как и на скриншоте: </p>
+            <p>&lt;p&gt;Создай одностраничный сайт index.html на тему "Моё хобби" с обязательными элементами: заголовок &lt;h1&gt;, одна фотография &lt;img&gt;, 2-3 предложения текста &lt;p&gt;, список из 3-4 пунктов &lt;ul&gt;, таблица 3×3 &lt;table&gt;, форма с 2 полями и кнопкой &lt;form&gt;, используя минимальный CSS для читаемости который уже для тебя написан — всё в одном файле, поставь себе время выполнения 30-45 минут, если получится дольше, не переживай, это нормально, поскольку ты ещё учишься!&lt;/p&gt;</p>
+            <img src="../../../images/css_example.png" alt="css код к заданию">
+        </section>
+
+        <section class="css_code_example_sec">
+            <h2>CSS:</h2>
+            <div class="code_html_3">
+                <pre>
+                    &lt;style&gt;
+                        body {
+                            font-family: Arial;
+                            max-width: 600px;
+                            margin: auto;
+                            padding: 20px;
+                            background-color: #f5f5f5;
+                        }
+                        h1 {
+                            text-align: center;
+                            color: #333;
+                            background: #4a6fa5;
+                            color: white;
+                            padding: 15px;
+                            border-radius: 8px;
+                        }
+                        img {
+                            width: 300px;
+                            height: 200px;
+                            object-fit: cover;
+                            display: block;
+                            margin: 20px auto;
+                            border-radius: 8px;
+                            border: 3px solid #4a6fa5;
+                        }
+
+                        ul {
+                            background: white;
+                            padding: 15px 25px;
+                            border-radius: 8px;
+                            margin: 15px 0;
+                            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        }
+                        table {
+                            width: 100%;
+                            border-collapse: collapse;
+                            margin: 20px 0;
+                            background: white;
+                            border-radius: 8px;
+                            overflow: hidden;
+                            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        }
+                        th, td {
+                            border: 1px solid #ddd;
+                            padding: 10px;
+                            text-align: left;
+                        }
+                        th {
+                            background: #4a6fa5;
+                            color: white;
+                        }
+                        form {
+                            background: white;
+                            padding: 20px;
+                            border-radius: 8px;
+                            margin: 20px 0;
+                            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        }
+                        label {
+                            display: block;
+                            margin: 10px 0 5px;
+                            font-weight: bold;
+                        }
+                        input {
+                            width: 100%;
+                            padding: 10px;
+                            margin: 5px 0 15px;
+                            border: 1px solid #ddd;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                        }
+                        button {
+                            background: #4a6fa5;
+                            color: white;
+                            padding: 12px;
+                            border: none;
+                            border-radius: 4px;
+                            width: 100%;
+                            font-size: 16px;
+                            cursor: pointer;
+                        }
+                        button:hover {
+                            background: #3a5a80;
+                        }
+                        footer {
+                            text-align: center;
+                            margin-top: 30px;
+                            color: #666;
+                            padding: 20px;
+                        }
+                    &lt;/style&gt;
+                </pre>
+            </div>
+        </section>
+
+        <div>
+            <button class="button_previous"><a href="../../../Lections/HTML-Lections/2-All-Of-Head/">Предыдущая лекция</a></button>
+        </div>
+
+    </main>
+        <footer class="footer">
+                <div class="footer-columns">
+                    <!-- Колонка 1: FrontDocs -->
+                    <div class="footer-col">
+                        <h3 class="col-title">FrontDocs</h3>
+                        <div class="frontdocs-content">
+                            <p>База по фронтенду: <br> теория - примеры - задания</p>
+                            <button class="button_ex"><a href="../../../testPage.html">Перейти к заданиям</a></button>
+                            <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 2: Разделы -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Разделы</h3>
+                        <div class="shapter-content">
+                            <ul>
+                                <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                                <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                                <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                                <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                                <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                                <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                                <li><a href="">Задания</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 3: Инструменты -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Инструменты</h3>
+                        <div class="instruments-content">
+                            <ul>
+                                <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Колонка 4: Сообщество -->
+                    <div class="footer-col">
+                        <h3 class="col-title">Сообщество</h3>
+                        <div class="community-content">
+                            <ul>
+                                <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                                <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                                <li><a href="">Сообщить об ошибке</a></li>
+                                <li><a href="">Поддержать проект</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="end_line_three">
+                <!-- Нижняя часть футера -->
+                <div class="footer-bottom">
+                    <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                    <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+                </div>
+        </footer>
+</body>
+   <script src="../../../Theme-JS/script.js"></script>
+    <script src="../../../Burger-Menu-Js/burger.js"></script>
+</html>
