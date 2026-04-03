@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Создание гиперссылок в коде | FrontDocs</title>
     <link rel="stylesheet" href="../../../main.css">
-    <script src="../../../js/script.js"></script>
+    <script defer src="../../../js/script.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="header-inner">
-            <h1 class="logo">FrontDocs.</h1>
+            <span class="logo">FrontDocs.</span>
             <div class="border"></div>
             <nav class="nav">
                 <ul class="nav-list">
@@ -23,11 +23,12 @@
                     <li><a href="../../../testPage.html">Задания</a></li>
                 </ul>
 
-                <img class="nav-icon" src="../../../images/icon.png" alt="">
+                <img class="nav-icon" src="../../../images/icon.png" alt="Иконка меню">
             </nav>
         </div>
         <button class="theme-btn">🌙</button>
     </header>
+
     <main>
         <section class="start_sec_lec6">
             <h1>Создание гиперссылок в коде</h1>
@@ -39,7 +40,7 @@
             <h2>Как создать ссылку?</h2>
             <p>Базовая формула:</p>
             <div class="code_html_3">
-                <p><code>&lt;a href="ссылка">кликабельный текст/a&gt;</code></p>
+                <p><code>&lt;a href="ссылка"&gt;кликабельный текст&lt;/a&gt;</code></p>
             </div>
 
             <p class="title_code_href">Примеры:</p>
@@ -87,10 +88,10 @@
         <section class="type_adress_sec">
             <h2>Два типа адресов:</h2>
             <ul>
-                <li>Абсолютный - полный адрес: https://site.com/page.html(для ссылок на другие сайты)</li>
-                <li>Относительный - путь от текущей страницы: page.html или folder/page.html(для ссылок внутри своего сайта)</li>
+                <li>Абсолютный - полный адрес: https://site.com/page.html (для ссылок на другие сайты)</li>
+                <li>Относительный - путь от текущей страницы: page.html или folder/page.html (для ссылок внутри своего сайта)</li>
             </ul>
-            <p>Правило: внутри своего сайта - относительные, на чужие сайты - абсолютные.</p>
+            <p>Правило: внутри своего сайта - относительные, на чужие сайты - абсолютные.</p>
         </section>
     
         <section class="type_href_sec">
@@ -126,74 +127,71 @@
         <section class="rules_sec">
             <h2>Запомните!</h2>
             <ol>
-                <li>Без href ссылка не работает - это просто текст</li>
-                <li>Одна страница - один id - не повторяйте одинаковые якоря</li>
-                <li>Ссылка должна быть понятна даже без контекста</li>
-                <li>Проверяйте все ссылки - битые ссылки раздражают пользователей</li>
+                <li>Без href ссылка не работает - это просто текст</li>
+                <li>Одна страница - один id - не повторяйте одинаковые якоря</li>
+                <li>Ссылка должна быть понятна даже без контекста</li>
+                <li>Проверяйте все ссылки - битые ссылки раздражают пользователей</li>
             </ol>
         </section>
-        <div>
-            <button class="button_next"><a href="../7-Images-in-code/index.html">Дальше</a></button>
-            <button class="button_previous"><a href="../5-Semantics/index.html">Предыдущая лекция</a></button>
+
+        <div class="navigation-buttons">
+            <a href="../7-Images-in-code/index.html" class="button_next">Дальше</a>
+            <a href="../5-Semantics/index.html" class="button_previous">Предыдущая лекция</a>
         </div>
     </main>
+
     <footer class="footer">
-            <div class="footer-columns">
-                <!-- Колонка 1: FrontDocs -->
-                <div class="footer-col">
-                    <h3 class="col-title">FrontDocs</h3>
-                    <div class="frontdocs-content">
-                        <p>База по фронтенду: <br> теория - примеры - задания</p>
-                        <button class="button_ex"><a href="../../../testPage.html">Перейти к заданиям</a></button>
-                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
-                    </div>
-                </div>
-
-                <!-- Колонка 2: Разделы -->
-                <div class="footer-col">
-                    <h3 class="col-title">Разделы</h3>
-                    <div class="shapter-content">
-                        <ul>
-                            <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
-                            <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
-                            <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
-                            <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
-                            <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
-                            <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
-                            <li><a href="">Задания</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Колонка 3: Инструменты -->
-                <div class="footer-col">
-                    <h3 class="col-title">Инструменты</h3>
-                    <div class="instruments-content">
-                        <ul>
-                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Колонка 4: Сообщество -->
-                <div class="footer-col">
-                    <h3 class="col-title">Сообщество</h3>
-                    <div class="community-content">
-                        <ul>
-                            <li><a href="">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
-                            <li><a href="">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
-                            <li><a href="">Сообщить об ошибке</a></li>
-                            <li><a href="">Поддержать проект</a></li>
-                        </ul>
-                    </div>
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h3 class="col-title">FrontDocs</h3>
+                <div class="frontdocs-content">
+                    <p>База по фронтенду: <br> теория - примеры - задания</p>
+                    <a href="../../../testPage.html" class="button_ex">Перейти к заданиям</a>
+                    <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
                 </div>
             </div>
-            <hr class="end_line_three">
-            <!-- Нижняя часть футера -->
-            <div class="footer-bottom">
-                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
-                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+
+            <div class="footer-col">
+                <h3 class="col-title">Разделы</h3>
+                <div class="shapter-content">
+                    <ul>
+                        <li><a href="/FrontDocs/pages/main-page/index.html">Главная</a></li>
+                        <li><a href="/FrontDocs/pages/frontend-page/index.html">Фронтенд</a></li>
+                        <li><a href="/FrontDocs/pages/html-page/index.html">HTML5</a></li>
+                        <li><a href="/FrontDocs/pages/css-page/index.html">CSS3</a></li>
+                        <li><a href="/FrontDocs/pages/JavaScript-page/index.html">JavaScript</a></li>
+                        <li><a href="/FrontDocs/pages/git-page/index.html">Git</a></li>
+                        <li><a href="../../../testPage.html">Задания</a></li>
+                    </ul>
+                </div>
             </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Инструменты</h3>
+                <div class="instruments-content">
+                    <ul>
+                        <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3 class="col-title">Сообщество</h3>
+                <div class="community-content">
+                    <ul>
+                        <li><a href="https://github.com">GitHub <img src="../../../images/Icon (15).png" alt="GitHub иконка"></a></li>
+                        <li><a href="https://telegram.org">Telegram <img src="../../../images/Icon (16).png" alt="Telegram иконка"></a></li>
+                        <li><a href="#">Сообщить об ошибке</a></li>
+                        <li><a href="#">Поддержать проект</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="end_line_three">
+        <div class="footer-bottom">
+            <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+            <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+        </div>
     </footer>
 </body>
 </html>
