@@ -26,6 +26,7 @@
     width: 1050px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code1_sec1_lec11:hover {
@@ -73,6 +74,7 @@
     width: 1050px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code2_sec2_lec11:hover {
@@ -102,6 +104,7 @@
     width: 1050px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code3_sec2_lec11:hover {
@@ -125,6 +128,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code4_sec2_lec11:hover {
@@ -148,6 +152,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code5_sec2_lec11:hover {
@@ -171,6 +176,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code_5_sec2_lec11_1:hover {
@@ -206,6 +212,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code6_sec3_lec11:hover {
@@ -242,6 +249,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code7_sec3_lec11:hover {
@@ -270,6 +278,7 @@
     width: 1150px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code8_sec4_lec11:hover {
@@ -302,9 +311,10 @@
     font-family: 'Courier New', monospace;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 1150px;
+    width: 1200px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-size: 25px;
 }
 
 .code10_sec5_lec11:hover {
@@ -341,8 +351,13 @@
     font-family: 'Courier New', monospace;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 550px;
+    width: 750px;
     transition: all 0.3s;
+    font-size: 25px;
+}
+
+.code11_sec5_lec11 pre {
+    margin-left: -180px;
 }
 
 .code11_sec5_lec11:hover {

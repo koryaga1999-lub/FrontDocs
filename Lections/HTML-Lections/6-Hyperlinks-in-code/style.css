@@ -111,6 +111,12 @@
     margin-top: 10px; 
 }
 
+.type_href_sec_code .code_html_3 .text_code {
+    display: block;
+    margin-left: -480px;  /* влево */
+    margin-top: -50px;    /* вверх */
+}
+
 .type_href_sec pre {
     height: 200px; 
 }

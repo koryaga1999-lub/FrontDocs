@@ -216,12 +216,12 @@
     border-left: 4px solid #3498db;
     background-color: #f8f9fa;
     padding: 20px;
-    font-family: 'Courier New', monospace;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     width: 950px;
     margin-left: 50px;
     transition: all 0.3s;
+    font-weight: bold;
 }
 
 .sec6_lec7_code_1:hover {
