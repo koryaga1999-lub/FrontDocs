@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация на курс (форма)</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="./head.html">Главная</a></li>
+                    <li><a href="./FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="./HtmlPage.html">HTML5</a></li>
+                    <li><a href="./cssPage.html">CSS3</a></li>
+                    <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="./GitPage.html">Git</a></li>
+                    <li><a href="./testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="./images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+
+  <h1 class="title_lection1">Связь с поддержкой</h1>
+  <section class="form_sec">
+            <form class="form">
+            <div class="form__group">
+                <label for="name" class="form__label">Имя</label>
+                <input type="text" id="name" name="name" class="form__input" placeholder="Введите Ваше имя" required minlength="4" maxlength="25">
+                <span class="form_description">Минимум 3 символа</span>
+            </div>
+
+            <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" id="email" name="email" class="form__input" placeholder="Введите Ваш email" required minlength="7" maxlength="100">
+                <span class="form_description">Введите действительный email</span>
+            </div>
+
+            <div class="form__group">
+                <label for="theme" class="form__label">Тема обращения</label>
+                <input type="text" id="theme" name="theme" class="form__input" placeholder="Введите тему обращения" required minlength="5">
+                <span class="form_description">Например, "кнопка не работает"</span>
+            </div>
+
+            <div class="form__group">
+                <label for="message" class="form__label__area">Комментарий</label>
+                <textarea id="message" name="message" class="form__input" placeholder="Расскажите подробно о проблеме" rows="5" maxlength="500"></textarea>
+                <span class="form__description">Опционально, до 500 символов</span>
+            </div>
+
+                <button class="form__button" type="submit">Отправить</button>
+            </form>
+
+            <!-- Подключение EmailJS для отправки формы на почту -->
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- Подключение EmailJS -->
+
+            <script>
+                emailjs.init('wfF1HMSf5gw9uGF-I'); // Инициализация EmailJS
+
+                document.querySelector('.form').addEventListener('submit', function(event) { // Обработка отправки формы
+                    event.preventDefault(); // Отмена стандартной отправки формы
+
+                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS
+                        .then(function() { // Обработка успешной отправки, then() - функция EmailJS для 
+                            alert('Отправлено!'); 
+                            document.querySelector('.form').reset(); // Сброс формы после успешной отправки
+                        }, function(error) { // Обработка ошибки, function() - функция EmailJS для 
+                            alert('Ошибка отправки: ' + error.text); // Вывод сообщения об ошибке
+                        });
+                });
+            </script>
+  </section>
+
+  <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="./testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="../../../head.html">Главная</a></li>
+                            <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                            <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                            <li><a href="../../../cssPage.html">CSS3</a></li>
+                            <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                            <li><a href="../../../GitPage.html">Git</a></li>
+                            <li><a href="../../../testPage.html">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="https://github.com/koryaga1999-lub/FrontDocs">GitHub <img src="./images/Icon (15).png" alt=""></a></li>
+                            <li><a href="">Telegram <img src="./images/Icon (16).png" alt=""></a></li>
+                            <li><a href="">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+            </div>
+        </footer>
+</body>
+</html>

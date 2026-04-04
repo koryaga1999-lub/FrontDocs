@@ -1,0 +1,100 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 42px;
+    border-radius: 10px;
+    margin-top: 25px;
+    display: grid;
+  place-items: center;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.form__label {
+    font-weight: bold;
+    margin-block-end: 5px;
+}
+
+.form__label::after {
+    content: " *";
+    color: red;
+}
+
+.form__label__area {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.form__input {
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.form__input:focus {
+    outline: 1px solid rgba(65, 146, 251, 0.7);
+    border-radius: 5px;
+}
+
+.form__input:valid {
+    border: 1px solid green;
+    outline:rgba(2, 154, 2, 0.2);
+}
+
+.form__input:invalid:not(:placeholder-shown){
+    border: 3px solid red;
+    outline: 1px solid rgb(115, 7, 7 / .4);
+}
+
+textarea.form__input {
+    resize: none;
+    height: 146px;
+    width: 515px;
+}
+
+textarea.form_input:valid {
+  resize: none; 
+}
+
+textarea.form__input:valid,
+textarea.form__input:invalid {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea.form__input:focus {
+    outline: 2px solid rgba(48, 48, 221, 0.7);
+    border: 1px solid #ccc;
+}
+
+.form__group span {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.form_description {
+    font-size: 12px;
+    margin-block-end: 20px;
+}
+
+
+.form__button {
+  padding: 15px 30px; 
+  font-size: 18px;       
+  height: 50px;           
+  min-width: 200px;  
+  background-color: rgb(40, 110, 201); 
+  border: none;
+  border-radius: 10px;    
+  color: white;
+}

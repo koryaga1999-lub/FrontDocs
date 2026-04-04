@@ -8,7 +8,8 @@
 @import url('./pages/git-page/style.css'); /* файл с главной страницей модуля git */
 @import url('./pages/html-page/style.css'); /* файл с главной страницей модуля html */
 @import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
-@import url('./pages/test-page/style.css'); 
+@import url('./pages/test-page/style.css'); /* файл с главной страницей тестов */
+@import url('./supportPage/support.css'); /* файл с главной страницей поддержки */
  
 /* Подключение файлов с лекциями */
 @import url("./Lections/HTML-Lections/1-Base/style.css"); /* 1 лекция */
