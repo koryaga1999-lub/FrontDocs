@@ -14,13 +14,13 @@
             <div class="border"></div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="./head.html">Главная</a></li>
-                    <li><a href="./FrontendPage.html">Фронтенд</a></li>
-                    <li><a href="./HtmlPage.html">HTML5</a></li>
-                    <li><a href="./cssPage.html">CSS3</a></li>
-                    <li><a href="./JavaScriptPage.html">JavaScript</a></li>
-                    <li><a href="./GitPage.html">Git</a></li>
-                    <li><a href="./testPage.html">Задания</a></li>
+                    <li><a href="../head.html">Главная</a></li>
+                    <li><a href="../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../cssPage.html">CSS3</a></li>
+                    <li><a href="../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../GitPage.html">Git</a></li>
+                    <li><a href="../testPage.html">Задания</a></li>
                 </ul>
 
                 <img class="nav-icon" src="./images/icon.png" alt="">
@@ -68,9 +68,9 @@
                 document.querySelector('.form').addEventListener('submit', function(event) { // Обработка отправки формы
                     event.preventDefault(); // Отмена стандартной отправки формы
 
-                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS
-                        .then(function() { // Обработка успешной отправки, then() - функция EmailJS для 
-                            alert('Отправлено!'); 
+                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS, this - форма - объект формы
+                        .then(function() { // Обработка успешной отправки, then() - функция EmailJS, то что будет выполнено после успешной отправки
+                            alert('Обращение отправлено!'); 
                             document.querySelector('.form').reset(); // Сброс формы после успешной отправки
                         }, function(error) { // Обработка ошибки, function() - функция EmailJS для 
                             alert('Ошибка отправки: ' + error.text); // Вывод сообщения об ошибке
