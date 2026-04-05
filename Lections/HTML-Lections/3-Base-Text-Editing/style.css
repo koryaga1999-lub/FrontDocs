@@ -466,3 +466,211 @@
     border-left: 4px solid #4a6fa5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+/* === АДАПТИВНЫЙ CSS (только для мобильных) === */
+@media (max-width: 768px) {
+    /* === Центрируем заголовки лекции === */
+    .header_lection3,
+    .title_lection3 {
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 20px;
+    }
+
+    /* === Убираем ширину у всех блоков кода и контейнеров === */
+    .txt2,
+    .lection3_code,
+    .p_container,
+    .code_1,
+    .code_html_3,
+    .code_html_4,
+    .em_code_div,
+    .strong_code_div,
+    .ul_li_tegs_2,
+    .em_code_div1,
+    .list {
+        width: 90% !important;
+        max-width: 100%;
+        margin-left: 15px !important;
+        margin-right: 15px;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    /* === Адаптируем отступы (вместо 50px — 15px) === */
+    .discription1_lec3,
+    .discription3,
+    .discription4,
+    .discription5,
+    .discription6,
+    .container,
+    .container_h1_h2_h3,
+    .container_list,
+    .rules_list,
+    .ul_li_structure,
+    .what_is_structure,
+    .explanation_txt,
+    .title_sec6,
+    .discription_code_1,
+    .list_discription,
+    .txt_ul_code,
+    .txt1,
+    .txt3,
+    .p_title,
+    .rules_title,
+    .stick2 {
+        margin-left: 15px !important;
+        margin-right: 15px;
+    }
+
+    /* === Flex-контейнеры: делаем колонками === */
+    .code_3,
+    .code_4,
+    .em_strong_code,
+    .container_code,
+    .txt_code {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px !important;
+    }
+
+    /* === Стрелки между примерами — центрируем === */
+    .stick2 {
+        margin: 10px auto !important;
+        display: block;
+        opacity: 0.7;
+    }
+
+    /* === Адаптив списка тегов === */
+    .list {
+        padding: 15px 20px;
+        margin: 20px 10px;
+    }
+
+    .list li {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .list li code {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    /* === Кнопки навигации — одна под другой или по центру === */
+    .button_previous,
+    .button_next {
+        float: none;
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        text-align: center;
+        font-size: 18px;
+        padding: 14px 20px;
+    }
+
+    /* === Футер === */
+    .footer-columns {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+
+    /* === Бургер-меню — показываем, скрываем nav-list по умолчанию === */
+    .burger-btn {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 0;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        z-index: 999;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-list a {
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    /* === Уменьшаем заголовки секций при необходимости === */
+    h2 {
+        font-size: 20px !important;
+    }
+
+    .title1,
+    .sec3_lection3 h2,
+    .title_sec4,
+    .title_sec5,
+    .sec6_lection3 h2 {
+        font-size: 20px !important;
+    }
+
+    /* === Горизонтальный скролл для длинного кода === */
+    .txt2,
+    .lection3_code,
+    .ul_li_tegs_2 {
+        white-space: pre;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* === Основной контейнер — убираем overflow: hidden если был === */
+    main {
+        overflow: visible !important;
+    }
+
+    /* === Уменьшаем шрифт в блоках с кодом === */
+    .txt2,
+    .lection3_code,
+    .ul_li_tegs_2,
+    .p_container,
+    .code_1,
+    .code_html_3,
+    .code_html_4,
+    .em_code_div,
+    .strong_code_div {
+        font-size: 14px !important;
+    }
+
+    .code_4 .stick2 {
+    margin: 8px auto !important;
+    display: block;
+    width: 30px;
+    opacity: 0.8;
+}
+}
+
