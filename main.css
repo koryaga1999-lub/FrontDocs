@@ -152,3 +152,60 @@ section {
         right: 0;
     }
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Гарантированный запрет горизонтального скролла */
+body {
+    overflow-x: hidden;
+    padding-right: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Защита всех контейнеров */
+.container,
+section,
+main,
+.test_container_ {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === ЕДИНЫЙ СТИЛЬ ДЛЯ ВСЕХ КОНТЕЙНЕРОВ ТЕСТОВ === */
+
+.test_container_ {
+    width: 90%;
+    max-width: 1278px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: auto; /* Убираем фиксированную высоту, если мешает */
+    overflow: hidden; /* Защита от вылезания */
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Гарантия: контейнер не вылезает за экран */
+@media (max-width: 768px) {
+    .test_container_ {
+        width: 94%;
+        max-width: 100%;
+        margin: 16px auto;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .test_container_ {
+        width: 96%;
+        margin: 14px auto;
+        border-radius: 6px;
+    }
+}
