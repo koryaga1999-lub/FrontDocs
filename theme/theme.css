@@ -509,3 +509,14 @@ body.dark-theme .form {
 body.dark-theme label {
   color: white;
 }
+
+body.dark-theme input, textarea {
+  color: white;
+  background-color: #2a2a2a;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #555;
+}
+
+input, textarea {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
