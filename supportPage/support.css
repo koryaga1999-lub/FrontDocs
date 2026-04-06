@@ -88,6 +88,12 @@ textarea.form__input {
 }
 
 @media (max-width: 768px) {
+
+    .title_lection1 {
+        display: flex;
+        text-align: center;
+    }
+
     .form {
         padding: 20px;
         margin-top: 15px;
