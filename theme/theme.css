@@ -520,3 +520,12 @@ body.dark-theme input, textarea {
 input, textarea {
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+/* ========== ТЁМНАЯ ТЕМА ДЛЯ ПЕСОЧНИЦЫ ========== */
+
+body.dark-theme .panel {
+  background-color: #555;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #3b82f6;
+}

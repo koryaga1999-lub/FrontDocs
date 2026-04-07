@@ -1,15 +1,5 @@
- * {
-      box-sizing: border-box;
-    }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-    }
-
-    .sandbox {
+  .sandbox {
       max-width: 1200px;
       margin: 40px auto;
       padding: 20px;
@@ -33,11 +23,11 @@
     }
 
     .panel {
-      background: #fff;
       border: 1px solid #dcdcdc;
       border-radius: 16px;
       padding: 16px;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .panel-title {
@@ -102,5 +92,5 @@
       min-height: 500px;
       border: 1px solid #cfcfcf;
       border-radius: 12px;
-      background: #fff;
+      /* background: #2A2A2A; */
     }
