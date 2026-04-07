@@ -166,3 +166,121 @@
     justify-content: center;
     align-items: center;
 }
+
+/* === АДАПТИВНЫЙ ДОПОЛНЕНИЕ БЕЗ ИЗМЕНЕНИЯ КЛАССОВ И ПЕРЕМЕННЫХ === */
+
+@media (max-width: 768px) {
+    /* Описание лекции */
+    .discription1 {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+        font-size: 16px;
+    }
+
+    /* Блочные и строчные элементы — в колонку */
+    .flex_container_lec4 {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .flex_border_container,
+    .flex_ul_container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Контейнер с текстом */
+    .title_container {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    /* Изображение */
+    .box_info img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Информация о box-модели */
+    .flex_container_box_info {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Блоки с кодом — основное исправление */
+    .code_html_practic .code_html_3,
+    .sec_rules .code_html_3,
+    .end_sec_lec4 .code_html_3 {
+       width: 90vw; /* ← чуть уже */
+        height: auto;
+        overflow-x: auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #f4f4f4;
+        margin-left: 15px; /* ← отступ слева */
+        margin-right: 15px; /* ← отступ справа! */
+    }
+
+    .code_html_practic .code_html_3 pre,
+    .sec_rules .code_html_3 pre,
+    .end_sec_lec4 pre {
+    margin: 0;
+        white-space: pre;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+
+    /* Списки */
+    .test_in_browser_sec ol,
+    .test_in_browser_sec ul,
+    .ul_container {
+        margin-left: 20px;
+    }
+
+    /* Кнопки */
+    .button_next,
+    .button_previous {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        font-size: 16px;
+    }
+}
+
+/* Для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+    .discription1,
+    .title_container {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+    }
+
+    .code_html_practic .code_html_3 pre,
+    .sec_rules .code_html_3 pre,
+    .end_sec_lec4 pre {
+       font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .button_next,
+    .button_previous {
+        width: 100%;
+        font-size: 14px;
+    }
+        .code_html_practic .code_html_3,
+    .sec_rules .code_html_3,
+    .end_sec_lec4 .code_html_3 {
+        width: 90vw;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 8px;
+    }
+
+}
