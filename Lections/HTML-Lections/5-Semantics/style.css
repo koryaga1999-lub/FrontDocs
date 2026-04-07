@@ -206,3 +206,159 @@
     font-size: var(--textsize);
 }
 
+/* === АДАПТИВНЫЙ СТИЛЬ — БЕЗ ИЗМЕНЕНИЯ КЛАССОВ === */
+
+@media (max-width: 768px) {
+    /* Заголовок */
+    .sec1_lec5 h1 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    /* Основной текст */
+    .title_txt_1,
+    .text_1_sec4_lec5,
+    .title_sec4_lec5,
+    .container1_text1_sec4 p,
+    .title_end_sec4_lec5 {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    /* Списки — уменьшаем отступы */
+    .list_sec1_lec5,
+    .list_sec2_lec5,
+    .list_sec4_lec5,
+    .list_sec5_lec5 {
+        margin-left: 20px;
+    }
+
+    .list_sec1_lec5 li {
+        width: 95%;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* Семантические теги — красиво и компактно */
+    .list_sec3_lec5 {
+        padding: 15px;
+        margin: 15px 10px;
+        border-left: 4px solid #4a6fa5;
+    }
+
+    .list_sec3_lec5 li {
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+    .list_sec3_lec5 li code {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+
+    /* Блок с примерами кода */
+    .title1_sec4_lec5 {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    .title1_sec4_lec5 code {
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+
+    .title1_sec4_lec5 p {
+        line-height: 1.6;
+    }
+
+    .text_1_sec4_lec5 p {
+        line-height: 1.6;
+        margin-left: 15px;
+    }
+
+    /* Золотые правила */
+    .list_sec5_lec5 {
+        margin-left: 20px;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+
+    /* Конец лекции */
+    .title_end_sec4_lec5 {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    /* Кнопки навигации */
+    .button_next,
+    .button_previous {
+        display: block;
+        width: 90%;
+        margin: 15px auto;
+        font-size: 16px;
+    }
+}
+
+/* === Для очень маленьких экранов (мобильные) === */
+@media (max-width: 480px) {
+    .sec1_lec5 h1 {
+        font-size: 1.6rem;
+        margin-top: 15px;
+    }
+
+    .title_txt_1,
+    .text_1_sec4_lec5,
+    .title_sec4_lec5,
+    .container1_text1_sec4 p,
+    .title_end_sec4_lec5 {
+        width: 95%;
+        font-size: 14px;
+    }
+
+    .list_sec1_lec5,
+    .list_sec2_lec5,
+    .list_sec4_lec5,
+    .list_sec5_lec5 {
+        margin-left: 15px;
+    }
+
+    .list_sec1_lec5 li {
+        width: 95%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .list_sec3_lec5 {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .list_sec3_lec5 li {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .title1_sec4_lec5 {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .title1_sec4_lec5 code {
+        font-size: 13px;
+        padding: 2px 4px;
+    }
+
+    .list_sec5_lec5 {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .button_next,
+    .button_previous {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+}
