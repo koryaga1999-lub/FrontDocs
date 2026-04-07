@@ -40,6 +40,9 @@
 @import url('./Tests/9-Tables-Tests/style.css'); /* тесты по таблицам */
 @import url('./Tests/10-Forms-Tests/style.css'); /* тесты по формам */
 
+/* Подключение файла с песочницей кода */
+@import url("./code_sandbox/sandbox.css");
+
 @import url("./theme/theme.css"); /* подключение файла с темами */
 
 

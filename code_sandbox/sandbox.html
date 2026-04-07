@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Песочница кода</title> 
+  <link rel="stylesheet" href="../main.css">
+  <script defer src="./sandbox.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../head.html">Главная</a></li>
+                    <li><a href="../FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../HtmlPage.html">HTML5</a></li>
+                    <li><a href="../cssPage.html">CSS3</a></li>
+                    <li><a href="../JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../GitPage.html">Git</a></li>
+                    <li><a href="../testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+    <main>
+<section class="sandbox"> <!-- добавил класс sandbox для окна ввода кода -->
+    <h1 class="sandbox-title">Песочница кода</h1> <!-- добавил класс sandbox-title для заголовка окна ввода кода -->
+    <p class="sandbox-text">Напиши HTML, CSS и JavaScript в одном окне и сразу посмотри результат.</p> <!-- добавил класс sandbox-text для текста под заголовком окна ввода кода -->
+    <div class="sandbox-layout"> <!-- добавил класс sandbox-layout для сетки с двумя панелями -->
+      <div class="panel"> <!-- добавил класс panel для первого блока с кодом -->
+        <h2 class="panel-title">Редактор</h2> <!-- добавил класс panel-title для заголовка первого блока с кодом -->
+    
+        <!-- добавил id codeInput для текстового поля в первом блоке -->
+        <textarea id="codeInput">
+<!DOCTYPE html>
+<html lang="ru"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Мой пример</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        button {
+            background: #111827;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Привет, FrontDocs!</h1>
+    <p>Это простая песочница кода.</p>
+    <button onclick="showMessage()">Нажми меня</button>
+
+    <script>
+        function showMessage() {
+            alert('Код работает!');
+        }
+    </script>
+</body>
+</html>
+        </textarea> <!-- добавил закрывающий тег textarea, весь код написанный выше в текстовом поле будет отображаться в первом блоке -->
+
+        <div class="buttons"> <!-- добавил класс buttons для блока с кнопками -->
+          <button class="run-btn" id="runCode">Запустить код</button>
+          <button class="clear-btn" id="clearCode">Очистить</button>
+        </div>
+      </div> 
+
+      <div class="panel"> <!-- добавил класс panel для второго блока с результатом -->
+        <h2 class="panel-title">Результат</h2> <!-- добавил класс panel-title для заголовка второго блока с результатом -->
+        <iframe id="resultFrame"></iframe> <!-- добавил id resultFrame для iframe в котором будет отображаться результат от пользователя -->
+      </div>
+    </div>
+  </section>
+</main>
+    <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="./testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="./head.html">Главная</a></li>
+                            <li><a href="./FrontendPage.html">Фронтенд</a></li>
+                            <li><a href="./HtmlPage.html">HTML5</a></li>
+                            <li><a href="./cssPage.html">CSS3</a></li>
+                            <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+                            <li><a href="./GitPage.html">Git</a></li>
+                            <li><a href="./testPage.html">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="https://github.com/koryaga1999-lub/FrontDocs">GitHub <img src="../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="https://t.me/Koryaga1999">Telegram <img src="../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="./supportPage/support.html">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
+            </div>
+    </footer>
+</body>
+</html>
