@@ -31,7 +31,8 @@
 
   <h1 class="title_lection1">Связь с поддержкой</h1>
   <section class="form_sec">
-            <form class="form">
+    <div class="border_form">
+        <form class="form">
             <div class="form__group">
                 <label for="name" class="form__label">Имя</label>
                 <input type="text" id="name" name="name" class="form__input" placeholder="Введите Ваше имя" required minlength="4" maxlength="25">
@@ -58,6 +59,8 @@
 
                 <button class="form__button" type="submit">Отправить</button>
             </form>
+    </div>
+            
 
             <!-- Подключение EmailJS для отправки формы на почту -->
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- Подключение EmailJS -->
