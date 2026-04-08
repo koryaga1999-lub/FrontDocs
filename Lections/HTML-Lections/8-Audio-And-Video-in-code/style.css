@@ -1,126 +1,72 @@
-.video_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.video_sec .code_html_3 {
-    width: 800px;
-    height: 200px;
-}
-
-.video_sec .code_html_3 pre {
-    margin-left: -290px;
-    font-size: 25px;
-    margin-top: 5px;
-}
-
-.audio_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.audio_sec .code_html_3 {
-    width: 800px;
-    height: 180px;
-    font-size: 25px;
-}
-
-.audio_sec .code_html_3 pre {
-    margin-left: -290px;
-}
-
-.audio_sec .attributes_lec8 {
-    margin-top: 10px;
-    margin-left: 25px;
-    font-size: var(--textsize);
-}
-
-.audio_sec ol {
-    margin-top: 10px;
-    margin-left: 45px;
-    font-size: var(--textsize);
-}
-
-.format_file_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.format_file_sec p {
-    font-size: var(--textsize);
-    margin-top: 10px;
-}
-
-.format_file_sec ul {
-    margin-top: 10px;
-    margin-left: 35px;
-}
-
-.format_file_sec li {
-    font-size: var(--textsize);
-}
-
-.availability_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.availability_sec .code_html_3 pre {
-    font-size: 25px;
-    margin-left: -290px;
-}
-
-.availability_sec .code_html_3 {
-    width: 1220px;
-    height: 160px;
-}
-
-.availability_sec ul {
-    margin-top: 10px;
-    margin-left: 75px;
-    font-size: var(--textsize);
-    line-height: 30px
-}
-
-.rules_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.rules_sec ol {
-    font-size: var(--textsize);
-    margin-top: 10px;
-    margin-left: 45px;
-    line-height: 35px
-}
-
-.example_sec h2 {
-    font-size: var(--undershsize);
-    margin-top: 39px;
-}
-
-.example_sec .code_html_3 {
-    font-size: 25px;
-    height: 220px;
-    width: 1050px;
-}
-
-.example_sec .code_html_3 pre {
-    margin-left: -290px;
-}
-
+/* Общие настройки */
+.video_sec h2,
+.audio_sec h2,
+.format_file_sec h2,
+.availability_sec h2,
+.rules_sec h2,
+.example_sec h2,
 .rules2_sec h2 {
     font-size: var(--undershsize);
     margin-top: 39px;
 }
 
-.rules2_sec ol {
-    font-size: var(--textsize);
-    margin-top: 10px;
-    margin-left: 45px;
+/* Блоки с примерами кода — слева, без прокрутки */
+.code_html_3 {
+    width: 100%;
+    max-width: 800px;           /* Ограничиваем ширину */
+    margin-left: 0;             /* ✅ Прижимаем к левому краю */
+    margin-right: 0;            /* Убираем отступы справа */
+    overflow: hidden;           /* Гарантированно убираем прокрутку */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.code_html_3 pre {
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;      /* Перенос строк */
+    word-wrap: break-word;      /* Ломаем длинные строки */
+    margin: 0;
+    padding: 0;
+    color: #f8f7f7;                /* Читаемый тёмный текст */
+    font-family: 'Courier New', Courier, monospace;
+}
 
-.rules2_sec .end_title {
-    margin-top: 40px;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .code_html_3 {
+        max-width: 100%;        /* На мобильных — почти вся ширина */
+        margin-left: 0;         /* Остаётся слева */
+        padding: 12px 15px;
+    }
+
+    .code_html_3 pre {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* Мелкие тексты */
+    .audio_sec .attributes_lec8 p,
+    .format_file_sec li,
+    .availability_sec ul li,
+    .rules_sec ol li,
+    .rules2_sec ol li {
+        font-size: calc(var(--textsize) * 0.9);
+    }
+
+    .audio_sec ol,
+    .availability_sec ul,
+    .rules_sec ol,
+    .rules2_sec ol {
+        margin-left: 20px;
+    }
+}
+
+/* Видео и аудио — адаптивные */
+video, audio {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
