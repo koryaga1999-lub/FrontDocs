@@ -149,5 +149,162 @@ main {
 }
 
 
+@media (max-width: 1100px) {
+  .title_lection1 {
+    font-size: 52px;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
 
+  .title_lection2 {
+    font-size: 34px;
+    line-height: 1.25;
+  }
 
+  main {
+    padding: 0 20px;
+  }
+
+  .html-basics {
+    margin-top: 44px;
+  }
+
+  .title_txt,
+  .code {
+    margin-top: 18px;
+  }
+
+  .discription2,
+  .txt_tegs,
+  .txt_atr,
+  .discription_code_html,
+  .discription_code_html2,
+  .end_discription {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .txt_tegs,
+  .txt_atr {
+    margin-top: 18px;
+  }
+
+  .code_html_1,
+  .code_html_2,
+  .ul_li_tegs {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .title_code1,
+  .title_code2 {
+    margin-left: 0;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_lection1 {
+    font-size: 40px;
+    padding: 0 16px;
+    margin-top: 24px;
+    line-height: 1.2;
+  }
+
+  .title_lection2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-top: 30px;
+  }
+
+  main {
+    padding: 0 16px;
+  }
+
+  .html-basics {
+    margin-top: 36px;
+  }
+
+  .discription2,
+  .txt_tegs,
+  .txt_atr,
+  .discription_code_html,
+  .discription_code_html2,
+  .end_discription,
+  .title_txt1 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .txt_tegs p,
+  .txt_atr p {
+    margin-bottom: 20px;
+  }
+
+  .code_html_1,
+  .code_html_2,
+  .ul_li_tegs {
+    padding: 14px;
+    font-size: 13px;
+    overflow-x: auto;
+  }
+
+  .li {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_lection1 {
+    font-size: 30px;
+    padding: 0 12px;
+    margin-top: 20px;
+  }
+
+  .title_lection2 {
+    font-size: 22px;
+    margin-top: 24px;
+  }
+
+  main {
+    padding: 0 12px;
+  }
+
+  .html-basics {
+    margin-top: 28px;
+  }
+
+  .discription2,
+  .txt_tegs,
+  .txt_atr,
+  .discription_code_html,
+  .discription_code_html2,
+  .end_discription,
+  .title_txt1 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .title_code1,
+  .title_code2 {
+    font-size: 15px;
+  }
+
+  .code_html_1,
+  .code_html_2,
+  .ul_li_tegs {
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+
+  .txt_tegs p,
+  .txt_atr p {
+    margin-bottom: 16px;
+  }
+}

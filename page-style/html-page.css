@@ -58,3 +58,116 @@
   top: 450px;
   width: 650px;
 }
+
+@media (max-width: 1100px) {
+  .title_html {
+    font-size: 52px;
+    text-align: center;
+    margin-top: 18px;
+    padding: 0 20px;
+  }
+
+  .section_one {
+    padding: 0 24px;
+    margin-top: 44px;
+  }
+
+  .title {
+    line-height: 1.25;
+  }
+
+  .lections {
+    margin-left: 40px;
+    margin-top: 14px;
+    line-height: 36px;
+  }
+
+  .lections_section2 {
+    margin-top: 28px;
+  }
+
+  .lections img {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    margin: 24px auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title_html {
+    font-size: 40px;
+    margin-top: 16px;
+    padding: 0 16px;
+  }
+
+  .section_one {
+    padding: 0 16px;
+    margin-top: 36px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .lections {
+    margin-left: 24px;
+    margin-top: 14px;
+    line-height: 32px;
+    font-size: 18px;
+  }
+
+  .lections li {
+    margin-bottom: 6px;
+  }
+
+  .lections_section2 {
+    margin-top: 24px;
+  }
+
+  .lections img {
+    max-width: 420px;
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .title_html {
+    font-size: 30px;
+    margin-top: 14px;
+    padding: 0 12px;
+  }
+
+  .section_one {
+    padding: 0 12px;
+    margin-top: 28px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .lections {
+    margin-left: 20px;
+    margin-top: 12px;
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .lections li {
+    margin-bottom: 4px;
+  }
+
+  .lections_section2 {
+    margin-top: 20px;
+  }
+
+  .lections img {
+    max-width: 100%;
+    margin: 18px auto 0;
+  }
+}

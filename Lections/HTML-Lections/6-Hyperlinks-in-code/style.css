@@ -135,3 +135,458 @@
     margin-top: 10px;
     margin-left: 45px;
 }
+
+/* === АДАПТИВ ДЛЯ СТРАНИЦЫ ЛЕКЦИИ 6 (Гиперссылки) === */
+
+/* Планшеты и ноутбуки (до 1100px) */
+@media (max-width: 1100px) {
+  .start_sec_lec6 h1 {
+    font-size: 42px;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .start_sec_lec6 h2,
+  .create_href_sec h2,
+  .attributes_sec_lec6 h2,
+  .type_adress_sec h2,
+  .type_href_sec h2,
+  .rules_sec h2 {
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .start_sec_lec6 p {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .create_href_sec {
+    padding: 0 20px;
+  }
+
+  .create_href_sec .code_html_3 {
+    width: auto;
+    max-width: 100%;
+  }
+
+  .create_href_sec .code_html_3 p {
+    width: auto;
+  }
+
+  .code_container_href .code_html_3 {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow-x: auto;
+  }
+
+  .code_container_href .code_html_3 pre {
+    margin-left: 0;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .attributes_sec_lec6 {
+    padding: 0 20px;
+  }
+
+  .attributes_sec_lec6 ol {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .attributes_sec_lec6 .code_html_3 {
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .type_adress_sec {
+    padding: 0 20px;
+  }
+
+  .type_adress_sec ul {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .type_href_sec {
+    padding: 0 20px;
+  }
+
+  .type_href_sec ol {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .type_href_sec li {
+    font-size: 18px;
+  }
+
+  .type_href_sec .code_html_3 {
+    width: auto;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .type_href_sec_code .code_html_3 .text_code {
+    margin-left: 0;
+    margin-top: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .type_href_sec pre {
+    height: auto;
+    overflow-x: auto;
+  }
+
+  .type_href_sec li:nth-last-child(-n+2) pre {
+    height: auto;
+  }
+
+  .rules_sec {
+    padding: 0 20px;
+  }
+
+  .rules_sec ol {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .navigation-buttons {
+    margin: 40px 20px 20px;
+  }
+}
+
+/* Планшеты (до 900px) */
+@media (max-width: 900px) {
+  .start_sec_lec6 h1 {
+    font-size: 38px;
+  }
+
+  .start_sec_lec6 h2,
+  .create_href_sec h2,
+  .attributes_sec_lec6 h2,
+  .type_adress_sec h2,
+  .type_href_sec h2,
+  .rules_sec h2 {
+    font-size: 26px;
+  }
+
+  .start_sec_lec6 p {
+    font-size: 17px;
+  }
+
+  .type_href_sec li {
+    font-size: 17px;
+  }
+}
+
+/* Маленькие планшеты и большие телефоны (до 768px) */
+@media (max-width: 768px) {
+  .start_sec_lec6 h1 {
+    font-size: 32px;
+    padding: 0 16px;
+    margin-top: 24px;
+    line-height: 1.2;
+  }
+
+  .start_sec_lec6 h2,
+  .create_href_sec h2,
+  .attributes_sec_lec6 h2,
+  .type_adress_sec h2,
+  .type_href_sec h2,
+  .rules_sec h2 {
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 1.3;
+  }
+
+  .start_sec_lec6 p {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .create_href_sec {
+    padding: 0 16px;
+  }
+
+  .create_href_sec p {
+    font-size: 16px;
+  }
+
+  .create_href_sec .code_html_3 {
+    width: auto;
+  }
+
+  .create_href_sec .code_html_3 p {
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .title_code_href {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .code_container_href .code_html_3 {
+    width: auto;
+    height: auto;
+  }
+
+  .code_container_href .code_html_3 pre {
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .attributes_sec_lec6 {
+    padding: 0 16px;
+  }
+
+  .attributes_sec_lec6 ol {
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  .attributes_sec_lec6 li {
+    margin-bottom: 20px;
+  }
+
+  .attributes_sec_lec6 .code_html_3 {
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .attributes_sec_lec6 .code_html_3 code {
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .type_adress_sec {
+    padding: 0 16px;
+  }
+
+  .type_adress_sec ul {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 16px;
+  }
+
+  .type_adress_sec p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .type_href_sec {
+    padding: 0 16px;
+  }
+
+  .type_href_sec ol {
+    margin-left: 20px;
+    margin-right: 16px;
+  }
+
+  .type_href_sec li {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .type_href_sec .code_html_3 {
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .type_href_sec .code_html_3 code {
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .type_href_sec pre {
+    height: auto;
+  }
+
+  .type_href_sec_code .code_html_3 .text_code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .rules_sec {
+    padding: 0 16px;
+  }
+
+  .rules_sec ol {
+    margin-left: 20px;
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .rules_sec li {
+    margin-bottom: 10px;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 16px 20px;
+  }
+
+  .button_previous,
+  .button_next {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+}
+
+/* Телефоны (до 600px) */
+@media (max-width: 600px) {
+  .start_sec_lec6 h1 {
+    font-size: 28px;
+  }
+
+  .start_sec_lec6 h2,
+  .create_href_sec h2,
+  .attributes_sec_lec6 h2,
+  .type_adress_sec h2,
+  .type_href_sec h2,
+  .rules_sec h2 {
+    font-size: 22px;
+  }
+
+  .start_sec_lec6 p,
+  .create_href_sec p,
+  .title_code_href,
+  .attributes_sec_lec6 ol,
+  .type_adress_sec ul,
+  .type_adress_sec p,
+  .type_href_sec li,
+  .rules_sec ol {
+    font-size: 15px;
+  }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .start_sec_lec6 h1 {
+    font-size: 26px;
+    padding: 0 12px;
+    margin-top: 20px;
+  }
+
+  .start_sec_lec6 h2,
+  .create_href_sec h2,
+  .attributes_sec_lec6 h2,
+  .type_adress_sec h2,
+  .type_href_sec h2,
+  .rules_sec h2 {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .start_sec_lec6 p {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .create_href_sec {
+    padding: 0 12px;
+  }
+
+  .create_href_sec p {
+    font-size: 14px;
+  }
+
+  .create_href_sec .code_html_3 p,
+  .code_container_href .code_html_3 pre,
+  .attributes_sec_lec6 .code_html_3 code,
+  .type_href_sec .code_html_3 code {
+    font-size: 12px;
+  }
+
+  .title_code_href {
+    font-size: 14px;
+  }
+
+  .attributes_sec_lec6 {
+    padding: 0 12px;
+  }
+
+  .attributes_sec_lec6 ol {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .type_adress_sec {
+    padding: 0 12px;
+  }
+
+  .type_adress_sec ul {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .type_adress_sec p {
+    font-size: 14px;
+  }
+
+  .type_href_sec {
+    padding: 0 12px;
+  }
+
+  .type_href_sec ol {
+    margin-left: 16px;
+    margin-right: 12px;
+  }
+
+  .type_href_sec li {
+    font-size: 14px;
+  }
+
+  .rules_sec {
+    padding: 0 12px;
+  }
+
+  .rules_sec ol {
+    margin-left: 16px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .navigation-buttons {
+    margin: 30px 12px 20px;
+  }
+
+  .button_previous,
+  .button_next {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}

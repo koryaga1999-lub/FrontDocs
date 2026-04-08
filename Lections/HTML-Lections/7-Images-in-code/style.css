@@ -267,3 +267,339 @@
     margin-left: 50px;
     font-size: var(--textsize);
 }
+
+/* === АДАПТИВ ДЛЯ СТРАНИЦЫ ЛЕКЦИИ 7 (Изображения) === */
+
+/* Планшеты и ноутбуки (до 1100px) */
+@media (max-width: 1100px) {
+  .sec1_lec7 h1 {
+    font-size: 42px;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .sec1_lec7 h2,
+  .sec2_lec7 h2,
+  .sec3_lec7 h2,
+  .sec4_lec7 h2,
+  .sec5_lec7 h2,
+  .sec6_lec7 h2,
+  .sec7_lec7 h2 {
+    font-size: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .code_sec1_lec7,
+  .alt_code_1,
+  .code_sec3_lec7,
+  .code_sec4_lec7,
+  .sec6_lec7_code_1 {
+    width: calc(100% - 40px) !important;
+    margin-left: 20px !important;
+    margin-right: 20px;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .list_sec1_lec7,
+  .list_sec3_lec7,
+  .list_rules,
+  .list_rule_img,
+  .list_ol_sec7,
+  .list_ul_sec7 {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+
+  .list_sec3_lec7 {
+    width: auto;
+  }
+
+  .title_sec2_lec7,
+  .title_code_1,
+  .title_code2,
+  .title_rules,
+  .rule_img,
+  .title_end_sec3_lec7 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .txt_format {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bold_text {
+    margin-left: 30px;
+  }
+
+  .figure_code_1 {
+    margin-left: 15px;
+  }
+
+  .navigation-buttons {
+    margin: 40px 20px 20px;
+  }
+}
+
+/* Планшеты (до 900px) */
+@media (max-width: 900px) {
+  .sec1_lec7 h1 {
+    font-size: 38px;
+  }
+
+  .sec1_lec7 h2,
+  .sec2_lec7 h2,
+  .sec3_lec7 h2,
+  .sec4_lec7 h2,
+  .sec5_lec7 h2,
+  .sec6_lec7 h2,
+  .sec7_lec7 h2 {
+    font-size: 26px;
+  }
+}
+
+/* Маленькие планшеты и большие телефоны (до 768px) */
+@media (max-width: 768px) {
+  .sec1_lec7 h1 {
+    font-size: 32px;
+    padding: 0 16px;
+    margin-top: 24px;
+    line-height: 1.2;
+  }
+
+  .sec1_lec7 h2,
+  .sec2_lec7 h2,
+  .sec3_lec7 h2,
+  .sec4_lec7 h2,
+  .sec5_lec7 h2,
+  .sec6_lec7 h2,
+  .sec7_lec7 h2 {
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 1.3;
+    margin-top: 30px;
+  }
+
+  .code_sec1_lec7,
+  .alt_code_1,
+  .code_sec3_lec7,
+  .code_sec4_lec7,
+  .sec6_lec7_code_1 {
+    width: calc(100% - 32px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px;
+    padding: 16px;
+    font-size: 14px;
+    overflow-x: auto;
+  }
+
+  .code_sec1_lec7 code,
+  .alt_code_1 code,
+  .code_sec3_lec7 code,
+  .code_sec4_lec7 code,
+  .sec6_lec7_code_1 code {
+    font-size: 13px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .list_sec1_lec7,
+  .list_sec3_lec7,
+  .list_rules,
+  .list_rule_img,
+  .list_ol_sec7,
+  .list_ul_sec7 {
+    margin-left: 32px;
+    margin-right: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .list_sec3_lec7 {
+    width: auto;
+  }
+
+  .title_sec2_lec7,
+  .title_code_1,
+  .title_code2,
+  .title_rules,
+  .rule_img,
+  .title_end_sec3_lec7 {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 15px;
+  }
+
+  .txt_format {
+    margin-left: 16px;
+    margin-right: 16px;
+    line-height: 1.6;
+  }
+
+  .txt_format p {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+  .bold_text {
+    margin-left: 25px;
+    font-size: 15px;
+  }
+
+  .figure_code_1 {
+    margin-left: 10px;
+  }
+
+  .codes_sec6_lec7 {
+    margin-top: 20px;
+  }
+
+  .navigation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 16px 20px;
+  }
+
+  .button_previous,
+  .button_next {
+    display: block;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+}
+
+/* Телефоны (до 600px) */
+@media (max-width: 600px) {
+  .sec1_lec7 h1 {
+    font-size: 28px;
+  }
+
+  .sec1_lec7 h2,
+  .sec2_lec7 h2,
+  .sec3_lec7 h2,
+  .sec4_lec7 h2,
+  .sec5_lec7 h2,
+  .sec6_lec7 h2,
+  .sec7_lec7 h2 {
+    font-size: 22px;
+  }
+
+  .list_sec1_lec7,
+  .list_sec3_lec7,
+  .list_rules,
+  .list_rule_img,
+  .list_ol_sec7,
+  .list_ul_sec7,
+  .title_sec2_lec7,
+  .title_code_1,
+  .title_code2,
+  .title_rules,
+  .rule_img,
+  .title_end_sec3_lec7,
+  .txt_format p,
+  .bold_text {
+    font-size: 14px;
+  }
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .sec1_lec7 h1 {
+    font-size: 26px;
+    padding: 0 12px;
+    margin-top: 20px;
+  }
+
+  .sec1_lec7 h2,
+  .sec2_lec7 h2,
+  .sec3_lec7 h2,
+  .sec4_lec7 h2,
+  .sec5_lec7 h2,
+  .sec6_lec7 h2,
+  .sec7_lec7 h2 {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 25px;
+  }
+
+  .code_sec1_lec7,
+  .alt_code_1,
+  .code_sec3_lec7,
+  .code_sec4_lec7,
+  .sec6_lec7_code_1 {
+    width: calc(100% - 24px) !important;
+    margin-left: 12px !important;
+    margin-right: 12px;
+    padding: 12px;
+  }
+
+  .code_sec1_lec7 code,
+  .alt_code_1 code,
+  .code_sec3_lec7 code,
+  .code_sec4_lec7 code,
+  .sec6_lec7_code_1 code {
+    font-size: 12px;
+  }
+
+  .list_sec1_lec7,
+  .list_sec3_lec7,
+  .list_rules,
+  .list_rule_img,
+  .list_ol_sec7,
+  .list_ul_sec7 {
+    margin-left: 28px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .title_sec2_lec7,
+  .title_code_1,
+  .title_code2,
+  .title_rules,
+  .rule_img,
+  .title_end_sec3_lec7 {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 14px;
+  }
+
+  .txt_format {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .txt_format p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .bold_text {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .figure_code_1 {
+    margin-left: 8px;
+  }
+
+  .navigation-buttons {
+    margin: 30px 12px 20px;
+  }
+
+  .button_previous,
+  .button_next {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+}
