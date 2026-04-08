@@ -2,13 +2,13 @@
 @import url('./base/variables.css'); /* подключение файла с переменными */
 
  /* подключение файлов стилей для главных страниц каждого раздела лекций  */
-@import url('./pages/css-page/style.css'); /* файл с главной страницей модуля css */
-@import url('./pages/main-page/style.css'); /* файл с главной страницей всего сайта */
-@import url('./pages/frontend-page/style.css'); /* файл с главной страницей модуля frontend */
-@import url('./pages/git-page/style.css'); /* файл с главной страницей модуля git */
-@import url('./pages/html-page/style.css'); /* файл с главной страницей модуля html */
-@import url('./pages/JavaScript-page/style.css'); /* файл с главной страницей модуля JavaScript */
-@import url('./pages/test-page/style.css'); /* файл с главной страницей тестов */
+@import url('./page-style/css-page.css'); /* файл с главной страницей модуля css */
+@import url('./page-style/head-page.css'); /* файл с главной страницей всего сайта */
+@import url('./page-style/front-page.css'); /* файл с главной страницей модуля frontend */
+@import url('./page-style/git-page.css'); /* файл с главной страницей модуля git */
+@import url('./page-style/html-page.css'); /* файл с главной страницей модуля html */
+@import url('./page-style/js-page.css'); /* файл с главной страницей модуля JavaScript */
+@import url('./page-style/test-page.css'); /* файл с главной страницей тестов */
 @import url('./supportPage/support.css'); /* файл с главной страницей поддержки */
  
 /* Подключение файлов с лекциями */
@@ -31,14 +31,6 @@
 /* Подключение файлов с тестами */
 @import url('./Tests/1-Main-Page-Of-Tests/style.css'); /* файл с главной страницей тестов */
 @import url('./Tests/2-Base-Tests/style.css'); /* тесты по основам HTML */
-@import url('./Tests/3-All-Of-Head-Tests/style.css'); /* тесты по head  */
-@import url('./Tests/4-Indents-Borders-Tests/style.css'); /* тесты по отступам и границам */
-@import url('./Tests/5-Semantics-Tests/style.css'); /* тесты по семантике */
-@import url('./Tests/6-Hyperlinks-Tests/style.css'); /* тесты по гиперссылкам */
-@import url('./Tests/7-Images-Tests/style.css'); /* тесты по картинкам */
-@import url('./Tests/8-Audio-And-Video-Tests/style.css'); /* тесты по аудио и видео */
-@import url('./Tests/9-Tables-Tests/style.css'); /* тесты по таблицам */
-@import url('./Tests/10-Forms-Tests/style.css'); /* тесты по формам */
 
 /* Подключение файла с песочницей кода */
 @import url("./code_sandbox/sandbox.css");
