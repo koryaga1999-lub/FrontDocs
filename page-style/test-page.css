@@ -25,7 +25,7 @@
     cursor: pointer;
     text-decoration: none;
     position: sticky;
-    margin-top: -40px;
+    margin-top: 20px;
 }
 
 .button_sandbox a {
@@ -164,6 +164,7 @@
 
   .button_sandbox {
     margin-right: 16px;
+    margin-top: 10px;
   }
 
   .test_tz_1,

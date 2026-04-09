@@ -504,6 +504,16 @@ body.dark-theme .theme-btn:hover {
 
 
 @media (max-width: 1100px) {
+
+  .header {
+    display: flex;
+  }
+
+  .theme-btn {
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+
   .information_section,
   .advantages_section,
   .about_us,
