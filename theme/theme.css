@@ -529,3 +529,11 @@ body.dark-theme .panel {
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #3b82f6;
 }
+
+/* ========== БУРГЕР МЕНЮ ========== */
+
+@media (max-width: 1200px) {
+  body.dark-theme .nav-list {
+    background-color: #2a2a2a;
+  }
+}

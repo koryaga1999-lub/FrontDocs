@@ -22,10 +22,10 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    margin-top: 10px;
-    margin-right: 20px;
     cursor: pointer;
     text-decoration: none;
+    position: sticky;
+    margin-top: -40px;
 }
 
 .button_sandbox a {
@@ -252,11 +252,6 @@
     padding-bottom: 8px;
   }
 
-  .button_sandbox {
-    width: calc(100% - 24px);
-    margin: 10px 12px 0 auto;
-    justify-content: center;
-  }
 
   .title_exer {
     margin-left: 12px;
