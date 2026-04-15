@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/theme.js"></script>
-    <script defer src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="../../main.css">
+<link rel="stylesheet" href="../../main.css">
+    <script defer src="../../js/tests.js"></script>
 </head>
 <body>
     <header class="header">
@@ -14,12 +14,7 @@
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
             <nav class="nav">
-                <button class="burger-btn" aria-label="Меню">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <ul class="nav-list">
+<ul class="nav-list">
                     <li><a href="../../pages/head.html">Главная</a></li>
                     <li><a href="../../pages/FrontendPage.html">Фронтенд</a></li>
                     <li><a href="../../pages/HtmlPage.html">HTML5</a></li>
@@ -44,7 +39,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">1/10 Что обязательно должно быть в начале HTML-документа?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_1" value="doctype"><span class="choice-text">A) <code>&lt;!DOCTYPE html&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_1" value="doctype"><span class="choice-text">A) <code>&lt;!DOCTYPE html&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_1" value="head"><span class="choice-text">B) <code>&lt;head&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_1" value="meta"><span class="choice-text">C) <code>&lt;meta charset&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_1" value="body"><span class="choice-text">D) <code>&lt;body&gt;</code></span></label>
@@ -55,7 +50,7 @@
                 <h2 class="test_choise_">2/10 Какой тег создаёт абзац?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_2" value="span"><span class="choice-text">A) <code>&lt;span&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_2" value="p"><span class="choice-text">B) <code>&lt;p&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_2" value="p"><span class="choice-text">B) <code>&lt;p&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_2" value="br"><span class="choice-text">C) <code>&lt;br&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_2" value="h1"><span class="choice-text">D) <code>&lt;h1&gt;</code></span></label>
                 </div>
@@ -65,7 +60,7 @@
                 <h2 class="test_choise_">3/10 Как правильно написать комментарий в HTML?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_3" value="slash"><span class="choice-text">A) <code>&lt;// текст&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_3" value="comment"><span class="choice-text">B) <code>&lt;!-- текст --&gt;</code></span></label>
+                    <label class="choice-item"  data-correct ><input type="radio" name="question_3" value="comment"><span class="choice-text">B) <code>&lt;!-- текст --&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_3" value="csscomment"><span class="choice-text">C) <code>&lt;/* текст */&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_3" value="php"><span class="choice-text">D) <code>&lt;? текст ?&gt;</code></span></label>
                 </div>
@@ -75,7 +70,7 @@
                 <h2 class="test_choise_">4/10 Что такое атрибут?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_4" value="page"><span class="choice-text">A) Отдельная страница</span></label>
-                    <label class="choice-item"><input type="radio" name="question_4" value="parameter"><span class="choice-text">B) Доп. параметр тега</span></label>
+                    <label class="choice-item" data-correct ><input type="radio" name="question_4" value="parameter"><span class="choice-text">B) Доп. параметр тега</span></label>
                     <label class="choice-item"><input type="radio" name="question_4" value="css"><span class="choice-text">C) <code>&lt;Только CSS-правило&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_4" value="script"><span class="choice-text">D) <code>&lt;Скрипт&gt;</code></span></label>
                 </div>
@@ -85,7 +80,7 @@
                 <h2 class="test_choise_">5/10 Какой тег делает перенос строки без нового абзаца?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_5" value="hr"><span class="choice-text">A) <code>&lt;hr&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_5" value="br"><span class="choice-text">B) <code>&lt;br&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_5" value="br"><span class="choice-text">B) <code>&lt;br&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_5" value="p"><span class="choice-text">C) <code>&lt;p&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_5" value="div"><span class="choice-text">D) <code>&lt;div&gt;</code></span></label>
                 </div>
@@ -95,7 +90,7 @@
                 <h2 class="test_choise_">6/10 Что лучше для кнопки отправки формы?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_6" value="a"><span class="choice-text">A) <code>&lt;a&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_6" value="button"><span class="choice-text">B) <code>&lt;button type="submit"&gt;</code></span></label>
+                    <label class="choice-item" data-correct ><input type="radio" name="question_6" value="button"><span class="choice-text">B) <code>&lt;button type="submit"&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_6" value="div"><span class="choice-text">C) <code>&lt;div&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_6" value="span"><span class="choice-text">D) <code>&lt;span&gt;</code></span></label>
                 </div>
@@ -105,7 +100,7 @@
                 <h2 class="test_choise_">7/10 Какая пара тегов образует список?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_7" value="divp"><span class="choice-text">A) <code>&lt;div&gt;</code> + <code>&lt;p&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_7" value="ulli"><span class="choice-text">B) <code>&lt;ul&gt;</code> + <code>&lt;li&gt;</code></span></label>
+                    <label class="choice-item" data-correct ><input type="radio" name="question_7" value="ulli"><span class="choice-text">B) <code>&lt;ul&gt;</code> + <code>&lt;li&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_7" value="tabletr"><span class="choice-text">C) <code>&lt;table&gt;</code> + <code>&lt;tr&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_7" value="forminput"><span class="choice-text">D) <code>&lt;form&gt;</code> + <code>&lt;input&gt;</code></span></label>
                 </div>
@@ -114,7 +109,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">8/10 Что делает тег &lt;strong&gt;?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_8" value="bold"><span class="choice-text">A) Делает текст жирным</span></label>
+                    <label class="choice-item" data-correct ><input type="radio" name="question_8" value="bold"><span class="choice-text">A) Делает текст жирным</span></label>
                     <label class="choice-item"><input type="radio" name="question_8" value="italic"><span class="choice-text">B) Делает текст курсивом</span></label>
                     <label class="choice-item"><input type="radio" name="question_8" value="underline"><span class="choice-text">C) Подчёркивает текст</span></label>
                     <label class="choice-item"><input type="radio" name="question_8" value="header"><span class="choice-text">D) Создаёт заголовок</span></label>
@@ -124,7 +119,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">9/10 Какой тег используется для создания ссылки?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_9" value="link"><span class="choice-text">A) <code>&lt;a&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_9" value="link"><span class="choice-text">A) <code>&lt;a&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_9" value="href"><span class="choice-text">B) <code>&lt;href&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_9" value="url"><span class="choice-text">C) <code>&lt;url&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_9" value="click"><span class="choice-text">D) <code>&lt;click&gt;</code></span></label>
@@ -136,15 +131,15 @@
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_10" value="head"><span class="choice-text">A) <code>&lt;head&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_10" value="doctype"><span class="choice-text">B) <code>&lt;!DOCTYPE html&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_10" value="meta"><span class="choice-text">C) <code>&lt;meta charset&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_10" value="body"><span class="choice-text">D) <code>&lt;body&gt;</code></span></label>
+                    <label class="choice-item"><input type="radio" name="question_10" value="meta"><span class="choice-text">C) <code>&lt;meta-charset&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_10" value="body"><span class="choice-text">D) <code>&lt;body&gt;</code></span></label>
                 </div>
             </div>
         </section>
 
         <div>
             <button class="button_previous"><a href="../../pages/testPage.html">Назад к странице “Задания”</a></button>
-            <button class="button_next"><a href="#">Сбросить тест и пройти заново</a></button>
+           <button type="button" class="button_next">Сбросить тест и пройти заново</button>
         </div>
     </main>
     <footer class="footer">

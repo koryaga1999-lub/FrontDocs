@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/theme.js"></script>
-    <script defer src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="../../main.css">
+<link rel="stylesheet" href="../../main.css">
+    <script defer src="../../js/tests.js"></script>
 </head>
 <body>
     <header class="header">
@@ -14,12 +14,7 @@
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
             <nav class="nav">
-                <button class="burger-btn" aria-label="Меню">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <ul class="nav-list">
+<ul class="nav-list">
                     <li><a href="../../pages/head.html">Главная</a></li>
                     <li><a href="../../pages/FrontendPage.html">Фронтенд</a></li>
                     <li><a href="../../pages/HtmlPage.html">HTML5</a></li>
@@ -43,7 +38,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">1/10 Какой тег добавляет изображение на страницу?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_51" value="img"><span class="choice-text">A) <code>&lt;img&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_51" value="img"><span class="choice-text">A) <code>&lt;img&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_51" value="image"><span class="choice-text">B) <code>&lt;image&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_51" value="pic"><span class="choice-text">C) <code>&lt;pic&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_51" value="src"><span class="choice-text">D) <code>&lt;src&gt;</code></span></label>
@@ -53,7 +48,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">2/10 Какой атрибут обязателен для тега изображения?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_52" value="src"><span class="choice-text">A) src</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_52" value="src"><span class="choice-text">A) src</span></label>
                     <label class="choice-item"><input type="radio" name="question_52" value="alt"><span class="choice-text">B) alt</span></label>
                     <label class="choice-item"><input type="radio" name="question_52" value="both"><span class="choice-text">C) И src, и alt</span></label>
                     <label class="choice-item"><input type="radio" name="question_52" value="none"><span class="choice-text">D) Никакой не обязателен</span></label>
@@ -63,7 +58,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">3/10 Какой alt для декоративной картинки?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_53" value="empty"><span class="choice-text">A) alt=""</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_53" value="empty"><span class="choice-text">A) alt=""</span></label>
                     <label class="choice-item"><input type="radio" name="question_53" value="decor"><span class="choice-text">B) alt="декор"</span></label>
                     <label class="choice-item"><input type="radio" name="question_53" value="image"><span class="choice-text">C) alt="картинка"</span></label>
                     <label class="choice-item"><input type="radio" name="question_53" value="noalt"><span class="choice-text">D) Без alt</span></label>
@@ -74,7 +69,7 @@
                 <h2 class="test_choise_">4/10 Какой тег для подписи к картинке?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_54" value="caption"><span class="choice-text">A) <code>&lt;caption&gt;</code></span></label>
-                    <label class="choice-item"><input type="radio" name="question_54" value="figcaption"><span class="choice-text">B) <code>&lt;figcaption&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_54" value="figcaption"><span class="choice-text">B) <code>&lt;figcaption&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_54" value="title"><span class="choice-text">C) <code>&lt;title&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_54" value="text"><span class="choice-text">D) <code>&lt;text&gt;</code></span></label>
                 </div>
@@ -83,7 +78,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">5/10 Какой формат для фотографий?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_55" value="jpeg"><span class="choice-text">A) JPEG</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_55" value="jpeg"><span class="choice-text">A) JPEG</span></label>
                     <label class="choice-item"><input type="radio" name="question_55" value="png"><span class="choice-text">B) PNG</span></label>
                     <label class="choice-item"><input type="radio" name="question_55" value="svg"><span class="choice-text">C) SVG</span></label>
                     <label class="choice-item"><input type="radio" name="question_55" value="gif"><span class="choice-text">D) GIF</span></label>
@@ -94,7 +89,7 @@
                 <h2 class="test_choise_">6/10 Какой формат для логотипа с прозрачностью?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_56" value="jpeg"><span class="choice-text">A) JPEG</span></label>
-                    <label class="choice-item"><input type="radio" name="question_56" value="png"><span class="choice-text">B) PNG</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_56" value="png"><span class="choice-text">B) PNG</span></label>
                     <label class="choice-item"><input type="radio" name="question_56" value="svg"><span class="choice-text">C) SVG</span></label>
                     <label class="choice-item"><input type="radio" name="question_56" value="all"><span class="choice-text">D) Все варианты</span></label>
                 </div>
@@ -103,7 +98,7 @@
             <div class="test_container_">
                 <h2 class="test_choise_">7/10 Какой тег оборачивает картинку и подпись?</h2>
                 <div class="choices-container">
-                    <label class="choice-item"><input type="radio" name="question_57" value="figure"><span class="choice-text">A) <code>&lt;figure&gt;</code></span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_57" value="figure"><span class="choice-text">A) <code>&lt;figure&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_57" value="div"><span class="choice-text">B) <code>&lt;div&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_57" value="section"><span class="choice-text">C) <code>&lt;section&gt;</code></span></label>
                     <label class="choice-item"><input type="radio" name="question_57" value="wrap"><span class="choice-text">D) <code>&lt;wrap&gt;</code></span></label>
@@ -115,7 +110,7 @@
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_58" value="empty"><span class="choice-text">A) alt=""</span></label>
                     <label class="choice-item"><input type="radio" name="question_58" value="general"><span class="choice-text">B) alt="картинка"</span></label>
-                    <label class="choice-item"><input type="radio" name="question_58" value="descriptive"><span class="choice-text">C) alt="Красная машина на дороге"</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_58" value="descriptive"><span class="choice-text">C) alt="Красная машина на дороге"</span></label>
                     <label class="choice-item"><input type="radio" name="question_58" value="noalt"><span class="choice-text">D) Без alt</span></label>
                 </div>
             </div>
@@ -125,7 +120,7 @@
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_59" value="jpeg"><span class="choice-text">A) JPEG</span></label>
                     <label class="choice-item"><input type="radio" name="question_59" value="png"><span class="choice-text">B) PNG</span></label>
-                    <label class="choice-item"><input type="radio" name="question_59" value="svg"><span class="choice-text">C) SVG</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_59" value="svg"><span class="choice-text">C) SVG</span></label>
                     <label class="choice-item"><input type="radio" name="question_59" value="gif"><span class="choice-text">D) GIF</span></label>
                 </div>
             </div>
@@ -134,7 +129,7 @@
                 <h2 class="test_choise_">10/10 Для чего атрибуты width и height у картинки?</h2>
                 <div class="choices-container">
                     <label class="choice-item"><input type="radio" name="question_60" value="quality"><span class="choice-text">A) Улучшают качество</span></label>
-                    <label class="choice-item"><input type="radio" name="question_60" value="space"><span class="choice-text">B) Резервируют место на странице</span></label>
+                    <label class="choice-item" data-correct><input type="radio" name="question_60" value="space"><span class="choice-text">B) Резервируют место на странице</span></label>
                     <label class="choice-item"><input type="radio" name="question_60" value="speed"><span class="choice-text">C) Ускоряют загрузку</span></label>
                     <label class="choice-item"><input type="radio" name="question_60" value="all"><span class="choice-text">D) Все варианты</span></label>
                 </div>
@@ -143,7 +138,7 @@
 
         <div>
             <button class="button_previous"><a href="../../pages/testPage.html">Назад к странице “Задания”</a></button>
-            <button class="button_next"><a href="#">Сбросить тест и пройти заново</a></button>
+            <button type="button" class="button_next">Сбросить тест и пройти заново</button>
         </div>
     </main>
         <footer class="footer">
@@ -206,6 +201,4 @@
         </footer>
 </body>
 </html>
-
-
 

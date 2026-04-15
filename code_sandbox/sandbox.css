@@ -1,5 +1,4 @@
-
-  .sandbox {
+.sandbox {
       max-width: 1200px;
       margin: 40px auto;
       padding: 20px;
@@ -98,135 +97,9 @@
     /* ===== АДАПТИВ ДЛЯ ПЕСОЧНИЦЫ КОДА ===== */
 
 /* Планшеты (768px - 1024px) */
-@media (max-width: 1024px) {
-    .sandbox {
-        max-width: 95%;
-        margin: 30px auto;
-        padding: 15px;
-    }
-
-    .sandbox-title {
-        font-size: 30px;
-    }
-
-    .sandbox-text {
-        font-size: 16px;
-    }
-
-    .sandbox-layout {
-        gap: 15px;
-    }
-
-    textarea {
-        min-height: 350px;
-        font-size: 14px;
-    }
-
-    iframe {
-        min-height: 420px;
-    }
-}
 
 /* Мобильные (до 768px) */
-@media (max-width: 768px) {
-    .sandbox {
-        margin: 20px auto;
-        padding: 12px;
-    }
-
-    .sandbox-title {
-        font-size: 24px;
-        margin-bottom: 8px;
-    }
-
-    .sandbox-text {
-        font-size: 14px;
-        margin-bottom: 18px;
-    }
-
-    .sandbox-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .panel {
-        padding: 12px;
-    }
-
-    .panel-title {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
-
-    textarea {
-        min-height: 280px;
-        padding: 10px;
-        font-size: 13px;
-    }
-
-    .buttons {
-        gap: 10px;
-        margin-top: 12px;
-    }
-
-    button {
-        padding: 10px 16px;
-        font-size: 14px;
-    }
-
-    iframe {
-        min-height: 380px;
-    }
-}
 
 /* Маленькие телефоны (до 480px) */
-@media (max-width: 480px) {
-    .sandbox-title {
-        font-size: 20px;
-    }
-
-    .sandbox-text {
-        font-size: 13px;
-    }
-
-    .panel-title {
-        font-size: 16px;
-    }
-
-    textarea {
-        min-height: 220px;
-        font-size: 12px;
-    }
-
-    button {
-        padding: 8px 14px;
-        font-size: 13px;
-    }
-
-    iframe {
-        min-height: 300px;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .run-btn, .clear-btn {
-        width: 100%;
-    }
-}
 
 /* Очень маленькие (до 360px) */
-@media (max-width: 360px) {
-    .sandbox-title {
-        font-size: 18px;
-    }
-
-    textarea {
-        min-height: 180px;
-    }
-
-    iframe {
-        min-height: 260px;
-    }
-}

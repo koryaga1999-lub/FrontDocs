@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/theme.js"></script>
-    <script defer src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="../../main.css">
+<link rel="stylesheet" href="../../main.css">
+    <script defer src="../../js/tests.js"></script>
 </head>
 <body>
     <header class="header">
@@ -14,12 +14,7 @@
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
             <nav class="nav">
-                <button class="burger-btn" aria-label="Меню">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <ul class="nav-list">
+<ul class="nav-list">
                     <li><a href="../../pages/head.html">Главная</a></li>
                     <li><a href="../../pages/FrontendPage.html">Фронтенд</a></li>
                     <li><a href="../../pages/HtmlPage.html">HTML5</a></li>
@@ -44,7 +39,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">1/10 Какой элемент является блочным по умолчанию?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_21" value="div"><span class="choice-text">A) <code>&lt;div&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_21" value="div"><span class="choice-text">A) <code>&lt;div&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_21" value="span"><span class="choice-text">B) <code>&lt;span&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_21" value="a"><span class="choice-text">C) <code>&lt;a&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_21" value="strong"><span class="choice-text">D) <code>&lt;strong&gt;</code></span></label>
@@ -56,7 +51,7 @@
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_22" value="p"><span class="choice-text">A) <code>&lt;p&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_22" value="div"><span class="choice-text">B) <code>&lt;div&gt;</code></span></label>
-                <label class="choice-item"><input type="radio" name="question_22" value="span"><span class="choice-text">C) <code>&lt;span&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_22" value="span"><span class="choice-text">C) <code>&lt;span&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_22" value="h1"><span class="choice-text">D) <code>&lt;h1&gt;</code></span></label>
             </div>
         </div>
@@ -75,7 +70,7 @@
             <h2 class="test_choise_">4/10 Как называется внешний отступ между элементами?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_24" value="margin"><span class="choice-text">A) Margin</span></label>
-                <label class="choice-item"><input type="radio" name="question_24" value="padding"><span class="choice-text">B) Padding</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_24" value="padding"><span class="choice-text">B) Padding</span></label>
                 <label class="choice-item"><input type="radio" name="question_24" value="border"><span class="choice-text">C) Border</span></label>
                 <label class="choice-item"><input type="radio" name="question_24" value="gap"><span class="choice-text">D) Gap</span></label>
             </div>
@@ -86,7 +81,7 @@
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_25" value="strong"><span class="choice-text">A) <code>&lt;strong&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_25" value="em"><span class="choice-text">B) <code>&lt;em&gt;</code></span></label>
-                <label class="choice-item"><input type="radio" name="question_25" value="div"><span class="choice-text">C) <code>&lt;div&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_25" value="div"><span class="choice-text">C) <code>&lt;div&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_25" value="a"><span class="choice-text">D) <code>&lt;a&gt;</code></span></label>
             </div>
         </div>
@@ -96,7 +91,7 @@
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_26" value="span"><span class="choice-text">A) <code>&lt;span&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_26" value="p"><span class="choice-text">B) <code>&lt;p&gt;</code></span></label>
-                <label class="choice-item"><input type="radio" name="question_26" value="both"><span class="choice-text">C) И то, и другое</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_26" value="both"><span class="choice-text">C) И то, и другое</span></label>
                 <label class="choice-item"><input type="radio" name="question_26" value="none"><span class="choice-text">D) Ничего</span></label>
             </div>
         </div>
@@ -106,7 +101,7 @@
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_27" value="padding"><span class="choice-text">A) padding</span></label>
                 <label class="choice-item"><input type="radio" name="question_27" value="margin"><span class="choice-text">B) margin</span></label>
-                <label class="choice-item"><input type="radio" name="question_27" value="border"><span class="choice-text">C) border</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_27" value="border"><span class="choice-text">C) border</span></label>
                 <label class="choice-item"><input type="radio" name="question_27" value="outline"><span class="choice-text">D) outline</span></label>
             </div>
         </div>
@@ -115,7 +110,7 @@
             <h2 class="test_choise_">8/10 Можно ли в &lt;span&gt; вложить &lt;div&gt;?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_28" value="yes"><span class="choice-text">A) Да</span></label>
-                <label class="choice-item"><input type="radio" name="question_28" value="no"><span class="choice-text">B) Нет</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_28" value="no"><span class="choice-text">B) Нет</span></label>
                 <label class="choice-item"><input type="radio" name="question_28" value="sometimes"><span class="choice-text">C) Иногда</span></label>
                 <label class="choice-item"><input type="radio" name="question_28" value="depend"><span class="choice-text">D) Зависит от браузера</span></label>
             </div>
@@ -124,7 +119,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">9/10 Где идут строчные элементы?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_29" value="row"><span class="choice-text">A) В строке</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_29" value="row"><span class="choice-text">A) В строке</span></label>
                 <label class="choice-item"><input type="radio" name="question_29" value="column"><span class="choice-text">B) В столбце</span></label>
                 <label class="choice-item"><input type="radio" name="question_29" value="random"><span class="choice-text">C) Вразброс</span></label>
                 <label class="choice-item"><input type="radio" name="question_29" value="center"><span class="choice-text">D) По центру</span></label>
@@ -135,7 +130,7 @@
             <h2 class="test_choise_">10/10 Что из этого является частью блочной модели?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_30" value="content"><span class="choice-text">A) Контент</span></label>
-                <label class="choice-item"><input type="radio" name="question_30" value="padding"><span class="choice-text">B) Внутренний отступ (padding)</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_30" value="padding"><span class="choice-text">B) Внутренний отступ (padding)</span></label>
                 <label class="choice-item"><input type="radio" name="question_30" value="border"><span class="choice-text">C) Граница (border)</span></label>
                 <label class="choice-item"><input type="radio" name="question_30" value="margin"><span class="choice-text">D) Всё вышеперечисленное</span></label>
             </div>
@@ -143,7 +138,7 @@
 
         <div>
             <button class="button_previous"><a href="../../pages/testPage.html">Назад к странице “Задания”</a></button>
-            <button class="button_next"><a href="#">Сбросить тест и пройти заново</a></button>
+          <button type="button" class="button_next">Сбросить тест и пройти заново</button>
         </div>
     </main>
         <footer class="footer">

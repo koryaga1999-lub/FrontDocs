@@ -226,28 +226,7 @@ main {
     background-color: #0056b3;
 }
 
-
 /* Для адаптива — центрируем кнопки на малых экранах */
-@media (max-width: 768px) {
-    .button_previous,
-    .button_next {
-        float: none;
-        display: block;
-        width: 80%;
-        margin: 15px auto;
-        text-align: center;
-    }
-
-    .button_previous {
-        float: none;
-        margin: 15px auto 0;
-    }
-
-    .button_next {
-        float: none;
-        margin: 15px auto 0;
-    }
-}
 
 /* === Адаптив для блоков с кодом === */
 .code_html_3 {
@@ -320,77 +299,3 @@ pre {
 }
 
 /* === Мобильное меню (бургер) === */
-@media (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        background-color: white;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-        padding: 10px 20px;
-        border-radius: 0 0 5px 5px;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
-
-    .burger-btn {
-        display: flex;
-    }
-
-    /* Скрываем иконку пользователя на мобильных */
-    .nav-icon {
-        display: none;
-    }
-
-    /* Адаптация текста */
-    .discription3,
-    .title2_lec2,
-    .title3_lec2,
-    .title4_lec2,
-    .title5_lec2,
-    .title6_lec2,
-    .title7_lec2,
-    .title8_lec2,
-    .text_container,
-    .info_code_lec2,
-    .end_sec_lec2 p {
-        margin-left: 20px;
-        font-size: 15px;
-    }
-
-    .sec_info_head ol,
-    .metadata-section ol,
-    .info_code_lec2 ol,
-    .end_title_lec2 ul {
-        margin-left: 30px;
-    }
-
-    /* Уменьшаем размер шрифта в коде на мобильных */
-    .code_html_3 {
-        font-size: 14px !important;
-    }
-
-    .code_container1 .code_html_3,
-    .code_container2 .code_html_3 {
-        width: 100% !important;
-        max-width: 100%;
-        overflow-x: auto;
-    }
-
-    /* Заголовки секций */
-    .sec_info_head h2,
-    .sec_info_tittle h2,
-    .sec_info_charset h2,
-    .metadata-section h2,
-    .sec_info_favicon h2,
-    .add_css_js_sec h2,
-    .end_sec_lec2 h2 {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-}

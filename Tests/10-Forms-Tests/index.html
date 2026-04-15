@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../../js/theme.js"></script>
-    <script defer src="../../js/burger.js"></script>
-    <link rel="stylesheet" href="../../main.css">
+<link rel="stylesheet" href="../../main.css">
+    <script defer src="../../js/tests.js"></script>
 </head>
 <body>
     <header class="header">
@@ -14,12 +14,7 @@
             <h1 class="logo">FrontDocs.</h1>
             <div class="border"></div>
             <nav class="nav">
-                <button class="burger-btn" aria-label="Меню">
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                    <span class="burger-line"></span>
-                </button>
-                <ul class="nav-list">
+<ul class="nav-list">
                     <li><a href="../../pages/head.html">Главная</a></li>
                     <li><a href="../../pages/FrontendPage.html">Фронтенд</a></li>
                     <li><a href="../../pages/HtmlPage.html">HTML5</a></li>
@@ -44,7 +39,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">1/10 Какой тег создаёт форму?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_81" value="form"><span class="choice-text">A) <code>&lt;form&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_81" value="form"><span class="choice-text">A) <code>&lt;form&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_81" value="input"><span class="choice-text">B) <code>&lt;input&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_81" value="fieldset"><span class="choice-text">C) <code>&lt;fieldset&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_81" value="section"><span class="choice-text">D) <code>&lt;section&gt;</code></span></label>
@@ -55,7 +50,7 @@
             <h2 class="test_choise_">2/10 Какой атрибут указывает куда отправлять данные формы?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_82" value="method"><span class="choice-text">A) method</span></label>
-                <label class="choice-item"><input type="radio" name="question_82" value="action"><span class="choice-text">B) action</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_82" value="action"><span class="choice-text">B) action</span></label>
                 <label class="choice-item"><input type="radio" name="question_82" value="submit"><span class="choice-text">C) submit</span></label>
                 <label class="choice-item"><input type="radio" name="question_82" value="url"><span class="choice-text">D) url</span></label>
             </div>
@@ -67,14 +62,14 @@
                 <label class="choice-item"><input type="radio" name="question_83" value="text"><span class="choice-text">A) <code>&lt;text&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_83" value="input"><span class="choice-text">B) <code>&lt;input&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_83" value="textarea"><span class="choice-text">C) <code>&lt;textarea&gt;</code></span></label>
-                <label class="choice-item"><input type="radio" name="question_83" value="both"><span class="choice-text">D) И B, и C</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_83" value="both"><span class="choice-text">D) И B, и C</span></label>
             </div>
         </div>
 
         <div class="test_container_">
             <h2 class="test_choise_">4/10 Какой тип input для поля email?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_84" value="email"><span class="choice-text">A) type="email"</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_84" value="email"><span class="choice-text">A) type="email"</span></label>
                 <label class="choice-item"><input type="radio" name="question_84" value="mail"><span class="choice-text">B) type="mail"</span></label>
                 <label class="choice-item"><input type="radio" name="question_84" value="text"><span class="choice-text">C) type="text"</span></label>
                 <label class="choice-item"><input type="radio" name="question_84" value="e-mail"><span class="choice-text">D) type="e-mail"</span></label>
@@ -85,7 +80,7 @@
             <h2 class="test_choise_">5/10 Какой атрибут делает поле обязательным?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_85" value="important"><span class="choice-text">A) important</span></label>
-                <label class="choice-item"><input type="radio" name="question_85" value="required"><span class="choice-text">B) required</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_85" value="required"><span class="choice-text">B) required</span></label>
                 <label class="choice-item"><input type="radio" name="question_85" value="must"><span class="choice-text">C) must</span></label>
                 <label class="choice-item"><input type="radio" name="question_85" value="need"><span class="choice-text">D) need</span></label>
             </div>
@@ -94,7 +89,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">6/10 Какой тип input для радиокнопок?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_86" value="radio"><span class="choice-text">A) type="radio"</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_86" value="radio"><span class="choice-text">A) type="radio"</span></label>
                 <label class="choice-item"><input type="radio" name="question_86" value="checkbox"><span class="choice-text">B) type="checkbox"</span></label>
                 <label class="choice-item"><input type="radio" name="question_86" value="button"><span class="choice-text">C) type="button"</span></label>
                 <label class="choice-item"><input type="radio" name="question_86" value="select"><span class="choice-text">D) type="select"</span></label>
@@ -105,7 +100,7 @@
             <h2 class="test_choise_">7/10 Какой атрибут label связывает его с полем?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_87" value="id"><span class="choice-text">A) id</span></label>
-                <label class="choice-item"><input type="radio" name="question_87" value="for"><span class="choice-text">B) for</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_87" value="for"><span class="choice-text">B) for</span></label>
                 <label class="choice-item"><input type="radio" name="question_87" value="name"><span class="choice-text">C) name</span></label>
                 <label class="choice-item"><input type="radio" name="question_87" value="link"><span class="choice-text">D) link</span></label>
             </div>
@@ -114,7 +109,7 @@
         <div class="test_container_">
             <h2 class="test_choise_">8/10 Какой тег создаёт выпадающий список?</h2>
             <div class="choices-container">
-                <label class="choice-item"><input type="radio" name="question_88" value="select"><span class="choice-text">A) <code>&lt;select&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_88" value="select"><span class="choice-text">A) <code>&lt;select&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_88" value="option"><span class="choice-text">B) <code>&lt;option&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_88" value="dropdown"><span class="choice-text">C) <code>&lt;dropdown&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_88" value="list"><span class="choice-text">D) <code>&lt;list&gt;</code></span></label>
@@ -125,7 +120,7 @@
             <h2 class="test_choise_">9/10 Какой тег группирует поля формы?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_89" value="group"><span class="choice-text">A) <code>&lt;group&gt;</code></span></label>
-                <label class="choice-item"><input type="radio" name="question_89" value="fieldset"><span class="choice-text">B) <code>&lt;fieldset&gt;</code></span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_89" value="fieldset"><span class="choice-text">B) <code>&lt;fieldset&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_89" value="div"><span class="choice-text">C) <code>&lt;div&gt;</code></span></label>
                 <label class="choice-item"><input type="radio" name="question_89" value="section"><span class="choice-text">D) <code>&lt;section&gt;</code></span></label>
             </div>
@@ -135,7 +130,7 @@
             <h2 class="test_choise_">10/10 Какой метод отправки формы для паролей?</h2>
             <div class="choices-container">
                 <label class="choice-item"><input type="radio" name="question_90" value="get"><span class="choice-text">A) GET</span></label>
-                <label class="choice-item"><input type="radio" name="question_90" value="post"><span class="choice-text">B) POST</span></label>
+                <label class="choice-item" data-correct><input type="radio" name="question_90" value="post"><span class="choice-text">B) POST</span></label>
                 <label class="choice-item"><input type="radio" name="question_90" value="send"><span class="choice-text">C) SEND</span></label>
                 <label class="choice-item"><input type="radio" name="question_90" value="put"><span class="choice-text">D) PUT</span></label>
             </div>
@@ -144,7 +139,7 @@
 
         <div>
             <button class="button_previous"><a href="../../pages/testPage.html">Назад к странице “Задания”</a></button>
-            <button class="button_next"><a href="#">Сбросить тест и пройти заново</a></button>
+            <button type="button" class="button_next">Сбросить тест и пройти заново</button>
         </div>
 
     </main>
@@ -208,6 +203,4 @@
         </footer>
 </body>
 </html>
-
-
 
