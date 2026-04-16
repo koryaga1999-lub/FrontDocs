@@ -1,23 +1,4 @@
-// const asd = document.getElementById('asd')
-// asd.addEventListener('click', () => {
-//     // asd.style.color = 'red'
-// })
-// asd()
 
-
-// const label = document.getElementById('was')
-// label.addEventListener("click", () => {
-//    label.style.backgroundColor = 'aqua'
-//    asd.style.color = 'white'
-//  })
-
-// label()
-
-// Функция изменяющая цвет фона и  текста при клике
-// Находим все элементы с классом .choice-item
-// Находим все элементы с классом .choice-item
-// Находим все .choice-item
-// Находим все .choice-item
 document.addEventListener('DOMContentLoaded', () => {
     const labels = document.querySelectorAll('.choice-item');
     console.log('Найдено элементов:', labels.length);
@@ -58,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         item.style.backgroundColor = isCorrect ? 'green' : 'red';
                         item.style.color = 'white';
                         item.classList.add(isCorrect ? 'correct' : 'wrong');
-
                         group.forEach(r => r.disabled = true);
                     }
                 });
@@ -67,26 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Кнопка "Сбросить тест"
+
 const resetButton = document.querySelector('.button_next');
-
 resetButton.addEventListener('click', () => {
-    // Находим все .choice-item
     const labels = document.querySelectorAll('.choice-item');
-
     labels.forEach(label => {
-        // Сбрасываем стили
         label.style.backgroundColor = '';
         label.style.color = '';
-
-        // Убираем классы
         label.classList.remove('correct', 'wrong');
-
-        // Находим радиокнопку
         const input = label.querySelector('input[type="radio"]');
         if (input) {
-            input.checked = false;   // снимаем галочку
-            input.disabled = false;  // разблокируем
+            input.checked = false;  
+            input.disabled = false;  
         }
     });
 
