@@ -72,7 +72,7 @@
                     // event.preventDefault(); // Отмена стандартной отправки формы
                     event.preventDefault(); // Отмена стандартной отправки формы, то есть отправка формы будет происходить только при нажатии на кнопку
                     
-                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS
+                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS, this - форма, которую мы отправляем
                         .then(function() { // Обработка успешной отправки, then() - функция EmailJS, то что будет выполнено после успешной отправки
                             alert('Обращение отправлено!');
                             document.querySelector('.form').reset(); // Сброс формы после успешной отправки

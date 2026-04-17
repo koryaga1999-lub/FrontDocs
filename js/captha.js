@@ -3,7 +3,6 @@
 const formCaptcha = document.getElementById('form_captcha');
 const input = formCaptcha.querySelector('[name="captcha"]');
 const captchaImg = document.querySelector('.img_captcha');
-const refreshBtn = document.getElementById('refreshCaptcha');
 
 const captchaImages = [
   './capthaImg/decorative_card_001.png',
@@ -109,8 +108,7 @@ const captchaAnswers = [
   'E4rL8c',
   'o7N3xP',
   'G5mQ2u'
-];
-
+]; 
 let currentAnswer = ''; // Глобальная переменная для хранения текущего ответа
 
 function loadRandomCaptcha() {
@@ -121,19 +119,19 @@ function loadRandomCaptcha() {
 
 loadRandomCaptcha();
 
-formCaptcha.addEventListener('submit', (event) => {
-    event.preventDefault();
+formCaptcha.addEventListener('submit', (event) => { // event - событие которое происходит при отправке формы
+    event.preventDefault(); // отменяем стандартное поведение формы, то есть - ev
     
-    const value = input.value.trim();
+    const value = input.value.trim(); // trim() - удаляет пробелы в начале и конце строки
 
-    if (value === '') {
+    if (value === '') { 
         alert("Введите код!");
     } else if (value === currentAnswer) {
         alert("Вы успешно вошли!");
         window.location.href = './pages/head.html';
     } else {
         alert("Неверный код!");
-        loadRandomCaptcha();
-        input.value = '';
+        loadRandomCaptcha(); 
+        input.value = ''; 
     }
 });
