@@ -66,14 +66,15 @@
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script> <!-- Подключение EmailJS -->
 
             <script>
-                emailjs.init('wfF1HMSf5gw9uGF-I'); // Инициализация EmailJS, ц
+                emailjs.init('wfF1HMSf5gw9uGF-I'); // Инициализация EmailJS, wfF1HMSf5gw9uGF-I - это API ключ который получили на сайте EmailJS
 
                 document.querySelector('.form').addEventListener('submit', function(event) { // Обработка отправки формы
-                    event.preventDefault(); // Отмена стандартной отправки формы
-
-                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS, this - форма - объект формы
+                    // event.preventDefault(); // Отмена стандартной отправки формы
+                    event.preventDefault(); // Отмена стандартной отправки формы, то есть отправка формы будет происходить только при нажатии на кнопку
+                    
+                    emailjs.sendForm('service_rd1epr6', 'template_jwb8mmp', this) // Отправка формы на почту, sendForm(service_id, template_id, form) - функция EmailJS
                         .then(function() { // Обработка успешной отправки, then() - функция EmailJS, то что будет выполнено после успешной отправки
-                            alert('Обращение отправлено!'); 
+                            alert('Обращение отправлено!');
                             document.querySelector('.form').reset(); // Сброс формы после успешной отправки
                         }, function(error) { // Обработка ошибки, function() - функция EmailJS для 
                             alert('Ошибка отправки: ' + error.text); // Вывод сообщения об ошибке
@@ -137,7 +138,6 @@
             <!-- Нижняя часть футера -->
             <div class="footer-bottom">
                 <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
-                <p><a href="#">Privacy</a> • <a href="#">License</a> • <a href="#">Контакты</a></p>
             </div>
         </footer>
 </body>
