@@ -1,18 +1,18 @@
-const codeInput = document.getElementById('codeInput'); // добавил переменную codeInput - это текстовое поле в котором будет написан код от пользователя
-const runCode = document.getElementById('runCode'); // добавил переменную runCode - это кнопка запуска кода
-const clearCode = document.getElementById('clearCode'); // добавил переменную clearCode - это кнопка очистки кода
-const resultFrame = document.getElementById('resultFrame'); // добавил переменную resultFrame - это iframe в котором будет отображаться результат от пользователя
+const codeInput = document.getElementById('codeInput'); 
+const runCode = document.getElementById('runCode'); 
+const clearCode = document.getElementById('clearCode'); 
+const resultFrame = document.getElementById('resultFrame'); 
 
-    function renderCode() { // добавил функцию renderCode - которая будет отображать код от пользователя в iframe
-      const code = codeInput.value; // code.value отвечает за весь контент в textarea, value - свойство которое получает всё содержимое textarea
-      resultFrame.srcdoc = code; // srcdoc - это свойство, которое позволяет задать содержимое iframe, например srcdoc = '<h1>Привет!</h1>';
+    function renderCode() { 
+      const code = codeInput.value; 
+      resultFrame.srcdoc = code; 
     }
 
-    runCode.addEventListener('click', renderCode); // создал обработчик события для кнопки запуска кода, теперь при нажатии на кнопку runCode будет вызываться функция renderCode
+    runCode.addEventListener('click', renderCode); 
 
-    clearCode.addEventListener('click', () => { // заменил document.getElementById('clearCode').addEventListener на clearCode.addEventListener
+    clearCode.addEventListener('click', () => { z
       codeInput.value = '';
-      resultFrame.srcdoc = ''; // srcdoc - это свойство, которое позволяет задать содержимое iframe, например srcdoc = '<h1>Привет!</h1>';
+      resultFrame.srcdoc = ''; 
     });
 
-    renderCode(); // добавил вызов renderCode
+    renderCode();
