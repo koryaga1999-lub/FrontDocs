@@ -172,10 +172,6 @@
     font-size: var(--textsize);
 }
 
-main {
-    overflow: hidden;
-}
-
 .button_previous {
     float: left;
     margin-left: 20px;

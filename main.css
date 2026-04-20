@@ -46,6 +46,10 @@ section {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: auto;
+    width: 100%;
+    display: block;
 }
+
 
 /* ===== ОБЩИЙ АДАПТИВ ХЕДЕРА ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ ===== */

@@ -1,22 +1,4 @@
 /* ХЕДЕР СЕКЦИЯ */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  min-height: 100vh;
-  background-color: var(--background-color);
-}
-
 .header {
   position: sticky;
   top: 0;
@@ -33,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
+
   width: 100%;
 }
 

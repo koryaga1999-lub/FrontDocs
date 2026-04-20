@@ -26,11 +26,11 @@
 }
 
 .frontendImg {
-    width: 500px;  /* ФИКСИРОВАННАЯ ширина */
-    height: 500px; /* ФИКСИРОВАННАЯ высота */
-    object-fit: contain; /* или cover - как вам больше нравится */
-    flex-shrink: 0; /* ЗАПРЕЩАЕМ сжатие */
-    flex-grow: 0; /* ЗАПРЕЩАЕМ растяжение */
+    width: 500px;
+    height: 500px; 
+    object-fit: contain;
+    flex-shrink: 0; 
+    flex-grow: 0;
 }
 
 .stick {
