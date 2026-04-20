@@ -1,0 +1,105 @@
+.sandbox {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .sandbox-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .sandbox-text {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+
+    .sandbox-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .panel {
+      border: 1px solid #dcdcdc;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .panel-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 420px;
+      resize: vertical;
+      border: 1px solid #cfcfcf;
+      border-radius: 12px;
+      padding: 14px;
+      font-size: 16px;
+      font-family: Consolas, monospace;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #3b82f6;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .run-btn {
+      background: #2563eb;
+      color: #fff;
+    }
+
+    .run-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .clear-btn {
+      background: #e5e7eb;
+      color: #111;
+    }
+
+    .clear-btn:hover {
+      background: #d1d5db;
+    }
+
+    iframe {
+      width: 100%;
+      min-height: 500px;
+      border: 1px solid #cfcfcf;
+      border-radius: 12px;
+      /* background: #2A2A2A; */
+    }
+
+    /* ===== АДАПТИВ ДЛЯ ПЕСОЧНИЦЫ КОДА ===== */
+
+/* Планшеты (768px - 1024px) */
+
+/* Мобильные (до 768px) */
+
+/* Маленькие телефоны (до 480px) */
+
+/* Очень маленькие (до 360px) */

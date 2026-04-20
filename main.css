@@ -1,0 +1,51 @@
+@import url('./base/reset.css'); /* подключение файла со сбросом базовых стилей браузера */
+@import url('./base/variables.css'); /* подключение файла с переменными */
+
+ /* подключение файлов стилей для главных страниц каждого раздела лекций  */
+@import url('./page-style/css-page.css'); /* файл с главной страницей модуля css */
+@import url('./page-style/head-page.css'); /* файл с главной страницей всего сайта */
+@import url('./page-style/front-page.css'); /* файл с главной страницей модуля frontend */
+@import url('./page-style/git-page.css'); /* файл с главной страницей модуля git */
+@import url('./page-style/html-page.css'); /* файл с главной страницей модуля html */
+@import url('./page-style/js-page.css'); /* файл с главной страницей модуля JavaScript */
+@import url('./page-style/test-page.css'); /* файл с главной страницей тестов */
+@import url('./supportPage/support.css'); /* файл с главной страницей поддержки */
+ 
+/* Подключение файлов с лекциями */
+@import url("./Lections/HTML-Lections/1-Base/style.css"); /* 1 лекция */
+@import url("./Lections/HTML-Lections/2-All-Of-Head/style.css"); /* 2 лекция */
+@import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css"); /* 3 лекция */
+@import url('./Lections/HTML-Lections/4-indents-borders-sizes/style.css'); /* 4 лекция */
+@import url("./Lections/HTML-Lections/5-Semantics/style.css"); /* 5 лекция */
+@import url("./Lections/HTML-Lections/6-Hyperlinks-in-code/style.css"); /* 6 лекция */
+@import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); /* 7 лекция */
+@import url("./Lections/HTML-Lections/8-Audio-And-Video-in-code/style.css"); /* 8 лекция */
+@import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
+@import url('./Lections/HTML-Lections/10-More-About-Tables/style.css'); /* 10 лекция */
+@import url("./Lections/HTML-Lections/11-Forms-in-HTML/style.css"); /* 11 лекция */
+@import url('./Lections/HTML-Lections/12-Project-On-HTML/style.css'); /* 12 лекция */
+
+/* Подключение файлов с каптчей */
+@import url("./Captcha-Page/style.css");
+
+/* Подключение файлов с тестами */
+@import url('./Tests/1-Main-Page-Of-Tests/style.css'); /* файл с главной страницей тестов */
+@import url('./Tests/2-Base-Tests/style.css'); /* тесты по основам HTML */
+
+/* Подключение файла с песочницей кода */
+@import url("./code_sandbox/sandbox.css");
+
+@import url("./theme/theme.css"); /* подключение файла с темами */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ОБЩИЙ АДАПТИВ ХЕДЕРА ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ ===== */

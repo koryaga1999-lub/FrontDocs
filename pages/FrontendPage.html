@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/theme.js"></script>
+<link rel="stylesheet" href="../main.css">
+</head>
+<body>
+     <header class="header">
+        <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="./head.html">Главная</a></li>
+                    <li><a href="./FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="./HtmlPage.html">HTML5</a></li>
+                    <li><a href="./cssPage.html">CSS3</a></li>
+                    <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="./GitPage.html">Git</a></li>
+                    <li><a href="./testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+    <main>
+        <section class="code">
+            <h1 class="head_title">Фронтенд</h1>
+            <div class="info">
+                <img class="frontendImg" src="../images/frontend.png" alt="сайт">
+                <div class="stick"></div>
+                <div class="text_head">
+                <h2>Что такое Фронтенд?</h2>
+                <p class="txt_1"><strong>Фронтенд</strong> — это всё, что видит пользователь в браузере: кнопки, меню, анимации, формы. Если сайт — это дом, то фронтенд — его фасад, мебель и интерьер. Фронтенд-разработчик превращает дизайн в рабочий сайт с помощью HTML, CSS и JavaScript.</p>
+            </div>
+            </div>
+            <h2 class="title_sec">Из чего состоит Фронтенд?</h2>
+            <div class="structure">
+                <div class="html">
+                    <p class="txt12"><img src="../images/Icon (12).png" alt="">HTML - каркас (структура) сайта, это заголовки, параграфы, таблицы, формы и т.д.</p>
+                    <p class="code_html"><code><i>&lt;button&gt;Кнопка&lt;/button&gt;<br>&lt;h1&gt;Заголовок&lt;/h1&gt;</i></code></p>
+                </div>
+                <div class="css">
+                    <p class="txt22"><img src="../images/Icon (13).png" alt="">JS (JavaScript) - поведение сайта, интерактив, клики, анимации и т.д</p>
+                    <p class="code_js"><code>button.addEventListener('click', () => {alert('Привет!');});</code></p>
+                </div>
+                <div class="js">
+                    <p class="txt32"><img src="../images/Icon (14).png" alt="">CSS - стиль, цвета, размеры, отступы, анимации и т.д.</p>
+                    <p class="code_js"><code>button { color: white; }</code></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="use_sec">
+            <h2 class="title_sec2">Как пользоваться FrontDocs?</h2>
+            <div class="block_content">
+                <div class="block">
+                    <p class="one_use1">1. Читай лекции</p>
+                    <p class="use_txt">Переходи по темам и читай лекции по HTML CSS и JS.</p>
+                </div>
+                <div class="block2">
+                    <p class="one_use1">2. Смотри примеры</p>
+                    <p class="use_txt">Смотри примеры кодов в лекциях. </p>
+                </div>
+                <div class="block3">
+                    <p class="one_use1">3. Выполняй тесты и задания</p>
+                    <p class="use_txt">На сайте есть тесты и задания которые ты можешь выполнять бесплатно!</p>
+                </div>
+            </div>
+        </section>
+        <hr class="end_line_two">
+        <section class="test_sec">
+            <h2 class="title_sec3">Мини - тест по этой странице:</h2>
+            <div class="test_container">
+                <div class="one_block">
+                    <p>1. За что отвечает Фронтенд?</p>
+                    <div>
+                        <input type="radio" id="q-a1" name="quastion1">
+                        <label for="q-a1">Цвета</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="q-a2" name="quastion1">
+                        <label id="test1" for="q-a2">Структура</label>
+                    </div>
+                     <div>
+                        <input type="radio" id="q-a3" name="quastion1">
+                        <label for="q-a3">Логика</label>
+                     </div>
+                     <div>
+                        <input type="radio" id="q-a4" name="quastion1">
+                        <label for="q-a4">Не смею предположить</label>
+                     </div>
+                </div>
+                <div class="two_block">
+                     <p>2. За что отвечает HTML?</p>
+                     <div>
+                        <input type="radio" id="q-b1" name="quastion2">
+                        <label id="test2" for="q-b1">Разметку</label>
+                     </div>
+                     <div>
+                        <input type="radio" id="q-b2" name="quastion2">
+                        <label for="q-b2">Структура</label>
+                     </div>
+                     <div>
+                        <input type="radio" id="q-b3" name="quastion2">
+                        <label for="q-b3">Функции</label>
+                     </div>
+                     <div>
+                        <input type="radio" id="q-b4" name="quastion2">
+                        <label for="q-b4">Не смею предположить</label>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // проверка на правильность ответов
+            const test_container = document.querySelector('.test_container');
+            const test1 = document.getElementById('test1');
+            const test2 = document.getElementById('test2');
+
+            test_container.addEventListener('click', (event) => {
+                if (event.target.id === 'test1') {
+                    alert('Правильно!');
+                    test1.style.color = 'green';
+                }
+
+                if (event.target.id === 'test2') {
+                    alert('Правильно!');
+                    test2.style.color = 'green';
+                }
+            })
+  
+        </script>
+
+    </main>
+    <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="./testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="./head.html">Главная</a></li>
+                            <li><a href="./FrontendPage.html">Фронтенд</a></li>
+                            <li><a href="./HtmlPage.html">HTML5</a></li>
+                            <li><a href="./cssPage.html">CSS3</a></li>
+                            <li><a href="./JavaScriptPage.html">JavaScript</a></li>
+                            <li><a href="./GitPage.html">Git</a></li>
+                            <li><a href="./testPage.html">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="https://github.com/koryaga1999-lub/FrontDocs">GitHub <img src="../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="https://t.me/Koryaga1999">Telegram <img src="../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="../supportPage/support.html">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+            </div>
+        </footer>
+</body>
+</html>
