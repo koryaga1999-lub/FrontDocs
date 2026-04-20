@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../js/theme.js"></script>
+<link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+<ul class="nav-list">
+                    <li><a href="../../../pages/head.html">Главная</a></li>
+                    <li><a href="../../../pages/FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../pages/HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../pages/cssPage.html">CSS3</a></li>
+                    <li><a href="../../../pages/JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../pages/GitPage.html">Git</a></li>
+                    <li><a href="../../../pages/testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+
+    <main>
+        <section class="start_sec_lec6">
+            <h1>Создание гиперссылок в коде</h1>
+            <h2>Что такое гиперссылка?</h2>
+            <p>Это кликабельный элемент, который ведёт куда-то: на другую страницу, файл, почту или внутри текущей страницы. Без ссылок Интернет был бы просто набором отдельных страниц - как дома без дорог между ними.</p>
+        </section>
+
+        <section class="create_href_sec">
+            <h2>Как создать ссылку?</h2>
+            <p>Базовая формула:</p>
+            <div class="code_html_3">
+                <p><code>&lt;a href="ссылка"&gt;кликабельный текст&lt;/a&gt;</code></p>
+            </div>
+
+            <p class="title_code_href">Примеры:</p>
+            <div class="code_container_href">
+                <div class="code_html_3">
+                    <pre>
+                        &lt;a href="https://twitch.tv"&gt;Перейти на Твич&lt;/a&gt;
+                        &lt;a href="page2.html"&gt;На вторую страницу&lt;/a&gt;
+                        &lt;a href="#section2"&gt;К разделу 2&lt;/a&gt;
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+        <section class="attributes_sec_lec6">
+            <h2>Главные атрибуты тега <code>&lt;a&gt;</code>:</h2>
+            <ol>
+                <li>
+                    <strong>href</strong> — куда идём (обязательный для рабочей ссылки)
+                    <pre class="code_html_3"><code>&lt;a href="https://yandex.ru"&gt;Поиск в Яндексе&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>target</strong> — где открываем (чаще всего <code>_blank</code> для внешних ссылок)
+                    <pre class="code_html_3"><code>&lt;a href="https://google.com" target="_blank"&gt;Google в новой вкладке&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>title</strong> — всплывающая подсказка (для дополнительной информации)
+                    <pre class="code_html_3"><code>&lt;a href="/about.html" title="Информация о нашей компании"&gt;О нас&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>download</strong> — скачать, а не открыть (для файлов)
+                    <pre class="code_html_3"><code>&lt;a href="/files/document.pdf" download="Руководство.pdf"&gt;Скачать инструкцию&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>id</strong> — уникальное имя (для якорных ссылок внутри страницы)
+                    <pre class="code_html_3"><code>&lt;a href="#contacts" id="contact-link"&gt;К контактам&lt;/a&gt;</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section class="type_adress_sec">
+            <h2>Два типа адресов:</h2>
+            <ul>
+                <li>Абсолютный - полный адрес: https://site.com/page.html (для ссылок на другие сайты)</li>
+                <li>Относительный - путь от текущей страницы: page.html или folder/page.html (для ссылок внутри своего сайта)</li>
+            </ul>
+            <p>Правило: внутри своего сайта - относительные, на чужие сайты - абсолютные.</p>
+        </section>
+    
+        <section class="type_href_sec">
+            <h2>Три особых типа ссылок:</h2>
+            <ol>
+                <li>
+                    <strong>Закладки (якоря)</strong> — прыжок внутри страницы:
+                    <div class="type_href_sec_code">
+                        <pre class="code_html_3">
+                            <code class="text_code">
+                                &lt;!-- 1. Ставим якорь --&gt;
+                                &lt;h2 id="contacts"&gt;Контакты&lt;/h2&gt;
+
+                                &lt;!-- 2. Ссылаемся на него --&gt;
+                                &lt;a href="#contacts"&gt;К контактам&lt;/a&gt;
+                            </code>
+                        </pre>
+                    </div>
+                </li>
+
+                <li>
+                    <strong>Ссылка на почту:</strong>
+                    <pre class="code_html_3"><code>&lt;a href="mailto:hello@site.com"&gt;Написать нам&lt;/a&gt;</code></pre>
+                </li>
+
+                <li>
+                    <strong>Ссылка для скачивания:</strong>
+                    <pre class="code_html_3"><code>&lt;a href="file.pdf" download&gt;Скачать PDF&lt;/a&gt;</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section class="rules_sec">
+            <h2>Запомните!</h2>
+            <ol>
+                <li>Без href ссылка не работает - это просто текст</li>
+                <li>Одна страница - один id - не повторяйте одинаковые якоря</li>
+                <li>Ссылка должна быть понятна даже без контекста</li>
+                <li>Проверяйте все ссылки - битые ссылки раздражают пользователей</li>
+            </ol>
+        </section>
+
+        <div>
+            <button class="button_next"><a href="../7-Images-in-code/index.html">Дальше</a></button>
+            <button class="button_previous"><a href="../5-Semantics/index.html">Предыдущая лекция</a></button>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="./testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="../../../head.html">Главная</a></li>
+                            <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                            <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                            <li><a href="../../../cssPage.html">CSS3</a></li>
+                            <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                            <li><a href="../../../GitPage.html">Git</a></li>
+                            <li><a href="../../../testPage.html">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="https://github.com/koryaga1999-lub/FrontDocs">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="https://t.me/Koryaga1999">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="../../../supportPage/support.html">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+            </div>
+        </footer>
+</body>
+</html>

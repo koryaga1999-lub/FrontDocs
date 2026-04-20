@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../../../js/theme.js"></script>
+<link rel="stylesheet" href="../../../main.css">
+</head>
+<body>
+    <header class="header">
+            <div class="header-inner">
+            <h1 class="logo">FrontDocs.</h1>
+            <div class="border"></div>
+            <nav class="nav">
+<ul class="nav-list">
+                    <li><a href="../../../pages/head.html">Главная</a></li>
+                    <li><a href="../../../pages/FrontendPage.html">Фронтенд</a></li>
+                    <li><a href="../../../pages/HtmlPage.html">HTML5</a></li>
+                    <li><a href="../../../pages/cssPage.html">CSS3</a></li>
+                    <li><a href="../../../pages/JavaScriptPage.html">JavaScript</a></li>
+                    <li><a href="../../../pages/GitPage.html">Git</a></li>
+                    <li><a href="../../../pages/testPage.html">Задания</a></li>
+                </ul>
+
+                <img class="nav-icon" src="../../../images/icon.png" alt="">
+            </nav>
+        </div>
+        <button class="theme-btn">🌙</button>
+    </header>
+    <main>
+        <h1 class="title_lection1">Всё о head</h1>
+        <p class="discription3">Если <code>&lt;body&gt;</code> - это содержимое страницы, которое видят пользователи, то <code>&lt;head&gt;</code> - это «мозг» страницы, где хранятся метаданные: информация о странице для браузеров, поисковиков и других устройств.</p>
+
+        <section class="sec_info_head">
+            <h2>Что такое <code>&lt;head&gt;</code> и зачем он нужен?</h2>
+            <p><strong><code>&lt;head&gt;</code></strong> - это служебная часть сайта, которая НЕ видна пользователям. В ней хранится:</p>
+            <ol>
+                <li><strong>Название страницы (title)</strong> - то, что видно во вкладке браузера</li>
+                <li><strong>Язык сайта (lang)</strong> - чтобы браузер знал, на каком языке текст</li>
+                <li><strong>Кодировка</strong> (<code>&lt;meta charset&gt;</code>) - чтобы русские буквы не превращались в "кракозябры"</li>
+                <li><strong>Настройки для телефонов</strong> (<code>&lt;meta name="viewport"&gt;</code>) - чтобы сайт нормально выглядел на мобильных устройствах</li>
+                <li><strong>Описание для Google</strong> (<code>&lt;meta name&gt;</code>) - короткий текст, который показывают в поиске</li>
+                <li><strong>Ссылки на стили</strong>  - откуда брать цвета, шрифты и оформление</li>
+                <li><strong>Иконка сайта (favicon)</strong> - маленькая картинка во вкладке браузера</li>
+            </ol>
+        </section>
+
+        <section class="sec_info_tittle">
+            <h2><code>&lt;tittle&gt;</code> - название страницы</h2>
+            <p class="title2_lec2">Название страницы видно во вкладках браузера, закладках и в поиске (Google / Yandex):</p>
+            <div class="code_html_3">
+                <p><code>&lt;title&gt;</code>Рецепт борща<code>&lt;/title&gt;</code></p>
+            </div>
+            <p class="title3_lec2"><code>&lt;tittle&gt;</code> отличается от <code>&lt;h1&gt;</code> тем, что h1 это заголовок на самой странице, а tittle - название вкладки.  </p>
+        </section>
+
+        <section class="sec_info_charset">
+            <h2>Кодировка: <code>&lt;meta charset&gt;</code></h2>
+            <p class="title4_lec2">Кодировка в head говорит браузеру: "используй русские буквы, иероглифы, эмодзи - всё что угодно"</p>
+            <div class="code_html_3">
+                <p><code>&lt;meta charset="utf-8"&gt;</code></p>
+            </div>
+            <p class="title5_lec2">Пишется самым первым в head. </p>
+            <p class="title6_lec2">Если же забыть написать кодировку, то вместо понятным нам всем символом мы получим примерно вот это - ÐÑÐ¸Ð²ÐµÑ (здесь написано привет)</p>
+        </section>
+
+        <section class="metadata-section">
+            <h2>Метаданные для поисковиков: <code>&lt;meta name&gt;</code></h2>
+            <p class="title7_lec2">Элемент &lt;meta&gt; с атрибутами name и content добавляет информацию о странице...</p>
+            <ol class="code_list_lec2">
+                <li>
+                    <p><strong>Автор (author):</strong> указывает, кто создал страницу.</p>
+                    <pre class="code_html_3"><code>&lt;meta name="author" content="Иван Иванов"&gt;</code></pre>
+                    <p>Это помогает идентифицировать автора</p>
+                </li>
+                <li>
+                    <p><strong>Описание (description):</strong> краткое описание страницы для поисковиков (SEO).</p>
+                    <pre class="code_html_3"><code>&lt;meta name="description" content="Страница о книге..."&gt;</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <section class="sec_info_favicon">
+            <h2>Подключение иконок: favicon и другие</h2>
+            <div class="text_container">  
+                <p><strong>Что это?</strong></p>
+                <p>Маленькая картинка рядом с названием сайта:</p>
+                <p>[🔖] Название сайта  <- эта иконка</p>
+            </div>
+            <div class="info_code_lec2">
+                <p>Где видна:</p>
+                <ol>
+                    <li>Во вкладке браузера </li>
+                    <li>В закладках </li>
+                    <li>В истории посещений </li>
+                    <li>На телефоне (если добавить сайт на главный экран)</li>
+                </ol>
+                <div class="code_html_3">
+                    <pre><code>&lt;link rel="icon" href="images/favicon.ico"&gt;</code></pre>
+                </div>
+                <p>Иконки для устройств (например, iPhone, iPad):Используются для экрана с разными размерами.</p>
+                <div class="code_html_3">
+                    <pre><code>&lt;link rel="apple-touch-icon" sizes="144x144" href="favicon144.png"&gt;</code></pre>
+                    <pre><code>&lt;link rel="apple-touch-icon" sizes="72x72" href="favicon72.png"&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="add_css_js_sec">
+            <h2>Подключение CSS и JavaScript</h2>
+            <div class="code_container1">
+                <p>CSS подключается с помощью link в head:</p>
+                <pre class="code_html_3"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+                <p>JavaScript с помощью <code>&lt;script&gt;</code><code>&lt;/script&gt;</code>в конце body</p>
+                <pre class="code_html_3"><code>&lt;script src="script.js"&gt;</code><code>&lt;/script&gt;</code></pre>
+            </div>
+            <p class="title8_lec2">Правильный порядок:</p>
+            <div class="code_container2">
+                <div class="code_html_3">
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                        &lt;!-- 1. Кодировка --&gt;
+                        &lt;meta charset="utf-8"&gt;
+
+                        &lt;!-- 2. CSS туг --&gt;
+                        &lt;link rel="stylesheet" href="style.css"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &lt;!-- 3. Весь HTML --&gt;
+
+                        &lt;!-- 4. JS в конце --&gt;
+                        &lt;script src="script.js"&gt;&lt;/script&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="end_sec_lec2">
+            <h2>Установка языка страницы</h2>
+            <p>Чтобы установить язык странице нужно написать:</p>
+            <div class="code_html_3">
+                <pre><code>&lt;html lang="ru"&gt;</code></pre>
+            </div>
+            <div class="end_title_lec2">
+                <p>Это помогает:</p>
+                <ul>
+                    <li>Поисковикам правильно индексировать страницу.</li>
+                    <li>Программам для слабовидящих (скринридерам) читать текст с правильным произношением.</li>
+                </ul>
+            </div>
+        </section>
+        <div>
+            <button class="button_next"><a href="../3-Base-Text-Editing/index.html">Дальше</a></button>
+            <button class="button_previous"><a href="../1-Base/index.html">Предыдущая лекция</a></button>
+        </div>
+    </main>
+    <footer class="footer">
+            <div class="footer-columns">
+                <!-- Колонка 1: FrontDocs -->
+                <div class="footer-col">
+                    <h3 class="col-title">FrontDocs</h3>
+                    <div class="frontdocs-content">
+                        <p>База по фронтенду: <br> теория - примеры - задания</p>
+                        <button class="button_ex"><a href="./testPage.html">Перейти к заданиям</a></button>
+                        <p class="version">Версия: base <br> обновлено: Февраль 2026</p>
+                    </div>
+                </div>
+
+                <!-- Колонка 2: Разделы -->
+                <div class="footer-col">
+                    <h3 class="col-title">Разделы</h3>
+                    <div class="shapter-content">
+                        <ul>
+                            <li><a href="../../../head.html">Главная</a></li>
+                            <li><a href="../../../FrontendPage.html">Фронтенд</a></li>
+                            <li><a href="../../../HtmlPage.html">HTML5</a></li>
+                            <li><a href="../../../cssPage.html">CSS3</a></li>
+                            <li><a href="../../../JavaScriptPage.html">JavaScript</a></li>
+                            <li><a href="../../../GitPage.html">Git</a></li>
+                            <li><a href="../../../testPage.html">Задания</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 3: Инструменты -->
+                <div class="footer-col">
+                    <h3 class="col-title">Инструменты</h3>
+                    <div class="instruments-content">
+                        <ul>
+                            <li><a href="#">Шпаргалки, теги, атрибуты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Колонка 4: Сообщество -->
+                <div class="footer-col">
+                    <h3 class="col-title">Сообщество</h3>
+                    <div class="community-content">
+                        <ul>
+                            <li><a href="https://github.com/koryaga1999-lub/FrontDocs">GitHub <img src="../../../images/Icon (15).png" alt=""></a></li>
+                            <li><a href="https://t.me/Koryaga1999">Telegram <img src="../../../images/Icon (16).png" alt=""></a></li>
+                            <li><a href="../../../supportPage/support.html">Сообщить об ошибке</a></li>
+                            <li><a href="">Поддержать проект</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="end_line_three">
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>2026 FrontDocs • Базовое руководство по Фронтенду</p>
+            </div>
+        </footer>
+</body>
+</html>

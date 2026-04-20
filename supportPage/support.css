@@ -1,0 +1,87 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 42px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid black;
+    
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.form__label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form__label::after {
+    content: " *";
+    color: red;
+}
+
+.form__label__area {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 5px;
+}
+
+.form__input {
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.form__input:focus {
+    outline: 1px solid rgba(65, 146, 251, 0.7);
+    border-radius: 5px;
+}
+
+.form__input:invalid:not(:placeholder-shown) {
+    border: 3px solid red;
+}
+
+textarea.form__input {
+    min-height: 160px;
+    max-width: 515px;
+    box-sizing: border-box;
+}
+
+.form__group span {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.form_description {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.form__button {
+    padding: 15px 30px;
+    font-size: 18px;
+    height: 50px;
+    min-width: 200px;
+    background-color: rgb(40, 110, 201);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
