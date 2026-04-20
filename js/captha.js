@@ -1,10 +1,10 @@
 // каптча
 
 const formCaptcha = document.getElementById('form_captcha');
-const input = formCaptcha.querySelector('[name="captcha"]');
-const captchaImg = document.querySelector('.img_captcha');
+const input = formCaptcha.querySelector('[name="captcha"]'); 
+const captchaImg = document.querySelector('.img_captcha'); 
 
-const captchaImages = [
+const captchaImages = [ // массив с картинками
   './capthaImg/decorative_card_001.png',
   './capthaImg/decorative_card_002.png',
   './capthaImg/decorative_card_003.png',
@@ -57,7 +57,7 @@ const captchaImages = [
   './capthaImg/decorative_card_050.png'
 ];
 
-const captchaAnswers = [
+const captchaAnswers = [ // массив с ответами
   'm7Rk9V',
   'Q8vN3x',
   't6Kp4Z',
@@ -132,6 +132,6 @@ formCaptcha.addEventListener('submit', (event) => { // event - событие к
     } else {
         alert("Неверный код!");
         loadRandomCaptcha(); 
-        input.value = ''; 
+        input.value = '';
     }
 });
