@@ -1,0 +1,72 @@
+.lections_section4 img {
+  position: absolute;
+  left: 1150px; /* Отступ от левого края списка */
+  top: 310px;
+  width: 250px;
+}
+
+.lections_section4 {
+    font-size: var(--lectsize);
+    line-height: 40px;
+    margin-left: 79px;
+    margin-top: 16px;
+}
+
+.lections_section4 a {
+    text-decoration: none;
+    color: #000000; 
+}
+
+.lections_section4_dop {
+    margin-top: 20px;
+}
+
+.lections_section4 a:hover {
+    color: #4ECDC4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.lections_section4_dop a:hover {
+    color: #4ECDC4;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .section_development {
+    min-height: 220px;
+    padding: 0 16px;
+  }
+
+  .title_development {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    line-height: 1.2;
+  }
+
+  .title_development2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 24px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .section_development {
+    min-height: 200px;
+    padding: 0 12px;
+  }
+
+  .title_development {
+    font-size: 30px;
+    margin-top: 70px;
+  }
+
+  .title_development2 {
+    font-size: 18px;
+    margin-top: 18px;
+  }
+}

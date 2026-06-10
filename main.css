@@ -1,0 +1,421 @@
+@import url('./base/reset.css'); /* подключение файла со сбросом базовых стилей браузера */
+@import url('./base/variables.css'); /* подключение файла с переменными */
+
+ /* подключение файлов стилей для главных страниц каждого раздела лекций  */
+@import url('./page-style/css-page.css'); /* файл с главной страницей модуля css */
+@import url('./page-style/head-page.css'); /* файл с главной страницей всего сайта */
+@import url('./page-style/front-page.css'); /* файл с главной страницей модуля frontend */
+@import url('./page-style/git-page.css'); /* файл с главной страницей модуля git */
+@import url('./page-style/html-page.css'); /* файл с главной страницей модуля html */
+@import url('./page-style/js-page.css'); /* файл с главной страницей модуля JavaScript */
+@import url('./page-style/test-page.css'); /* файл с главной страницей тестов */
+@import url('./supportPage/support.css'); /* файл с главной страницей поддержки */
+ 
+/* Подключение файлов с лекциями */
+@import url("./Lections/HTML-Lections/1-Base/style.css"); /* 1 лекция */
+@import url("./Lections/HTML-Lections/2-All-Of-Head/style.css"); /* 2 лекция */
+@import url("./Lections/HTML-Lections/3-Base-Text-Editing/style.css"); /* 3 лекция */
+@import url('./Lections/HTML-Lections/4-indents-borders-sizes/style.css'); /* 4 лекция */
+@import url("./Lections/HTML-Lections/5-Semantics/style.css"); /* 5 лекция */
+@import url("./Lections/HTML-Lections/6-Hyperlinks-in-code/style.css"); /* 6 лекция */
+@import url("./Lections/HTML-Lections/7-Images-in-code/style.css"); /* 7 лекция */
+@import url("./Lections/HTML-Lections/8-Audio-And-Video-in-code/style.css"); /* 8 лекция */
+@import url("./Lections/HTML-Lections/9-Tables-in-HTML/style.css"); /* 9 лекция */
+@import url('./Lections/HTML-Lections/10-More-About-Tables/style.css'); /* 10 лекция */
+@import url("./Lections/HTML-Lections/11-Forms-in-HTML/style.css"); /* 11 лекция */
+@import url('./Lections/HTML-Lections/12-Project-On-HTML/style.css'); /* 12 лекция */
+
+/* Подключение файлов с регистрацией */
+@import url('./registerPage/style.css'); /* файл с регистрацией 
+
+/* Подключение файлов с тестами */
+@import url('./Tests/1-Main-Page-Of-Tests/style.css'); /* файл с главной страницей тестов */
+@import url('./Tests/2-Base-Tests/style.css'); /* тесты по основам HTML */
+
+/* Подключение файла с песочницей кода */
+@import url("./code_sandbox/sandbox.css");
+
+@import url("./theme/theme.css"); /* подключение файла с темами */
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== ОБЩИЙ АДАПТИВ ХЕДЕРА ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ ===== */
+
+.burger-btn {
+  display: none;
+}
+
+.burger-line {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #000;
+  border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: auto;
+    min-height: 88px;
+  }
+
+  .header-inner {
+    min-height: 88px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .nav {
+    margin-left: auto;
+    position: relative;
+  }
+
+  .burger-btn {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    background: #4a8df6;
+    cursor: pointer;
+    flex: 0 0 42px;
+  }
+
+  .nav-icon {
+    display: none !important;
+  }
+
+  .nav-list {
+    display: none !important;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    left: auto;
+    width: 240px;
+    max-width: calc(100vw - 24px);
+    margin: 0;
+    padding: 8px 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+    z-index: 3000;
+  }
+
+  .nav-list.active {
+    display: flex !important;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-list a {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    text-align: left;
+    color: #111;
+    background: transparent;
+    border-radius: 0;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .nav-list a:hover {
+    color: #111;
+    background: #f3f6fb;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .nav-list a::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 0 12px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .burger-btn {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+  }
+
+  .burger-line {
+    width: 20px;
+  }
+}
+/* ===== Minimal clean redesign patch ===== */
+:root {
+  --background-color: #f7f8fb;
+  --advantage-color: #ffffff;
+  --footer-color: #101827;
+  --primary-color: #2563eb;
+  --text-color: #111827;
+  --muted-color: #64748b;
+  --soft-border: #e5e7eb;
+  --soft-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --border-radius: 16px;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  line-height: 1.55;
+}
+
+.header {
+  height: 82px;
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid var(--soft-border);
+  box-shadow: 0 8px 24px rgba(15,23,42,0.05);
+  backdrop-filter: blur(12px);
+}
+
+.header-inner {
+  gap: 22px;
+}
+
+.logo {
+  font-size: 38px;
+  letter-spacing: -1px;
+  color: #0f172a;
+}
+
+.border,
+.end_line,
+.end_line_two,
+.end_line_three {
+  display: none;
+}
+
+.nav-list {
+  gap: 12px;
+}
+
+.nav-list a {
+  padding: 9px 12px;
+  border-radius: 999px;
+  color: #334155;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  color: #fff;
+  background: var(--primary-color);
+  transform: none;
+  box-shadow: none;
+}
+
+.theme-btn,
+.burger-btn,
+.button_ex,
+.button_captcha,
+button,
+input[type="submit"] {
+  border-radius: 999px !important;
+}
+
+.information_section,
+.advantages_section,
+.about_us,
+.about,
+.page {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.information_section {
+  margin-top: 54px;
+  padding: 48px 40px;
+  background: #ffffff;
+  border: 1px solid var(--soft-border);
+  border-radius: 28px;
+  box-shadow: var(--soft-shadow);
+}
+
+.h1_head {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.hcj {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.discription,
+.about p,
+.info_text,
+.column_flex {
+  color: #475569;
+}
+
+.hero_img {
+  max-width: 320px;
+  filter: drop-shadow(0 18px 26px rgba(15, 23, 42, 0.12));
+}
+
+.static_text {
+  gap: 22px;
+  color: #0f172a;
+}
+
+.advantages_section,
+.about_us,
+.about {
+  margin-top: 72px;
+  padding: 0 20px;
+}
+
+.advantages_section h2,
+.about_us h2,
+.about h2 {
+  padding: 0;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.card_grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card,
+.example,
+.about_the_website,
+.block_captcha,
+.support-container,
+.editor-panel,
+.output-panel,
+.result-container,
+.test-card {
+  background: #ffffff !important;
+  border: 1px solid var(--soft-border) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--soft-shadow) !important;
+}
+
+.card {
+  margin-top: 26px;
+  padding: 22px;
+}
+
+.card:hover {
+  color: inherit;
+  border-color: #bfdbfe !important;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.11) !important;
+}
+
+.example,
+.about_the_website {
+  border-color: var(--soft-border);
+}
+
+.footer {
+  background: #0f172a;
+  border-radius: 28px 28px 0 0;
+  margin-top: 90px;
+}
+
+.footer a,
+.footer-bottom,
+.version {
+  color: #94a3b8 !important;
+}
+
+.footer a:hover {
+  color: #ffffff !important;
+}
+
+body.dark-theme {
+  --background-color: #0b1220;
+  --advantage-color: #111827;
+  --text-color: #e5e7eb;
+  --soft-border: #243044;
+  --soft-shadow: 0 12px 30px rgba(0,0,0,0.24);
+}
+
+body.dark-theme .header,
+body.dark-theme .information_section,
+body.dark-theme .card,
+body.dark-theme .example,
+body.dark-theme .about_the_website,
+body.dark-theme .block_captcha,
+body.dark-theme .support-container,
+body.dark-theme .editor-panel,
+body.dark-theme .output-panel,
+body.dark-theme .result-container,
+body.dark-theme .test-card {
+  background: #111827 !important;
+  border-color: #243044 !important;
+}
+
+body.dark-theme .logo,
+body.dark-theme .h1_head,
+body.dark-theme .advantages_section h2,
+body.dark-theme .about_us h2,
+body.dark-theme .about h2,
+body.dark-theme .static_text {
+  color: #f8fafc;
+}
+
+body.dark-theme .nav-list a {
+  color: #dbeafe;
+}
+
+@media (max-width: 1200px) {
+  .header { height: auto; }
+  .nav-list a { border-radius: 12px; }
+}
+
+@media (max-width: 768px) {
+  .information_section {
+    margin-top: 24px;
+    padding: 28px 20px;
+  }
+  .hero_img { max-width: 230px; }
+  .static_text { flex-wrap: wrap; }
+  .footer-columns { flex-direction: column; }
+}
