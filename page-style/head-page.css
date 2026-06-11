@@ -509,6 +509,43 @@ body.dark-theme .theme-btn:hover {
     color: #333;
 }
 
+.password {
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: -50px;
+}
+
+.modal-content h2 {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: var(--pagenamesize);
+}
+
+.passwordDiv {
+  display: flex;
+}
+
+.passwordDiv button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: none;
+    border: none;
+    background-color: #007bff;  
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+    position: relative;
+}
+
 .exitBtn {
     margin-top: 15px;
     padding: 8px 16px;

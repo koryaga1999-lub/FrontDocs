@@ -19,22 +19,27 @@ const profileBtn = document.getElementById('profile_link');
                     modalProfile.id = 'profile-modal';
 
                     const regDate = users[userEmail]?.registeredAt
-                    const formattedDate = regDate ? new Date(regDate).toLocaleDateString() : 'не указана';
+                    const formattedDate = regDate ? new Date(regDate).toLocaleDateString() : 'не указана'; 
 
                     modalProfile.innerHTML = `
                         <div class="modal-content">
                             <span class="close">&times;</span>
+                            <div class="profile">
+                                <img src="../images/profileImg.png" alt="profile" width="100" height="100">
+                            </div>
                             <h2>Профиль</h2>
+                            <br>
                             <p><strong>Почта:</strong> ${userEmail}</p>
                             <div class="passwordDiv">
-                            <p id="passwordID"><strong>Пароль:</strong> ${userPassword}</p>
-                            <button id="unlockBtn">Скрыть</button>
-                            <br>
-                            <p><strong>Дата регистрации:</strong> ${formattedDate}</p>
-                            <p><strong>Последний вход:</strong> ${new Date().toLocaleDateString()}</p>
-                            <br>
-                            <button id="exitBtn" class="exitBtn">Выйти</button>
-                        </div>
+                                <p id="passwordID"><strong>Пароль:</strong> <span class="password">**********</span></p>
+                                <button id="unlockBtn">Показать</button>  
+                            </div>
+                                <br>
+                                <p><strong>Дата регистрации:</strong> ${formattedDate}</p>
+                                <p><strong>Последний вход:</strong> ${new Date().toLocaleDateString()}</p>
+                                <br>
+                                <button id="exitBtn" class="exitBtn">Выйти</button>
+                            </div>
                     `;
                     
                     document.body.appendChild(modalProfile);
@@ -47,7 +52,7 @@ const profileBtn = document.getElementById('profile_link');
                         const passwordElement = modalProfile.querySelector('#passwordID');
                         
                         if (!isPasswordVisible) {
-                                passwordID.innerHTML = `<strong>Пароль:</strong> ${userPassword}` 
+                                passwordElement.innerHTML = `<strong>Пароль:</strong> ${userPassword}` 
                                 isPasswordVisible = true;
                                 unlockBtn.textContent = 'Скрыть';
                             } else {
